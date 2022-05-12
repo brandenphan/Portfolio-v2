@@ -190,7 +190,7 @@ const Temp = () => {
 
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={javascriptLogo} alt="JavaScriptLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>JavaScript</Typography>
+                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>JS</Typography>
                     </Grid>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     {width > 600 &&
@@ -399,7 +399,7 @@ const Temp = () => {
 
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={mongoLogo} alt="MongoDBLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>MongoDB</Typography>
+                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Mongo</Typography>
                     </Grid>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     {width > 600 &&
