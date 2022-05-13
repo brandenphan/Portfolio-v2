@@ -32,6 +32,8 @@ import firebaseLogo from '../Images/TechnologyIcons/firebase.svg';
 import mochaLogo from '../Images/TechnologyIcons/mocha.svg';
 import gitLogo from '../Images/TechnologyIcons/git.svg';
 import dockerLogo from '../Images/TechnologyIcons/docker.svg';
+import figmaLogo from '../Images/DesignIcons/figma.svg';
+import gimpLogo from '../Images/DesignIcons/gimp.svg';
 
 const Temp = () => {
     const { width } = useWidth();
@@ -190,7 +192,11 @@ const Temp = () => {
 
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={javascriptLogo} alt="JavaScriptLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>JS</Typography>
+                        {width > 600 ?
+                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>JavaScript</Typography>
+                        :
+                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>JS</Typography>
+                        }
                     </Grid>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     {width > 600 &&
@@ -483,6 +489,37 @@ const Temp = () => {
             </div>
 
 
+            
+            {/* Design Tools */}
+            <Grid container sx={{display: "flex", justifyContent: "center"}}>
+                <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: "5vh"}}>
+                    <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Design Tools</Typography>
+                </Grid>
+
+                <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
+                    <img src={figmaLogo} alt="FigmaLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
+                    <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Figma</Typography>
+                </Grid>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {width > 600 &&
+                    <>
+                        &nbsp;&nbsp;&nbsp;
+                    </>
+                }
+
+                <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
+                    <img src={gimpLogo} alt="GimpLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
+                    <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Gimp</Typography>
+                </Grid>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {width > 600 &&
+                    <>
+                        &nbsp;&nbsp;&nbsp;
+                    </>
+                }
+            </Grid>
+
+
 
 
             {/* Project Section */}
@@ -491,6 +528,7 @@ const Temp = () => {
                     <Grid item xs={12} sx={{marginBottom: "5vh", marginTop: "10vh"}}>
                         <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Projects</Typography>
                     </Grid>
+
                 </Grid>
             </div>
 
@@ -510,7 +548,7 @@ const Temp = () => {
                             <Grid item xs={width > 1500 ? 8 : 12}>
                                 <Typography variant="h5" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Lotus Thai & Vietnamese Cuisine</Typography>
                                 <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "1%"}}>Hamilton, Ontario</Typography>
-                                {width <= 1500 && <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "1%"}}>Dec 2021 - April 2022</Typography>}
+                                {width <= 1500 && <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "1%"}}>Dec 2021 - Mar 2022</Typography>}
                                 <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Frontend Developer</Typography>
                                 {width <= 700 &&
                                     (openLotus ? 
@@ -563,7 +601,7 @@ const Temp = () => {
 
                             {width > 1500 &&
                                 <Grid item xs={4} sx={{display: "flex", justifyContent: "flex-end", alignItems: "flex-start"}}>
-                                    <Typography variant="h6" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF"}}>Dec 2021 - Apr 2022</Typography>
+                                    <Typography variant="h6" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF"}}>Dec 2021 - Mar 2022</Typography>
                                 </Grid>
                             }
                         </Grid>
