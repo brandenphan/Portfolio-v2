@@ -1,13 +1,15 @@
 import React from "react";
 import { useWidth } from "../Context/WidthContext";
 import NavBar from "../Components/NavBar";
-import { Grid, Typography, IconButton, Tooltip, Collapse, Button } from "@mui/material";
+import { Grid, Typography, IconButton, Tooltip, Collapse, Button, Dialog, Card, CardContent } from "@mui/material";
 import profilePic from "../Images/profile.png";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import { CgArrowLongDown } from 'react-icons/cg';
-
+import CloseIcon from '@mui/icons-material/Close';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import GitHub from "@mui/icons-material/GitHub";
 
 
 import { FaScroll } from 'react-icons/fa';
@@ -31,11 +33,28 @@ import mysqlLogo from '../Images/TechnologyIcons/mysql.svg';
 import firebaseLogo from '../Images/TechnologyIcons/firebase.svg';
 import mochaLogo from '../Images/TechnologyIcons/mocha.svg';
 import gitLogo from '../Images/TechnologyIcons/git.svg';
-import dockerLogo from '../Images/TechnologyIcons/docker.svg';
+import herokuLogo from '../Images/TechnologyIcons/heroku.svg';
 import figmaLogo from '../Images/DesignIcons/figma.svg';
 import gimpLogo from '../Images/DesignIcons/gimp.svg';
 
-const Temp = () => {
+import courseSearchPNG from '../Images/Projects/CourseSearch.png';
+import LotusImagePNG from '../Images/Projects/LotusImage.png';
+import PortfolioImageNewPNG from '../Images/Projects/PortfolioImageNew.png';
+import PortfolioImageOldPNG from '../Images/Projects/PortfolioImageOld.png';
+import ScheduleMakerImagePNG from '../Images/Projects/ScheduleMakerImage.png';
+import GpxImagePNG from '../Images/Projects/GpxImage.png';
+import DiscordImagePNG from '../Images/Projects/DiscordImage.png';
+import BrawlhallaImagePNG from '../Images/Projects/BrawlhallaImage.png';
+import courseSearchWEBP from '../Images/Projects/CourseSearch.webp';
+import LotusImageWEBP from '../Images/Projects/LotusImage.webp';
+import PortfolioImageNewWEBP from '../Images/Projects/PortfolioImageNew.webp';
+import PortfolioImageOldWEBP from '../Images/Projects/PortfolioImageOld.webp';
+import ScheduleMakerImageWEBP from '../Images/Projects/ScheduleMakerImage.webp';
+import GpxImageWEBP from '../Images/Projects/GpxImage.webp';
+import DiscordImageWEBP from '../Images/Projects/DiscordImage.webp';
+import BrawlhallaImageWEBP from '../Images/Projects/BrawlhallaImage.webp';
+
+const Index = () => {
     const { width } = useWidth();
 
     const [openLotus, setOpenLotus] = React.useState(false);
@@ -61,7 +80,7 @@ const Temp = () => {
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
 
             {/* Home Page Section */}
-            <div style={{height: "100vh", position: "relative", display: "flex", alignItems: "center", boxShadow: "0 13px 13px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(54, 114, 255, 0.2), 0 20px 20px 0 rgba(54, 114, 255, 0.2)"}}>
+            <div id="Home" style={{height: "100vh", position: "relative", display: "flex", alignItems: "center", boxShadow: "0 13px 13px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(54, 114, 255, 0.2), 0 20px 20px 0 rgba(54, 114, 255, 0.2)"}}>
                 <Grid container sx={{display: "flex", alignItems: "center", paddingLeft: width > 1500 ? "10%" : width > 1400 ? "6%" : width > 1000 ? "2%" : "10%", paddingRight: width > 1500 ? "10%" : width > 1400 ? "6%" : width > 1000 ? "2%" : "10%", marginLeft: width > 1400 ? "4%" : width > 1000 ? "6%" : ""}}>
                     <Grid item xs={width > 1000 ? 6 : 12}>
                         {width > 450 ? 
@@ -439,8 +458,8 @@ const Temp = () => {
                             }
 
                             <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                                <img src={dockerLogo} alt="DockerLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Docker</Typography>
+                                <img src={herokuLogo} alt="HerokuLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
+                                <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Heroku</Typography>
                             </Grid>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             {width > 600 &&
@@ -470,8 +489,8 @@ const Temp = () => {
                         }
 
                         <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                            <img src={dockerLogo} alt="DockerLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Docker</Typography>
+                            <img src={herokuLogo} alt="HerokuLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
+                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Heroku</Typography>
                         </Grid>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {width > 600 &&
@@ -523,20 +542,28 @@ const Temp = () => {
 
 
             {/* Project Section */}
-            <div id="Projects" style={{height: "100vh", boxShadow: "0 5px 13px 10px rgba(0, 0, 0, 0.3), 0 3px 5px 5px rgba(54, 114, 255, 0.2), 0 10px 20px 10px rgba(54, 114, 255, 0.2)"}}>
+            <div id="Projects" style={{boxShadow: "0 5px 13px 10px rgba(0, 0, 0, 0.3), 0 3px 5px 5px rgba(54, 114, 255, 0.2), 0 10px 20px 10px rgba(54, 114, 255, 0.2)"}}>
                 <Grid container sx={{marginTop: "15vh", display: "flex", justifyContent: "center"}}>
                     <Grid item xs={12} sx={{marginBottom: "5vh", marginTop: "10vh"}}>
                         <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Projects</Typography>
                     </Grid>
 
+                    <Grid container columnSpacing={20} sx={{paddingLeft: width > 1300 ? "14%" : width > 1000 ? "16%" : "4%", paddingRight: width > 1300 ? "14%" : width > 1000 ? "16%" : "4%"}}>
+                        {projectArray.map((instance, ID) => (
+                            <CardComponent key={ID} projectName={instance.name} description={instance.description} github={instance.github} live={instance.live} techs={instance.technologies} imageNamePNG={instance.imageNamePNG} imageNameWEBP={instance.imageNameWEBP} />
+                        ))}
+                    </Grid>
                 </Grid>
+                <br />
+                <br />
+                <br />
+                <br />
             </div>
 
 
 
-
             {/* Work Section */}
-            <div>
+            <div id="Work">
                 <Grid container sx={{marginTop: "15vh", paddingLeft: width > 1300 ? "22%" : width > 1000 ? "16%" : "4%", paddingRight: width > 1300 ? "22%" : width > 1000 ? "16%" : "4%"}}>
                     <Grid item xs={12} sx={{marginBottom: "5vh"}}>
                         <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Work</Typography>
@@ -694,4 +721,310 @@ const Temp = () => {
     )
 };
 
-export default Temp;
+export default Index;
+
+
+// Card Component for projects
+const CardComponent = ({projectName, description, github, live, techs, imageNamePNG, imageNameWEBP}) => {
+    const [open, setOpen] = React.useState(false);
+
+    return (
+        <>
+            <Grid item xs={6}>
+                <Button onClick={() => {setOpen(true);}} sx={{padding: "0", boxShadow: "0px 0px 7px 1px rgba(9,62,128,0.49)", transition: "0.4s", "&:hover": {transform: "translateY(-4px)"}}}>
+                    <picture style={{height: "100%"}}>
+                        <source srcSet={imageNameWEBP} type="image/webp" />
+                        <source srcSet={imageNamePNG} type="image/png" />
+                        <img src={imageNamePNG} alt={projectName} height="100%" width="100%" style={{display: "block"}} />
+                    </picture>
+                </Button>
+                <Typography variant="h6" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "3%", marginLeft: "1%"}}>{projectName}</Typography>
+                <br />
+                <br />
+                <br />
+            </Grid>
+        
+            <Dialog open={open} onClose={() => {setOpen(false);}} disableScrollLock={true}>
+                <Card>
+                    <CardContent>
+                        <Grid container sx={{borderBottom: "1px solid #D7DEE6"}}>
+                            <Grid item xs={10} sx={{display: "flex", alignItems: "center"}}>
+                                <Typography variant="h6" sx={{fontFamily: "Source Sans Pro", color: "black"}}>
+                                    {projectName}
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </Typography> 
+                            </Grid>
+                            <Grid item xs={2} sx={{display: "flex", justifyContent: "flex-end"}}>
+                                <IconButton onClick={() => {setOpen(false);}}>
+                                    <CloseIcon sx={{color: "black"}} />
+                                </IconButton>
+                            </Grid>
+                        </Grid>
+
+                        <br />
+                        <Typography variant="h6" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold"}}>Description</Typography>
+                        <Typography variant="h6" sx={{fontFamily: "Source Sans Pro"}}>{description}</Typography>
+
+                        <br />
+                        <Typography variant="h6" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", marginBottom: "2%"}}>Technologies</Typography>
+                        {techs.map((instance, ID) => (
+                            <React.Fragment key={ID}>
+                                {instance === "JavaScript" &&
+                                    <>
+                                        <Tooltip title="JavaScript" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={javascriptLogo} alt="JavaScriptLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "HTML" &&
+                                    <>
+                                        <Tooltip title="HTML" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={htmlLogo} alt="HTMLLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "CSS" &&
+                                    <>
+                                        <Tooltip title="CSS" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={cssLogo} alt="CSSLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "C" &&
+                                    <>
+                                        <Tooltip title="C" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={cLogo} alt="CLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "Heroku" &&
+                                    <>
+                                        <Tooltip title="Heroku" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={herokuLogo} alt="HerokuLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "Python" &&
+                                    <>
+                                        <Tooltip title="Python" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={pythonLogo} alt="PythonLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "React" &&
+                                    <>
+                                        <Tooltip title="React" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={reactLogo} alt="ReactLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "NextJS" &&
+                                    <>
+                                        <Tooltip title="NextJS" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={nextLogo} alt="NextJSLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "Gatsby" &&
+                                    <>
+                                        <Tooltip title="Gatsby" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={gatsbyLogo} alt="GatsbyLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "Node" &&
+                                    <>
+                                        <Tooltip title="Node" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={nodeLogo} alt="NodeLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "Express" &&
+                                    <>
+                                        <Tooltip title="Express" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={expressLogo} alt="ExpressLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "Git" &&
+                                    <>
+                                        <Tooltip title="Git" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={gitLogo} alt="GitLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                                {instance === "Mocha" &&
+                                    <>
+                                        <Tooltip title="Mocha" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                            <img src={mochaLogo} alt="MochaLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
+                                        </Tooltip>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </>
+                                }
+                            </React.Fragment>
+                        ))}
+
+                        <br />
+                        <br />
+                        <Typography variant="h6" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold"}}>External Links</Typography>
+                        {github !== "" &&
+                            <>
+                                <Button href={`${github}`} target="_blank" variant="outlined" sx={{textTransform: "none", marginTop: "2%"}}>
+                                    <GitHub />
+                                    &nbsp;&nbsp;
+                                    <Typography sx={{fontFamily: "Source Sans Pro", fontSize: "18px"}}>Github</Typography>
+                                </Button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </>
+                        }
+                        {live !== "" &&
+                            <>
+                                <Button href={`${live}`} target="_blank" variant="outlined" sx={{textTransform: "none", marginTop: "2%", color: "white", backgroundColor: "#3672FF", "&:hover": {backgroundColor: "#1B5FFF"}}}>
+                                    <ExitToAppIcon />
+                                    &nbsp;&nbsp;
+                                    <Typography sx={{fontFamily: "Source Sans Pro", fontSize: "18px"}}>Live</Typography>
+                                </Button>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </>
+                        }
+                    </CardContent>
+                </Card>
+            </Dialog>
+        </>
+    )
+}
+
+// Project array holding project information
+const projectArray = [
+    {
+        imageNamePNG: LotusImagePNG,
+        imageNameWEBP: LotusImageWEBP,
+        name: "Lotus",
+        description: "Front-end web-application, displaying a modern and responsive user interface to showcase various information pertaining to the Lotus restaurant.",
+        github: "",
+        live: "https://lotus-restaurant.netlify.app/",
+        technologies: [
+            "JavaScript",
+            "React",
+            "Node",
+            "Git"
+        ]
+    },
+    {
+        imageNamePNG: PortfolioImageNewPNG,
+        imageNameWEBP: PortfolioImageNewWEBP,
+        name: "Personal Portfolio - New",
+        description: "Updated personal portfolio web-application, using many of the designs from the previous personal portfolio while introducing newly learned design languages and technologies to display resume related information.",
+        github: "https://github.com/brandenphan/New-Portfolio",
+        live: "brandenphan.netlify.app",
+        technologies: [
+            "JavaScript",
+            "React",
+            "Node",
+            "Git"
+        ]
+    },
+    {
+        imageNamePNG: courseSearchPNG,
+        imageNameWEBP: courseSearchWEBP,
+        name: "Course Search", 
+        description: "Full-stack web-application created in a team of 6 people, developed over a span of 4 weeks. Web-application allows users to search courses and graph major/minor/subject trees offered at the University of Guelph and University of British Columbia.",
+        github: "https://github.com/brandenphan/Course-Search",
+        live: "",
+        technologies: [
+            "JavaScript",
+            "React",
+            "NextJS",
+            "Node",
+            "Express",
+            "Git",
+            "Mocha"
+        ]
+    },
+    {
+        imageNamePNG: PortfolioImageOldPNG,
+        imageNameWEBP: PortfolioImageOldWEBP,
+        name: "Personal Portfolio - Old",
+        description: "Personal portfolio web-application, displaying various resume related information through Gatsby JS's high-speed static site generator.",
+        github: "https://github.com/brandenphan/Portfolio",
+        live: "",
+        technologies: [
+            "JavaScript",
+            "React",
+            "Gatsby",
+            "Node",
+            "Git"
+        ]
+    },
+    {
+        imageNamePNG: ScheduleMakerImagePNG,
+        imageNameWEBP: ScheduleMakerImageWEBP,
+        name: "Schedule Maker",
+        description: "Full-stack web-application written in JavaScript using the React framework, providing users the ability to create multiple time-tables unique to their specific accounts.",
+        github: "https://github.com/brandenphan/Schedule-Maker",
+        live: "",
+        technologies: [
+            "JavaScript",
+            "React",
+            "Node",
+            "Git"
+        ]
+    },
+    {
+        imageNamePNG: DiscordImagePNG,
+        imageNameWEBP: DiscordImageWEBP,
+        name: "Discord Bot",
+        description: "Discord bot written in Python that utilizes various libraries and API's giving the bot commands that can be called by users in servers with the bot.",
+        github: "https://github.com/brandenphan/Pami-Bot",
+        live: "",
+        technologies: [
+            "Python",
+            "Heroku",
+            "Git"
+        ]
+    },
+    {
+        imageNamePNG: BrawlhallaImagePNG,
+        imageNameWEBP: BrawlhallaImageWEBP,
+        name: "Brawlhalla Search",
+        description: "Web-application utilizing React and the Brawlhalla API to provide users with various information regarding the Brawlhalla Game.",
+        github: "https://github.com/brandenphan/Brawlhalla-Website",
+        live: "",
+        technologies: [
+            "JavaScript",
+            "React",
+            "Node",
+            "Git"
+        ]
+    },
+    {
+        imageNamePNG: GpxImagePNG,
+        imageNameWEBP: GpxImageWEBP,
+        name: "GPX Data Viewer",
+        description: "Full-stack web-application written in C and JavaScript allowing users to uploade/download GPx files and perform various tasks related to those files.",
+        github: "https://github.com/brandenphan/GPX-Data-Viewer",
+        live: "",
+        technologies: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "C",
+            "Node",
+            "Express",
+            "MySQL",
+            "Git",
+        ]
+    }
+]
