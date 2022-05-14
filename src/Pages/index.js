@@ -886,7 +886,7 @@ const CardComponent = ({projectName, description, github, live, techs, imageName
                                     &nbsp;&nbsp;
                                     <Typography sx={{fontFamily: "Source Sans Pro", fontSize: "18px"}}>Github</Typography>
                                 </Button>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </>
                         }
                         {live !== "" &&
@@ -896,7 +896,7 @@ const CardComponent = ({projectName, description, github, live, techs, imageName
                                     &nbsp;&nbsp;
                                     <Typography sx={{fontFamily: "Source Sans Pro", fontSize: "18px"}}>Live</Typography>
                                 </Button>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </>
                         }
                     </CardContent>
