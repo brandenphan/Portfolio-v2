@@ -37,22 +37,22 @@ const NavBar = () => {
                                         <MenuIcon sx={{fontSize: "32px", color: "#E60268"}} />
                                     </IconButton>
                                     <Menu anchorEl={menuElement} open={open} onClose={handleClose}>
-                                        <MenuItem>
+                                        <MenuItem onClick={handleClose}>
                                             <a href="#Home" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Source Sans Pro"}}>
-                                                Education
+                                                Home
                                             </a>
                                         </MenuItem>
-                                        <MenuItem>
+                                        <MenuItem onClick={handleClose}>
                                             <a href="#Education" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Source Sans Pro"}}>
                                                 Education
                                             </a>
                                         </MenuItem>
-                                        <MenuItem>
+                                        <MenuItem onClick={handleClose}>
                                             <a href="#Projects" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Source Sans Pro"}}>
                                                 Projects
                                             </a>
                                         </MenuItem>
-                                        <MenuItem>
+                                        <MenuItem onClick={handleClose}>
                                             <a href="#Work" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Source Sans Pro"}}>
                                                 Work
                                             </a>
