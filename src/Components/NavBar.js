@@ -16,7 +16,7 @@ const NavBar = () => {
         setMenuElement(null);
     };
     return (
-        <Box sx={{flexGrow: 1, position: "absolute", top: "0", left: "0", width: "100%", marginTop: "1%"}}>
+        <Box sx={{flexGrow: 1, position: "fixed", top: "0", left: "0", width: "100%", marginTop: "1%"}}>
             <AppBar position="static" sx={{backgroundColor: "transparent", boxShadow: "none"}}> {/* BOX SHADOW ADDED WHEN SCROLLING */}
                 <Toolbar>
                     <Grid container>

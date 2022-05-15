@@ -212,9 +212,9 @@ const Index = () => {
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={javascriptLogo} alt="JavaScriptLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
                         {width > 600 ?
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>JavaScript</Typography>
+                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>JavaScript</Typography>
                         :
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>JS</Typography>
+                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>JS</Typography>
                         }
                     </Grid>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -226,7 +226,7 @@ const Index = () => {
 
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={htmlLogo} alt="HTMLLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>HTML</Typography>
+                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>HTML</Typography>
                     </Grid>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     {width > 600 &&
@@ -237,7 +237,7 @@ const Index = () => {
 
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={cssLogo} alt="CSSLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>CSS</Typography>
+                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>CSS</Typography>
                     </Grid>
 
                     {width > 1200 &&
@@ -250,7 +250,7 @@ const Index = () => {
                             }
                             <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                                 <img src={cLogo} alt="CLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>C</Typography>
+                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>C</Typography>
                             </Grid>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             {width > 600 &&
@@ -261,7 +261,7 @@ const Index = () => {
 
                             <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                                 <img src={javaLogo} alt="JavaLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Java</Typography>
+                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Java</Typography>
                             </Grid>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             {width > 600 &&
@@ -272,7 +272,7 @@ const Index = () => {
 
                             <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                                 <img src={pythonLogo} alt="PythonLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Python</Typography>
+                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Python</Typography>
                             </Grid>
                         </>
                     }
@@ -281,7 +281,7 @@ const Index = () => {
                     <Grid container sx={{marginTop: width > 650 ? "6vh" : "4vh", display: "flex", justifyContent: "center"}}>
                         <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                             <img src={cLogo} alt="CLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>C</Typography>
+                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>C</Typography>
                         </Grid>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {width > 600 &&
@@ -292,7 +292,7 @@ const Index = () => {
 
                         <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                             <img src={javaLogo} alt="JavaLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Java</Typography>
+                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Java</Typography>
                         </Grid>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {width > 600 &&
@@ -303,7 +303,7 @@ const Index = () => {
 
                         <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                             <img src={pythonLogo} alt="PythonLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Python</Typography>
+                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Python</Typography>
                         </Grid>
                     </Grid>
                 }
@@ -317,7 +317,7 @@ const Index = () => {
 
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={reactLogo} alt="ReactLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>React</Typography>
+                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>React</Typography>
                     </Grid>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     {width > 600 &&
@@ -328,7 +328,7 @@ const Index = () => {
 
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={gatsbyLogo} alt="GatsbyLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Gatsby</Typography>
+                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Gatsby</Typography>
                     </Grid>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     {width > 600 &&
@@ -339,7 +339,7 @@ const Index = () => {
 
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={nextLogo} alt="NextJSLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>NextJS</Typography>
+                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>NextJS</Typography>
                     </Grid>
 
                     {width > 1200 &&
@@ -352,7 +352,7 @@ const Index = () => {
                             }
                             <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                                 <img src={graphLogo} alt="GraphQLLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>GraphQL</Typography>
+                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>GraphQL</Typography>
                             </Grid>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             {width > 600 &&
@@ -363,7 +363,7 @@ const Index = () => {
 
                             <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                                 <img src={nodeLogo} alt="NodeLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Node</Typography>
+                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Node</Typography>
                             </Grid>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             {width > 600 &&
@@ -374,7 +374,7 @@ const Index = () => {
 
                             <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                                 <img src={expressLogo} alt="ExpressLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Express</Typography>
+                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Express</Typography>
                             </Grid>
                         </>
                     }
@@ -383,7 +383,7 @@ const Index = () => {
                     <Grid container sx={{marginTop: width > 650 ? "6vh" : "4vh", display: "flex", justifyContent: "center"}}>
                         <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                             <img src={graphLogo} alt="GraphQLLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>GraphQL</Typography>
+                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>GraphQL</Typography>
                         </Grid>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {width > 600 &&
@@ -394,7 +394,7 @@ const Index = () => {
 
                         <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                             <img src={nodeLogo} alt="NodeLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Node</Typography>
+                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Node</Typography>
                         </Grid>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {width > 600 &&
@@ -405,7 +405,7 @@ const Index = () => {
 
                         <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                             <img src={expressLogo} alt="ExpressLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Express</Typography>
+                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Express</Typography>
                         </Grid>
                     </Grid>
                 }
@@ -413,7 +413,7 @@ const Index = () => {
                 <Grid container sx={{display: "flex", justifyContent: "center", marginTop: width > 650 ? "6vh" : "4vh"}}>
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={mysqlLogo} alt="MySQLLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>MySQL</Typography>
+                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>MySQL</Typography>
                     </Grid>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     {width > 600 &&
@@ -424,7 +424,7 @@ const Index = () => {
 
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={mongoLogo} alt="MongoDBLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Mongo</Typography>
+                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Mongo</Typography>
                     </Grid>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     {width > 600 &&
@@ -435,7 +435,7 @@ const Index = () => {
 
                     <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <img src={firebaseLogo} alt="FirebaseLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Firebase</Typography>
+                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Firebase</Typography>
                     </Grid>
 
                     {width > 1200 &&
@@ -448,7 +448,7 @@ const Index = () => {
                             }
                             <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                                 <img src={gitLogo} alt="GitLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Git</Typography>
+                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Git</Typography>
                             </Grid>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             {width > 600 &&
@@ -459,7 +459,7 @@ const Index = () => {
 
                             <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                                 <img src={herokuLogo} alt="HerokuLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Heroku</Typography>
+                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Heroku</Typography>
                             </Grid>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             {width > 600 &&
@@ -470,7 +470,7 @@ const Index = () => {
 
                             <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                                 <img src={mochaLogo} alt="MochaLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Mocha</Typography>
+                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Mocha</Typography>
                             </Grid>
                         </>
                     }
@@ -479,7 +479,7 @@ const Index = () => {
                     <Grid container sx={{marginTop: width > 650 ? "6vh" : "4vh", display: "flex", justifyContent: "center"}}>
                         <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                             <img src={gitLogo} alt="GitLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Git</Typography>
+                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Git</Typography>
                         </Grid>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {width > 600 &&
@@ -490,7 +490,7 @@ const Index = () => {
 
                         <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                             <img src={herokuLogo} alt="HerokuLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Heroku</Typography>
+                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Heroku</Typography>
                         </Grid>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {width > 600 &&
@@ -501,7 +501,7 @@ const Index = () => {
 
                         <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                             <img src={mochaLogo} alt="MochaLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Mocha</Typography>
+                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Mocha</Typography>
                         </Grid>
                     </Grid>
                 }
@@ -517,7 +517,7 @@ const Index = () => {
 
                 <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                     <img src={figmaLogo} alt="FigmaLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                    <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Figma</Typography>
+                    <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Figma</Typography>
                 </Grid>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 {width > 600 &&
@@ -528,7 +528,7 @@ const Index = () => {
 
                 <Grid item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                     <img src={gimpLogo} alt="GimpLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                    <Typography align="center" variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Gimp</Typography>
+                    <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Gimp</Typography>
                 </Grid>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 {width > 600 &&
@@ -548,9 +548,9 @@ const Index = () => {
                         <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Projects</Typography>
                     </Grid>
 
-                    <Grid container columnSpacing={20} sx={{paddingLeft: width > 1300 ? "14%" : width > 1000 ? "16%" : "4%", paddingRight: width > 1300 ? "14%" : width > 1000 ? "16%" : "4%"}}>
+                    <Grid container columnSpacing={width > 1400 ? 20 : width > 1000 ? 16 : 0} sx={{marginTop: "1%", paddingLeft: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%", paddingRight: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%"}}>
                         {projectArray.map((instance, ID) => (
-                            <CardComponent key={ID} projectName={instance.name} description={instance.description} github={instance.github} live={instance.live} techs={instance.technologies} imageNamePNG={instance.imageNamePNG} imageNameWEBP={instance.imageNameWEBP} />
+                            <CardComponent key={ID} width={width} projectName={instance.name} description={instance.description} github={instance.github} live={instance.live} techs={instance.technologies} imageNamePNG={instance.imageNamePNG} imageNameWEBP={instance.imageNameWEBP} />
                         ))}
                     </Grid>
                 </Grid>
@@ -573,10 +573,10 @@ const Index = () => {
                     <Grid item xs={12} sx={{padding: width > 1000 ? "2%" : width > 600 ? "4%" : "6%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <Grid container>
                             <Grid item xs={width > 1500 ? 8 : 12}>
-                                <Typography variant="h5" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Lotus Thai & Vietnamese Cuisine</Typography>
-                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "1%"}}>Hamilton, Ontario</Typography>
-                                {width <= 1500 && <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "1%"}}>Dec 2021 - Mar 2022</Typography>}
-                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Frontend Developer</Typography>
+                                <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Lotus Thai & Vietnamese Cuisine</Typography>
+                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "1%"}}>Hamilton, Ontario</Typography>
+                                {width <= 1500 && <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "1%"}}>Dec 2021 - Mar 2022</Typography>}
+                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Frontend Developer</Typography>
                                 {width <= 700 &&
                                     (openLotus ? 
                                         <>
@@ -594,32 +594,32 @@ const Index = () => {
                                 {width > 700 ?
                                     <ul style={{marginTop: "3%"}}>
                                         <li>
-                                            <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Developing a front-end web-application using React JavaScript, creating a modern and responsive user interface, displaying various information pertaining to the Lotus restaurant</Typography>
+                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Developing a front-end web-application using React JavaScript, creating a modern and responsive user interface, displaying various information pertaining to the Lotus restaurant</Typography>
                                         </li>
                                         <li>
-                                            <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Optimizing SEO through concise and updated metadata to increase customer traffic to the Lotus web-application</Typography>
+                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Optimizing SEO through concise and updated metadata to increase customer traffic to the Lotus web-application</Typography>
                                         </li>
                                         <li>
-                                            <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Utilizing different techniques to improve website speed such as image optimization and CDN usage</Typography>
+                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Utilizing different techniques to improve website speed such as image optimization and CDN usage</Typography>
                                         </li>
                                         <li>
-                                            <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Numerous test to ensure the web-application is supported by major web browsers and responsive for different screen sizes</Typography>
+                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Numerous test to ensure the web-application is supported by major web browsers and responsive for different screen sizes</Typography>
                                         </li>
                                     </ul>
                                 :
                                     <Collapse in={openLotus}>
                                         <ul style={{marginTop: "3%"}}>
                                             <li>
-                                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Developing a front-end web-application using React JavaScript, creating a modern and responsive user interface, displaying various information pertaining to the Lotus restaurant</Typography>
+                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Developing a front-end web-application using React JavaScript, creating a modern and responsive user interface, displaying various information pertaining to the Lotus restaurant</Typography>
                                             </li>
                                             <li>
-                                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Optimizing SEO through concise and updated metadata to increase customer traffic to the Lotus web-application</Typography>
+                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Optimizing SEO through concise and updated metadata to increase customer traffic to the Lotus web-application</Typography>
                                             </li>
                                             <li>
-                                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Utilizing different techniques to improve website speed such as image optimization and CDN usage</Typography>
+                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Utilizing different techniques to improve website speed such as image optimization and CDN usage</Typography>
                                             </li>
                                             <li>
-                                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Numerous test to ensure the web-application is supported by major web browsers and responsive for different screen sizes</Typography>
+                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Numerous test to ensure the web-application is supported by major web browsers and responsive for different screen sizes</Typography>
                                             </li>
                                         </ul>
                                     </Collapse>
@@ -628,7 +628,7 @@ const Index = () => {
 
                             {width > 1500 &&
                                 <Grid item xs={4} sx={{display: "flex", justifyContent: "flex-end", alignItems: "flex-start"}}>
-                                    <Typography variant="h6" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF"}}>Dec 2021 - Mar 2022</Typography>
+                                    <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF"}}>Dec 2021 - Mar 2022</Typography>
                                 </Grid>
                             }
                         </Grid>
@@ -638,10 +638,10 @@ const Index = () => {
                     <Grid item xs={12} sx={{marginTop: width > 650 ? "6vh" : "4vh", marginBottom: width > 650 ? "6vh" : "4vh", padding: width > 1000 ? "2%" : width > 600 ? "4%" : "6%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <Grid container>
                             <Grid item xs={width > 1500 ? 8 : 12}>
-                                <Typography variant="h5" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Extreme PC</Typography>
-                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "1%"}}>Guelph, Ontario</Typography>
-                                {width <= 1500 && <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "1%"}}>Oct 2018 - Jan 2019</Typography>}
-                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Tech Associate</Typography>
+                                <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Extreme PC</Typography>
+                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "1%"}}>Guelph, Ontario</Typography>
+                                {width <= 1500 && <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "1%"}}>Oct 2018 - Jan 2019</Typography>}
+                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Tech Associate</Typography>
                                 {width <= 700 &&
                                     (openExtremePC ? 
                                         <>
@@ -659,32 +659,32 @@ const Index = () => {
                                 {width > 700 ?
                                     <ul style={{marginTop: "3%"}}>
                                         <li>
-                                            <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Worked as a team to complete various tasks and projects such as, working together to do research on a product, subsequently updating the company website with the new product</Typography>
+                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Worked as a team to complete various tasks and projects such as, working together to do research on a product, subsequently updating the company website with the new product</Typography>
                                         </li>
                                         <li>
-                                            <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Built high quality computers to meet company standards, setting up the computers software and ensuring everything was up to date</Typography>
+                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Built high quality computers to meet company standards, setting up the computers software and ensuring everything was up to date</Typography>
                                         </li>
                                         <li>
-                                            <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Troubleshoot and repaired computer hardware and software problems</Typography>
+                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Troubleshoot and repaired computer hardware and software problems</Typography>
                                         </li>
                                         <li>
-                                            <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Assisted with customer service</Typography>
+                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Assisted with customer service</Typography>
                                         </li>
                                     </ul>
                                 :
                                     <Collapse in={openExtremePC}>
                                         <ul style={{marginTop: "3%"}}>
                                             <li>
-                                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Worked as a team to complete various tasks and projects such as, working together to do research on a product, subsequently updating the company website with the new product</Typography>
+                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Worked as a team to complete various tasks and projects such as, working together to do research on a product, subsequently updating the company website with the new product</Typography>
                                             </li>
                                             <li>
-                                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Built high quality computers to meet company standards, setting up the computers software and ensuring everything was up to date</Typography>
+                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Built high quality computers to meet company standards, setting up the computers software and ensuring everything was up to date</Typography>
                                             </li>
                                             <li>
-                                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Troubleshoot and repaired computer hardware and software problems</Typography>
+                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Troubleshoot and repaired computer hardware and software problems</Typography>
                                             </li>
                                             <li>
-                                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Assisted with customer service</Typography>
+                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Assisted with customer service</Typography>
                                             </li>
                                         </ul>
                                     </Collapse>
@@ -693,7 +693,7 @@ const Index = () => {
 
                             {width > 1500 &&
                                 <Grid item xs={4} sx={{display: "flex", justifyContent: "flex-end", alignItems: "flex-start"}}>
-                                    <Typography variant="h6" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF"}}>Oct 2018 - Jan 2019</Typography>
+                                    <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF"}}>Oct 2018 - Jan 2019</Typography>
                                 </Grid>
                             }
                         </Grid>
@@ -725,12 +725,12 @@ export default Index;
 
 
 // Card Component for projects
-const CardComponent = ({projectName, description, github, live, techs, imageNamePNG, imageNameWEBP}) => {
+const CardComponent = ({projectName, description, github, live, techs, imageNamePNG, imageNameWEBP, width}) => {
     const [open, setOpen] = React.useState(false);
 
     return (
         <>
-            <Grid item xs={6}>
+            <Grid item xs={width > 1000 ? 6 : 12}>
                 <Button onClick={() => {setOpen(true);}} sx={{padding: "0", boxShadow: "0px 0px 7px 1px rgba(9,62,128,0.49)", transition: "0.4s", "&:hover": {transform: "translateY(-4px)"}}}>
                     <picture style={{height: "100%"}}>
                         <source srcSet={imageNameWEBP} type="image/webp" />
@@ -738,7 +738,7 @@ const CardComponent = ({projectName, description, github, live, techs, imageName
                         <img src={imageNamePNG} alt={projectName} height="100%" width="100%" style={{display: "block"}} />
                     </picture>
                 </Button>
-                <Typography variant="h6" sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "3%", marginLeft: "1%"}}>{projectName}</Typography>
+                <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "3%", marginLeft: "1%"}}>{projectName}</Typography>
                 <br />
                 <br />
                 <br />
