@@ -749,7 +749,7 @@ const CardComponent = ({projectName, description, github, live, techs, imageName
                     <CardContent>
                         <Grid container sx={{borderBottom: "1px solid #D7DEE6"}}>
                             <Grid item xs={10} sx={{display: "flex", alignItems: "center"}}>
-                                <Typography variant="h6" sx={{fontFamily: "Source Sans Pro", color: "black"}}>
+                                <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", color: "black"}}>
                                     {projectName}
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </Typography> 
@@ -762,11 +762,11 @@ const CardComponent = ({projectName, description, github, live, techs, imageName
                         </Grid>
 
                         <br />
-                        <Typography variant="h6" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold"}}>Description</Typography>
-                        <Typography variant="h6" sx={{fontFamily: "Source Sans Pro"}}>{description}</Typography>
+                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", fontWeight: "bold"}}>Description</Typography>
+                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro"}}>{description}</Typography>
 
                         <br />
-                        <Typography variant="h6" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", marginBottom: "2%"}}>Technologies</Typography>
+                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", marginBottom: "2%"}}>Technologies</Typography>
                         {techs.map((instance, ID) => (
                             <React.Fragment key={ID}>
                                 {instance === "JavaScript" &&
@@ -878,13 +878,13 @@ const CardComponent = ({projectName, description, github, live, techs, imageName
 
                         <br />
                         <br />
-                        <Typography variant="h6" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold"}}>External Links</Typography>
+                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", fontWeight: "bold"}}>External Links</Typography>
                         {github !== "" &&
                             <>
                                 <Button href={`${github}`} target="_blank" variant="outlined" sx={{textTransform: "none", marginTop: "2%"}}>
                                     <GitHub />
                                     &nbsp;&nbsp;
-                                    <Typography sx={{fontFamily: "Source Sans Pro", fontSize: "18px"}}>Github</Typography>
+                                    <Typography sx={{fontFamily: "Source Sans Pro", fontSize: width > 600 ? "18px" : "16px"}}>Github</Typography>
                                 </Button>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </>
@@ -894,7 +894,7 @@ const CardComponent = ({projectName, description, github, live, techs, imageName
                                 <Button href={`${live}`} target="_blank" variant="outlined" sx={{textTransform: "none", marginTop: "2%", color: "white", backgroundColor: "#3672FF", "&:hover": {backgroundColor: "#1B5FFF"}}}>
                                     <ExitToAppIcon />
                                     &nbsp;&nbsp;
-                                    <Typography sx={{fontFamily: "Source Sans Pro", fontSize: "18px"}}>Live</Typography>
+                                    <Typography sx={{fontFamily: "Source Sans Pro", fontSize: width > 600 ? "18px" : "16px"}}>Live</Typography>
                                 </Button>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </>
