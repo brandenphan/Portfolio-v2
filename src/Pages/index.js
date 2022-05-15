@@ -146,21 +146,21 @@ const Index = () => {
                     <Grid item xs={12} sx={{padding: width > 1000 ? "2%" : width > 600 ? "4%" : "6%", transition: "0.4s", "&:hover": {transform: "perspective(700px) translateZ(10px)"}, borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
                         <Grid container>
                             <Grid item xs={width > 650 ? 6 : 12}>
-                                <Typography variant="h5" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>University of Guelph</Typography>
-                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Sep 2019 - Present</Typography>
-                                <Typography variant="subtitle1" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Bachelor of Computing</Typography>
+                                <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>University of Guelph</Typography>
+                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Sep 2019 - Present</Typography>
+                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Bachelor of Computing</Typography>
                                 <ul style={{marginTop: "3%"}}>
                                     <li>
-                                        <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Major in Computer Science</Typography>
+                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Major in Computer Science</Typography>
                                     </li>
                                     <li>
-                                        <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Minor in Business</Typography>
+                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Minor in Business</Typography>
                                     </li>
                                     <li>
-                                        <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>4.0 GPA (88%)</Typography>
+                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>4.0 GPA (88%)</Typography>
                                     </li>
                                     <li>
-                                        <Typography variant="subtitle1" sx={{fontFamily: "Montserrat"}}>Dean's List: 2019, 2020, 2021</Typography>
+                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Dean's List: 2019, 2020, 2021</Typography>
                                     </li>
                                 </ul>
                             </Grid>
