@@ -542,12 +542,6 @@ const Index = () => {
                     <img src={gimpLogo} alt="GimpLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
                     <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Gimp</Typography>
                 </Grid>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                {width > 600 &&
-                    <>
-                        &nbsp;&nbsp;&nbsp;
-                    </>
-                }
             </Grid>
 
 
