@@ -17,6 +17,8 @@ const NavBar = () => {
     const handleClose = () => {
         setMenuElement(null);
     };
+
+
     return (
         <Scroll render={({ y }) => (
             <Box sx={{flexGrow: 1, position: "fixed", top: "0", left: "0", width: "100%", transition: "0.3s", marginTop: y === 0 ? "1%" : "0%"}}>
@@ -24,15 +26,15 @@ const NavBar = () => {
                     <Toolbar>
                         <Grid container>
                             <Grid item xs={6}>
-                                <IconButton href="#Home" sx={{fontFamily: "Source Sans Pro", fontSize: "20px", fontWeight: "bold", color: "#FBC740", marginLeft: width > 1000 ? "16%" : ""}}><i>BP</i></IconButton>
+                                <IconButton href="#Home" sx={{fontFamily: "Source Sans Pro", fontSize: "20px", fontWeight: "bold", color: "#FBC740", marginLeft: width > 1000 ? "16%" : "", "&:hover": {backgroundColor: "transparent"}}}><i>BP</i></IconButton>
                             </Grid>
                             <Grid item xs={6} sx={{display: "flex", justifyContent: width > 1000 ? "center" : "flex-end"}}>
                                 {width > 1000 ? 
                                     <>
-                                        <Button href="#Home" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%"}}>HOME</Button>
-                                        <Button href="#Education" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%"}}>EDUCATION</Button>
-                                        <Button href="#Projects" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%"}}>PROJECTS</Button>
-                                        <Button href="#Work" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%"}}>WORK</Button>
+                                        <Button href="#Home" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%", transition: "0.3s", "&:hover": {color: "#FBC740", backgroundColor: "transparent"}}}>HOME</Button>
+                                        <Button href="#Education" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%", transition: "0.3s", "&:hover": {color: "#FBC740", backgroundColor: "transparent"}}}>EDUCATION</Button>
+                                        <Button href="#Projects" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%", transition: "0.3s", "&:hover": {color: "#FBC740", backgroundColor: "transparent"}}}>PROJECTS</Button>
+                                        <Button href="#Work" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%", transition: "0.3s", "&:hover": {color: "#FBC740", backgroundColor: "transparent"}}}>WORK</Button>
                                     </>
                                 :
                                     <>
