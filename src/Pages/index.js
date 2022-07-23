@@ -87,7 +87,7 @@ const Index = () => {
             setOpenExtremePC(true);
         }
     }
-    
+
 
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
@@ -544,6 +544,7 @@ const Index = () => {
                     <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Gimp</Typography>
                 </Grid>
             </Grid>
+
 
 
 
