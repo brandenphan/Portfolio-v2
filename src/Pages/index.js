@@ -87,6 +87,7 @@ const Index = () => {
             setOpenExtremePC(true);
         }
     }
+    
 
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
@@ -546,7 +547,6 @@ const Index = () => {
 
 
 
-
             {/* Project Section */}
             <div id="Projects" style={{boxShadow: "0 5px 13px 10px rgba(0, 0, 0, 0.3), 0 3px 5px 5px rgba(54, 114, 255, 0.2), 0 10px 20px 10px rgba(54, 114, 255, 0.2)"}}>
                 <Grid container sx={{marginTop: "15vh", display: "flex", justifyContent: "center"}}>
@@ -985,7 +985,7 @@ const CardComponent = ({projectName, description, github, live, techs, imageName
     )
 }
 
-// Project array holding project information
+// Project arrays holding project information
 const projectArray = [
     {
         imageNamePNG: GuelphDentalPNG,

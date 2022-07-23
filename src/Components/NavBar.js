@@ -26,7 +26,7 @@ const NavBar = () => {
                     <Toolbar>
                         <Grid container>
                             <Grid item xs={6}>
-                                <IconButton href="#Home" sx={{fontFamily: "Source Sans Pro", fontSize: "20px", fontWeight: "bold", color: "#FBC740", marginLeft: width > 1000 ? "16%" : "", "&:hover": {backgroundColor: "transparent"}}}><i>BP</i></IconButton>
+                                <IconButton href="#Home" sx={{fontFamily: "Source Sans Pro", fontSize: "20px", fontWeight: "bold", color: "#FBC740", marginLeft: width > 1000 ? "16%" : ""}}><i>BP</i></IconButton>
                             </Grid>
                             <Grid item xs={6} sx={{display: "flex", justifyContent: width > 1000 ? "center" : "flex-end"}}>
                                 {width > 1000 ? 
