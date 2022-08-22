@@ -610,7 +610,7 @@ const Index = () => {
                                             <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Back-end utilizes Express and Node JS, providing endpoints utilized by the front-end to securely retrieve and manipulate MongoDB data</Typography>
                                         </li>
                                         <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Future proofing supported through various front-end components combined with the back-end, allowing the company to easily and securely change the web-application with zero coding</Typography>
+                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Future proofing supported through various front-end components combined with the back-end, allowing the company to easily and securely change the web-application with zero coding knowledge</Typography>
                                         </li>
                                     </ul>
                                 :
@@ -626,7 +626,7 @@ const Index = () => {
                                                 <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Back-end utilizes Express and Node JS, providing endpoints utilized by the front-end to securely retrieve and manipulate MongoDB data</Typography>
                                             </li>
                                             <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Future proofing supported through various front-end components combined with the back-end, allowing the company to easily and securely change the  web-application with zero coding</Typography>
+                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Future proofing supported through various front-end components combined with the back-end, allowing the company to easily and securely change the  web-application with zero coding knowledge</Typography>
                                             </li>
                                         </ul>
                                     </Collapse>
