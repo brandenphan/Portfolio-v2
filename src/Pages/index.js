@@ -994,7 +994,7 @@ const projectArray = [
         name: "Guelph Dental",
         description: "Full-stack web-application, showcasing various information regarding Guelph Dental while also allowing future proofing capability features.",
         github: "",
-        live: "https://brandenphanguelphdental.netlify.app/",
+        live: "https://brandenphansample.netlify.app/",
         technologies: [
             "JavaScript",
             "React",
@@ -1011,7 +1011,7 @@ const projectArray = [
         name: "Lotus",
         description: "Front-end web-application, displaying a modern and responsive user interface to showcase various information pertaining to the Lotus restaurant.",
         github: "",
-        live: "https://lotus-restaurant.ca/",
+        live: "https://lotusrestaurant.ca/",
         technologies: [
             "JavaScript",
             "React",
@@ -1025,7 +1025,7 @@ const projectArray = [
         name: "Personal Portfolio - New",
         description: "Updated personal portfolio web-application, using many of the designs from the previous personal portfolio while introducing newly learned design languages and technologies to display resume related information.",
         github: "https://github.com/brandenphan/New-Portfolio",
-        live: "brandenphan.netlify.app",
+        live: "https://brandenphan.com/",
         technologies: [
             "JavaScript",
             "React",
