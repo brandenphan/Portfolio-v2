@@ -994,7 +994,7 @@ const projectArray = [
         name: "Guelph Dental",
         description: "Full-stack web-application, showcasing various information regarding Guelph Dental while also allowing future proofing capability features.",
         github: "",
-        live: "https://guelphdental.netlify.app/",
+        live: "https://guelphdental.com/",
         technologies: [
             "JavaScript",
             "React",
