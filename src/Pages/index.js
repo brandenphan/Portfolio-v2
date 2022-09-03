@@ -7,6 +7,7 @@ import profilePic from "../Images/profile.png";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import { CgArrowLongDown } from 'react-icons/cg';
 import CloseIcon from '@mui/icons-material/Close';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
@@ -15,6 +16,7 @@ import GitHub from "@mui/icons-material/GitHub";
 import { FaScroll } from 'react-icons/fa';
 import { AiOutlineCalendar } from 'react-icons/ai'
 import transcript from '../Images/transcript.pdf';
+import resume from '../Images/resume.pdf';
 
 import javascriptLogo from '../Images/LanguageIcons/javascript.svg';
 import cssLogo from '../Images/LanguageIcons/css.svg';
@@ -126,6 +128,13 @@ const Index = () => {
                                 <Tooltip title="Email" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
                                     <IconButton target="_blank" href="mailto: branden.phan@gmail.com" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
                                         <EmailIcon style={{fontSize: width > 1000 ? ("45px") : ("43px")}} />
+                                    </IconButton>
+                                </Tooltip>
+                            </Grid>
+                            <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                    <IconButton target="_blank" href={resume} sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                        <HistoryEduIcon style={{fontSize: width > 1000 ? ("45px") : ("43px")}} />
                                     </IconButton>
                                 </Tooltip>
                             </Grid>
