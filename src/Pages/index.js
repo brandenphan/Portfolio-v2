@@ -107,7 +107,7 @@ const Index = () => {
                             </>
                         }
                         <Typography variant={width > 1500 ? "h5" : "h6"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: width > 450 ? "2%" : "4%"}}>Software Developer</Typography>
-                        <Typography variant={width > 1500 ? "h5" : "h6"} align="center" sx={{fontFamily: "Source Sans Pro", marginTop: width > 450 ? "2%" : "4%"}}>A 3rd year computer science student at the University of Guelph</Typography>
+                        <Typography variant={width > 1500 ? "h5" : "h6"} align="center" sx={{fontFamily: "Source Sans Pro", marginTop: width > 450 ? "2%" : "4%"}}>A 4th year computer science student at the University of Guelph</Typography>
                         
                         <Grid container justifyContent="center" spacing={3} sx={{marginTop: width > 1500 ? "1%" : "0%"}}>
                             <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
