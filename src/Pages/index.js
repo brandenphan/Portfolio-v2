@@ -58,7 +58,6 @@ import BrawlhallaImageWEBP from '../Images/Projects/BrawlhallaImage.webp';
 import GuelphDentalPNG from '../Images/Projects/GuelphDental.png';
 import GuelphDentalWEBP from '../Images/Projects/GuelphDental.webp';
 
-
 const Index = () => {
     const { width } = useWidth();
 
@@ -182,7 +181,7 @@ const Index = () => {
                                         <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>4.0 GPA (88%)</Typography>
                                     </li>
                                     <li>
-                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Dean's List: 2019, 2020, 2021</Typography>
+                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Dean's List: 2019, 2020, 2021, 2022</Typography>
                                     </li>
                                 </ul>
                             </Grid>
