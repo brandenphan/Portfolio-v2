@@ -609,7 +609,7 @@ const Index = () => {
                                 {width > 700 ?
                                     <ul style={{marginTop: "3%"}}>
                                         <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Developing a full-stack web-application using React JS and Express JS to create a modern and visually appealing web-application regarding Guelph Denta</Typography>
+                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Developing a full-stack web-application using React JS and Express JS to create a modern and visually appealing web-application regarding Guelph Dental</Typography>
                                         </li>
                                         <li>
                                             <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Front-end developed to target an optimized SEO, while creating an aesthetic, efficient and easy-to-use interface</Typography>
@@ -625,7 +625,7 @@ const Index = () => {
                                     <Collapse in={openGuelphDental}>
                                         <ul style={{marginTop: "3%"}}>
                                             <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Developing a full-stack web-application using React JS and Express JS to create a modern and visually appealing web-application regarding Guelph Denta</Typography>
+                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Developing a full-stack web-application using React JS and Express JS to create a modern and visually appealing web-application regarding Guelph Dental</Typography>
                                             </li>
                                             <li>
                                                 <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Front-end developed to target an optimized SEO, while creating an aesthetic, efficient and easy-to-use interface</Typography>
