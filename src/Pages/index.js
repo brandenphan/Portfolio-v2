@@ -156,9 +156,9 @@ const Index = () => {
             </div>
             
 
-
             {/* Education Section */}
-            <div id="Education">
+            <div id="Education" style={{marginTop: "-20px"}} />
+            <div>
                 <Grid container sx={{marginTop: "15vh", paddingLeft: width > 1300 ? "24%" : width > 1000 ? "16%" : "4%", paddingRight: width > 1300 ? "24%" : width > 1000 ? "16%" : "4%"}}>
                     <Grid item xs={12} sx={{marginBottom: "5vh"}}>
                         <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Education</Typography>
@@ -223,7 +223,8 @@ const Index = () => {
 
 
             {/* Skill Section */}
-            <div id="Skills">
+            <div id="Skills" style={{marginTop: "-20px"}} />
+            <div>
                 {/* Languages Section */}
                 <Grid container sx={{display: "flex", justifyContent: "center"}}>
                     <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: "5vh"}}>
@@ -557,7 +558,8 @@ const Index = () => {
 
 
             {/* Project Section */}
-            <div id="Projects" style={{boxShadow: "0 5px 13px 10px rgba(0, 0, 0, 0.3), 0 3px 5px 5px rgba(54, 114, 255, 0.2), 0 10px 20px 10px rgba(54, 114, 255, 0.2)"}}>
+            <div id="Projects" style={{marginTop: "-20px"}} />
+            <div style={{boxShadow: "0 5px 13px 10px rgba(0, 0, 0, 0.3), 0 3px 5px 5px rgba(54, 114, 255, 0.2), 0 10px 20px 10px rgba(54, 114, 255, 0.2)"}}>
                 <Grid container sx={{marginTop: "15vh", display: "flex", justifyContent: "center"}}>
                     <Grid item xs={12} sx={{marginBottom: "5vh", marginTop: "10vh"}}>
                         <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Projects</Typography>
@@ -578,6 +580,7 @@ const Index = () => {
 
 
             {/* Work Section */}
+            <div id="Work" style={{marginTop: "-20px"}} />
             <div id="Work">
                 <Grid container sx={{marginTop: "15vh", paddingLeft: width > 1300 ? "22%" : width > 1000 ? "16%" : "4%", paddingRight: width > 1300 ? "22%" : width > 1000 ? "16%" : "4%"}}>
                     <Grid item xs={12} sx={{marginBottom: "5vh"}}>
