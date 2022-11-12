@@ -31,10 +31,10 @@ const Nav = () => {
                             <Grid item xs={width > 800 ? 6 : 3} sx={{display: "flex", justifyContent: width > 1000 ? "center" : "flex-end"}}>
                                 {width > 1000 ? 
                                     <>
-                                        <Button href="#Home" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "transparent"}}}>HOME</Button>
-                                        <Button href="#Education" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "transparent"}}}>EDUCATION</Button>
-                                        <Button href="#Work" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "transparent"}}}>WORK</Button>
-                                        <Button href="#Projects" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "transparent"}}}>PROJECTS</Button>
+                                        <Button href="#Home" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "#e2eafc"}}}>HOME</Button>
+                                        <Button href="#Education" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "#e2eafc"}}}>EDUCATION</Button>
+                                        <Button href="#Work" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "#e2eafc"}}}>WORK</Button>
+                                        <Button href="#Projects" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "#e2eafc"}}}>PROJECTS</Button>
                                     </>
                                 :
                                     <>
@@ -53,14 +53,14 @@ const Nav = () => {
                                                 </a>
                                             </MenuItem>
                                             <MenuItem onClick={handleClose}>
+                                                <a href="#Work" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Source Sans Pro"}}>
+                                                    Work
+                                                </a>
+                                            <MenuItem onClick={handleClose}>
                                                 <a href="#Projects" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Source Sans Pro"}}>
                                                     Projects
                                                 </a>
                                             </MenuItem>
-                                            <MenuItem onClick={handleClose}>
-                                                <a href="#Work" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Source Sans Pro"}}>
-                                                    Work
-                                                </a>
                                             </MenuItem>
                                         </Menu>
                                     </>

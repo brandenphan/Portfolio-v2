@@ -243,13 +243,60 @@ const Index = () => {
                     <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Languages</Typography>
                 </Grid>
 
-                <div style={{display: "flex", flexDirection: "row"}}>
-                    {["TypeScript", "JavaScript", "HTML", "CSS", "C", "Java", "Python"].map((language, ID) => (
-                        <div key={ID} style={{width: "150px", height: "70px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 6 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                            <Typography variant="h6" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
-                        </div>
-                    ))}
-                </div>
+
+                {width > 1100 ? 
+                    <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                        {["TypeScript", "JavaScript", "HTML", "CSS", "C", "Java", "Python"].map((language, ID) => (
+                            <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 6 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                <Typography variant={width > 1400 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
+                            </Grid>
+                        ))}
+                    </Grid>
+                : width > 700 ?
+                    <>
+                        <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                            {["TypeScript", "JavaScript", "HTML", "CSS"].map((language, ID) => (
+                                <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 3 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <Typography variant={width > 1400 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
+                                </Grid>
+                            ))}
+                        </Grid>
+                        <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center", marginTop: "20px"}}>
+                            {["C", "Java", "Python"].map((language, ID) => (
+                                <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 2 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <Typography variant={width > 1400 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
+                                </Grid>
+                            ))}
+                        </Grid>
+                    </>
+                :
+                    <>
+                        <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                            {["TypeScript", "JavaScript"].map((language, ID) => (
+                                <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <Typography variant={width > 1400 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
+                                </Grid>
+                            ))}
+                        </Grid>
+                        <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center", marginTop: "20px"}}>
+                            {["HTML", "CSS"].map((language, ID) => (
+                                <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <Typography variant={width > 1400 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
+                                </Grid>
+                            ))}
+                        </Grid>
+                        <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center", marginTop: "20px"}}>
+                            {["C", "Java"].map((language, ID) => (
+                                <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <Typography variant={width > 1400 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
+                                </Grid>
+                            ))}
+                        </Grid>
+                        <Grid item sx={{width: width > 1400 ? "150px" : "120px", height: "70px", marginTop: "20px", backgroundColor: "#ccdbfd", borderRadius: "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <Typography variant={width > 1400 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Python</Typography>
+                        </Grid>
+                    </>
+                }
             </Grid>
 
 
@@ -260,18 +307,18 @@ const Index = () => {
                     <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Skills</Typography>
                 </Grid>
 
-                <Grid container style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
                     {["React", "Gatsby", "NextJS", "GraphQL", "Node", "Express"].map((skill, ID) => (
-                        <Grid item key={ID} style={{width: "150px", height: "70px", backgroundColor: "#ffc4d6", borderRadius: "20px", marginRight: ID !== 5 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                            <Typography variant="h6" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{skill}</Typography>
+                        <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#ffc4d6", borderRadius: "20px", marginRight: ID !== 5 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <Typography variant={width > 1400 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{skill}</Typography>
                         </Grid>
                     ))}
                 </Grid>
 
-                <Grid container style={{display: "flex", flexDirection: "row", justifyContent: "center", marginTop: "20px"}}>
+                <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center", marginTop: "20px"}}>
                     {["MySQL", "Mongo", "Firebase", "Git", "Heroku", "Mocha"].map((skill, ID) => (
-                        <Grid item key={ID} style={{width: "150px", height: "70px", backgroundColor: "#ffc4d6", borderRadius: "20px", marginRight: ID !== 5 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                            <Typography variant="h6" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{skill}</Typography>
+                        <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#ffc4d6", borderRadius: "20px", marginRight: ID !== 5 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <Typography variant={width > 1400 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{skill}</Typography>
                         </Grid>
                     ))}
                 </Grid>
@@ -285,10 +332,10 @@ const Index = () => {
                     <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Design Tools</Typography>
                 </Grid>
 
-                <Grid container style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
                     {["Figma", "Gimp"].map((tool, ID) => (
-                        <Grid item key={ID} style={{width: "150px", height: "70px", backgroundColor: "#e7c6ff", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                            <Typography variant="h6" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{tool}</Typography>
+                        <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#e7c6ff", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <Typography variant={width > 1400 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{tool}</Typography>
                         </Grid>
                     ))}
                 </Grid>
