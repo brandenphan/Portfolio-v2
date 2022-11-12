@@ -25,10 +25,10 @@ const NewNav = () => {
                 <AppBar position="static" sx={{transition: "0.3s", backgroundColor: y === 0 ? "transparent" : "rgba(219, 235, 255, 0.2)", boxShadow: y === 0 && "none", backdropFilter: y > 0 && "blur(3px)"}}>
                     <Toolbar>
                         <Grid container>
-                            <Grid item xs={6}>
-                                <Button href="#Home" sx={{fontFamily: "Sacramento", fontSize: "36px", color: "black", marginLeft: width > 1000 ? "16%" : "", textTransform: "none", paddingBottom: "0px"}}>Branden Phan</Button>
+                            <Grid item xs={width > 800 ? 6 : 9}>
+                                <Button href="#Home" sx={{fontFamily: "Sacramento", fontSize: width > 1000 ? "36px" : "28px", color: "black", marginLeft: width > 1000 ? "16%" : "", textTransform: "none", paddingBottom: "0px"}}>Branden Phan</Button>
                             </Grid>
-                            <Grid item xs={6} sx={{display: "flex", justifyContent: width > 1000 ? "center" : "flex-end"}}>
+                            <Grid item xs={width > 800 ? 6 : 3} sx={{display: "flex", justifyContent: width > 1000 ? "center" : "flex-end"}}>
                                 {width > 1000 ? 
                                     <>
                                         <Button href="#Home" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "transparent"}}}>HOME</Button>
@@ -39,7 +39,7 @@ const NewNav = () => {
                                 :
                                     <>
                                         <IconButton onClick={handleClick}>
-                                            <MenuIcon sx={{fontSize: "32px", color: "#E60268"}} />
+                                            <MenuIcon sx={{fontSize: "32px", color: "black"}} />
                                         </IconButton>
                                         <Menu anchorEl={menuElement} open={open} onClose={handleClose}>
                                             <MenuItem onClick={handleClose}>
