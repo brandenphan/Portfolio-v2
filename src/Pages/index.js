@@ -1077,6 +1077,19 @@ const projectArray = [
         ]
     },
     {
+        imageNamePNG: DiscordImagePNG,
+        imageNameWEBP: DiscordImageWEBP,
+        name: "Discord Bot",
+        description: "Discord bot written in Python that utilizes various libraries and API's giving the bot commands that can be called by users in servers with the bot.",
+        github: "https://github.com/brandenphan/Pami-Bot",
+        live: "",
+        technologies: [
+            "Python",
+            "Heroku",
+            "Git"
+        ]
+    },
+    {
         imageNamePNG: ScheduleMakerImagePNG,
         imageNameWEBP: ScheduleMakerImageWEBP,
         name: "Schedule Maker",
@@ -1087,19 +1100,6 @@ const projectArray = [
             "JavaScript",
             "React",
             "Node",
-            "Git"
-        ]
-    },
-    {
-        imageNamePNG: DiscordImagePNG,
-        imageNameWEBP: DiscordImageWEBP,
-        name: "Discord Bot",
-        description: "Discord bot written in Python that utilizes various libraries and API's giving the bot commands that can be called by users in servers with the bot.",
-        github: "https://github.com/brandenphan/Pami-Bot",
-        live: "",
-        technologies: [
-            "Python",
-            "Heroku",
             "Git"
         ]
     },
