@@ -560,7 +560,7 @@ const Index = () => {
 
             {/* Project Section */}
             <div id="Projects" style={{marginTop: "-20px"}} />
-            <div style={{backgroundColor: "#D2D2D2", boxShadow: "0 5px 13px 10px rgba(0, 0, 0, 0.3), 0 3px 5px 5px rgba(54, 114, 255, 0.2), 0 10px 20px 10px rgba(54, 114, 255, 0.2)"}}>
+            <div style={{backgroundColor: "#D9D9D9", boxShadow: "0 5px 13px 10px rgba(0, 0, 0, 0.3), 0 3px 5px 5px rgba(54, 114, 255, 0.2), 0 10px 20px 10px rgba(54, 114, 255, 0.2)"}}>
                 <Grid container sx={{marginTop: "15vh", display: "flex", justifyContent: "center"}}>
                     <Grid item xs={12} sx={{marginBottom: "5vh", marginTop: "10vh"}}>
                         <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Projects</Typography>
@@ -1121,7 +1121,7 @@ const projectArray = [
         imageNamePNG: GpxImagePNG,
         imageNameWEBP: GpxImageWEBP,
         name: "GPX Data Viewer",
-        description: "Full-stack web-application written in C and JavaScript allowing users to uploade/download GPx files and perform various tasks related to those files.",
+        description: "Full-stack web-application written in C and JavaScript allowing users to upload/download GPx files and perform various tasks related to those files.",
         github: "https://github.com/brandenphan/GPX-Data-Viewer",
         live: "",
         technologies: [
