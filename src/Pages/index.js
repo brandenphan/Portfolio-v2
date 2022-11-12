@@ -39,15 +39,15 @@ import herokuLogo from '../Images/TechnologyIcons/heroku.svg';
 import figmaLogo from '../Images/DesignIcons/figma.svg';
 import gimpLogo from '../Images/DesignIcons/gimp.svg';
 
-import courseSearchPNG from '../Images/Projects/CourseSearch.png';
 import LotusImagePNG from '../Images/Projects/LotusImage.png';
 import PortfolioImageNewPNG from '../Images/Projects/PortfolioImageNew.png';
 import PortfolioImageOldPNG from '../Images/Projects/PortfolioImageOld.png';
 import ScheduleMakerImagePNG from '../Images/Projects/ScheduleMakerImage.png';
 import GpxImagePNG from '../Images/Projects/GpxImage.png';
 import DiscordImagePNG from '../Images/Projects/DiscordImage.png';
-import BrawlhallaImagePNG from '../Images/Projects/BrawlhallaImage.png';
-import courseSearchWEBP from '../Images/Projects/CourseSearch.webp';
+import BrawlhallaImagePNG from '../Images/Projects/BrawlhallaImage.webp';
+import courseSearchWEBP from '../Images/Projects/CourseSearch.png';
+import courseSearchPNG from '../Images/Projects/CourseSearch.png';
 import LotusImageWEBP from '../Images/Projects/LotusImage.webp';
 import PortfolioImageNewWEBP from '../Images/Projects/PortfolioImageNew.webp';
 import PortfolioImageOldWEBP from '../Images/Projects/PortfolioImageOld.webp';
@@ -57,6 +57,7 @@ import DiscordImageWEBP from '../Images/Projects/DiscordImage.webp';
 import BrawlhallaImageWEBP from '../Images/Projects/BrawlhallaImage.webp';
 import GuelphDentalPNG from '../Images/Projects/GuelphDental.png';
 import GuelphDentalWEBP from '../Images/Projects/GuelphDental.webp';
+
 
 const Index = () => {
     const { width } = useWidth();
@@ -559,13 +560,13 @@ const Index = () => {
 
             {/* Project Section */}
             <div id="Projects" style={{marginTop: "-20px"}} />
-            <div style={{boxShadow: "0 5px 13px 10px rgba(0, 0, 0, 0.3), 0 3px 5px 5px rgba(54, 114, 255, 0.2), 0 10px 20px 10px rgba(54, 114, 255, 0.2)"}}>
+            <div style={{backgroundColor: "#D2D2D2", boxShadow: "0 5px 13px 10px rgba(0, 0, 0, 0.3), 0 3px 5px 5px rgba(54, 114, 255, 0.2), 0 10px 20px 10px rgba(54, 114, 255, 0.2)"}}>
                 <Grid container sx={{marginTop: "15vh", display: "flex", justifyContent: "center"}}>
                     <Grid item xs={12} sx={{marginBottom: "5vh", marginTop: "10vh"}}>
                         <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Projects</Typography>
                     </Grid>
 
-                    <Grid container columnSpacing={width > 1400 ? 20 : width > 1000 ? 16 : 0} sx={{marginTop: "1%", paddingLeft: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%", paddingRight: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%"}}>
+                    <Grid container columnSpacing={width > 1400 ? 8 : width > 1000 ? 6 : 0} sx={{marginTop: "1%", paddingLeft: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%", paddingRight: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%"}}>
                         {projectArray.map((instance, ID) => (
                             <CardComponent key={ID} width={width} projectName={instance.name} description={instance.description} github={instance.github} live={instance.live} techs={instance.technologies} imageNamePNG={instance.imageNamePNG} imageNameWEBP={instance.imageNameWEBP} />
                         ))}
@@ -814,14 +815,13 @@ const CardComponent = ({projectName, description, github, live, techs, imageName
     return (
         <>
             <Grid item xs={width > 1000 ? 6 : 12}>
-                <Button onClick={() => {setOpen(true);}} sx={{padding: "0", boxShadow: "0px 0px 7px 1px rgba(9,62,128,0.49)", transition: "0.4s", "&:hover": {transform: "translateY(-4px)"}}}>
+                <Button onClick={() => {setOpen(true);}} sx={{marginBottom: width > 900 ? "20px" : width > 600 ? "15px" : "", padding: "0", borderRadius: "20px", transition: "0.4s", "&:hover": {transform: "translateY(-4px)"}}}>
                     <picture style={{height: "100%"}}>
                         <source srcSet={imageNameWEBP} type="image/webp" />
                         <source srcSet={imageNamePNG} type="image/png" />
-                        <img src={imageNamePNG} alt={projectName} height="100%" width="100%" style={{display: "block"}} />
+                        <img src={imageNamePNG} alt={projectName} height="100%" width="100%" style={{display: "block", borderRadius: "20px"}} />
                     </picture>
                 </Button>
-                <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "3%", marginLeft: "1%"}}>{projectName}</Typography>
                 <br />
                 <br />
                 <br />
