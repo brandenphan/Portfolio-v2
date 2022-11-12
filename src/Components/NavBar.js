@@ -5,7 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Scroll } from "react-fns";
 
 
-const NavBar = () => {
+const Nav = () => {
     const { width } = useWidth();
 
     const [menuElement, setMenuElement] = React.useState(null);
@@ -25,16 +25,16 @@ const NavBar = () => {
                 <AppBar position="static" sx={{transition: "0.3s", backgroundColor: y === 0 ? "transparent" : "rgba(219, 235, 255, 0.2)", boxShadow: y === 0 && "none", backdropFilter: y > 0 && "blur(3px)"}}>
                     <Toolbar>
                         <Grid container>
-                            <Grid item xs={6}>
-                                <IconButton href="#Home" sx={{fontFamily: "Source Sans Pro", fontSize: "20px", fontWeight: "bold", color: "#FBC740", marginLeft: width > 1000 ? "16%" : ""}}><i>BP</i></IconButton>
+                            <Grid item xs={width > 800 ? 6 : 9}>
+                                <Button href="#Home" sx={{fontFamily: "Sacramento", fontSize: width > 1000 ? "36px" : "28px", color: "black", marginLeft: width > 1000 ? "16%" : "", textTransform: "none", paddingBottom: "0px"}}>Branden Phan</Button>
                             </Grid>
-                            <Grid item xs={6} sx={{display: "flex", justifyContent: width > 1000 ? "center" : "flex-end"}}>
+                            <Grid item xs={width > 800 ? 6 : 3} sx={{display: "flex", justifyContent: width > 1000 ? "center" : "flex-end"}}>
                                 {width > 1000 ? 
                                     <>
-                                        <Button href="#Home" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%", transition: "0.3s", "&:hover": {color: "#FBC740", backgroundColor: "transparent"}}}>HOME</Button>
-                                        <Button href="#Education" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%", transition: "0.3s", "&:hover": {color: "#FBC740", backgroundColor: "transparent"}}}>EDUCATION</Button>
-                                        <Button href="#Projects" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%", transition: "0.3s", "&:hover": {color: "#FBC740", backgroundColor: "transparent"}}}>PROJECTS</Button>
-                                        <Button href="#Work" sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "16px", color: "#3672FF", marginLeft: "4%", transition: "0.3s", "&:hover": {color: "#FBC740", backgroundColor: "transparent"}}}>WORK</Button>
+                                        <Button href="#Home" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "transparent"}}}>HOME</Button>
+                                        <Button href="#Education" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "transparent"}}}>EDUCATION</Button>
+                                        <Button href="#Work" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "transparent"}}}>WORK</Button>
+                                        <Button href="#Projects" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "transparent"}}}>PROJECTS</Button>
                                     </>
                                 :
                                     <>
@@ -74,4 +74,4 @@ const NavBar = () => {
     )
 };
 
-export default NavBar;
+export default Nav;

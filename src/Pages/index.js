@@ -1,14 +1,13 @@
+import Nav from "../Components/NavBar";
+import test3 from "../Images/Projects/test4.png";
+import wave from "../Images/Projects/wave.png";
 import React from "react";
 import { useWidth } from "../Context/WidthContext";
-import { motion } from "framer-motion";
-import NavBar from "../Components/NavBar";
-import { Grid, Typography, IconButton, Tooltip, Collapse, Button, Dialog, Card, CardContent } from "@mui/material";
-import profilePic from "../Images/profile.png";
+import { Grid, Typography, IconButton, Tooltip, Button, Dialog, Card, CardContent } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
-import { CgArrowLongDown } from 'react-icons/cg';
 import CloseIcon from '@mui/icons-material/Close';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import GitHub from "@mui/icons-material/GitHub";
@@ -22,24 +21,24 @@ import javascriptLogo from '../Images/LanguageIcons/javascript.svg';
 import cssLogo from '../Images/LanguageIcons/css.svg';
 import htmlLogo from '../Images/LanguageIcons/html.svg';
 import cLogo from '../Images/LanguageIcons/cLanguage.svg';
-import javaLogo from '../Images/LanguageIcons/java.svg';
+// import javaLogo from '../Images/LanguageIcons/java.svg';
 import pythonLogo from '../Images/LanguageIcons/python.svg';
 import reactLogo from '../Images/TechnologyIcons/react.svg';
 import gatsbyLogo from '../Images/TechnologyIcons/gatsby.svg';
 import nextLogo from '../Images/TechnologyIcons/nextjs.svg';
 import nodeLogo from '../Images/TechnologyIcons/node.svg';
 import expressLogo from '../Images/TechnologyIcons/express.svg';
-import graphLogo from '../Images/TechnologyIcons/graphql.svg';
+// import graphLogo from '../Images/TechnologyIcons/graphql.svg';
 import mongoLogo from '../Images/TechnologyIcons/mongo.svg';
-import mysqlLogo from '../Images/TechnologyIcons/mysql.svg';
-import firebaseLogo from '../Images/TechnologyIcons/firebase.svg';
+// import mysqlLogo from '../Images/TechnologyIcons/mysql.svg';
+// import firebaseLogo from '../Images/TechnologyIcons/firebase.svg';
 import mochaLogo from '../Images/TechnologyIcons/mocha.svg';
 import gitLogo from '../Images/TechnologyIcons/git.svg';
 import herokuLogo from '../Images/TechnologyIcons/heroku.svg';
-import figmaLogo from '../Images/DesignIcons/figma.svg';
-import gimpLogo from '../Images/DesignIcons/gimp.svg';
+// import figmaLogo from '../Images/DesignIcons/figma.svg';
+// import gimpLogo from '../Images/DesignIcons/gimp.svg';
 
-import LotusImagePNG from '../Images/Projects/LotusImage.png';
+// import LotusImagePNG from '../Images/Projects/LotusImage.png';
 import PortfolioImageNewPNG from '../Images/Projects/PortfolioImageNew.png';
 import PortfolioImageOldPNG from '../Images/Projects/PortfolioImageOld.png';
 import ScheduleMakerImagePNG from '../Images/Projects/ScheduleMakerImage.png';
@@ -48,124 +47,139 @@ import DiscordImagePNG from '../Images/Projects/DiscordImage.png';
 import BrawlhallaImagePNG from '../Images/Projects/BrawlhallaImage.webp';
 import courseSearchWEBP from '../Images/Projects/CourseSearch.png';
 import courseSearchPNG from '../Images/Projects/CourseSearch.png';
-import LotusImageWEBP from '../Images/Projects/LotusImage.webp';
+// import LotusImageWEBP from '../Images/Projects/LotusImage.webp';
 import PortfolioImageNewWEBP from '../Images/Projects/PortfolioImageNew.webp';
 import PortfolioImageOldWEBP from '../Images/Projects/PortfolioImageOld.webp';
 import ScheduleMakerImageWEBP from '../Images/Projects/ScheduleMakerImage.webp';
 import GpxImageWEBP from '../Images/Projects/GpxImage.webp';
 import DiscordImageWEBP from '../Images/Projects/DiscordImage.webp';
 import BrawlhallaImageWEBP from '../Images/Projects/BrawlhallaImage.webp';
-import GuelphDentalPNG from '../Images/Projects/GuelphDental.png';
-import GuelphDentalWEBP from '../Images/Projects/GuelphDental.webp';
+// import GuelphDentalPNG from '../Images/Projects/GuelphDental.png';
+// import GuelphDentalWEBP from '../Images/Projects/GuelphDental.webp';
+
+
+import LotusWEBP from "../Images/Work/Lotus.webp";
+import LotusPNG from "../Images/Work/Lotus.png";
+import GuelphDenWEBP from "../Images/Work/GuelphDental.webp";
+import GuelphDenPNG from "../Images/Work/GuelphDental.png";
+import cutsbyjzWEBP from "../Images/Work/cutsbyjz.webp";
+import cutsbyjzPNG from "../Images/Work/cutsbyjz.png";
 
 
 const Index = () => {
     const { width } = useWidth();
 
-    const [openGuelphDental, setOpenGuelphDental] = React.useState(false);
-    const [openLotus, setOpenLotus] = React.useState(false);
-    const [openExtremePC, setOpenExtremePC] = React.useState(false);
-    const handleOpenGuelphDental = () => {
-        if (openGuelphDental === true) {
-            setOpenGuelphDental(false);
-        }
-        else {
-            setOpenGuelphDental(true);
-        }
-    }
-    const handleOpenLotus = () => {
-        if (openLotus === true) {
-            setOpenLotus(false);
-        }
-        else {
-            setOpenLotus(true);
-        }
-    }
-    const handleOpenExtremePC = () => {
-        if (openExtremePC === true) {
-            setOpenExtremePC(false);
-        }
-        else {
-            setOpenExtremePC(true);
-        }
-    }
-
-
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
-
             {/* Home Page Section */}
-            <div id="Home" style={{height: "100vh", position: "relative", display: "flex", alignItems: "center", boxShadow: "0 13px 13px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(54, 114, 255, 0.2), 0 20px 20px 0 rgba(54, 114, 255, 0.2)"}}>
-                <Grid container sx={{display: "flex", alignItems: "center", paddingLeft: width > 1500 ? "10%" : width > 1400 ? "6%" : width > 1000 ? "2%" : "10%", paddingRight: width > 1500 ? "10%" : width > 1400 ? "6%" : width > 1000 ? "2%" : "10%", marginLeft: width > 1400 ? "4%" : width > 1000 ? "6%" : ""}}>
-                    <Grid item xs={width > 1000 ? 6 : 12}>
-                        {width > 450 ? 
-                            <Typography variant={width > 1500 ? "h3" : "h4"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Hi, I'm Branden Phan</Typography>
-                        :
-                            <>
-                                <Typography variant={width > 1500 ? "h3" : "h4"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Hi, I'm</Typography>
-                                <Typography variant={width > 1500 ? "h3" : "h4"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Branden Phan</Typography>
-                            </>
-                        }
-                        <Typography variant={width > 1500 ? "h5" : "h6"} align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: width > 450 ? "2%" : "4%"}}>Software Developer</Typography>
-                        <Typography variant={width > 1500 ? "h5" : "h6"} align="center" sx={{fontFamily: "Source Sans Pro", marginTop: width > 450 ? "2%" : "4%"}}>A 4th year computer science student at the University of Guelph</Typography>
-                        
-                        <Grid container justifyContent="center" spacing={3} sx={{marginTop: width > 1500 ? "1%" : "0%"}}>
-                            <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <Tooltip title="Github" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                    <IconButton target="_blank" href="https://github.com/brandenphan" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
-                                        <GitHubIcon style={{fontSize: width > 1000 ? ("35px") : ("33px")}} />
-                                    </IconButton>
-                                </Tooltip>
+            <div id="Home" style={{height: "100vh", position: "relative", display: "flex", alignItems: "center"}}>
+                <Grid container sx={{display: "flex", alignItems: "center", justifyContent: "flex-start"}}>
+                    {width > 1200 ? 
+                        <>
+                            <Grid item xs={6}>
+                                <div style={{marginLeft: width > 1700 ? "220px" : width > 1500 ? "180px" : width > 1300 ? "160px" : "140px"}}>
+                                    <div style={{display: "flex", justifyContent: "flex-start", alignItems: "center"}}>
+                                        <Typography variant={width > 1700 ? "h3" : width > 1300 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito"}}>Hi, I'm Branden Phan</Typography>
+                                        <img src={wave} alt="" height={width > 1700 ? "50px" : width > 1300 ? "40px" : "30px"} width="auto" style={{marginLeft: width > 1300 ? "20px" : "15px"}} />
+                                    </div>
+
+                                    <Typography variant={width > 1700 ? "h5" : width > 1300 ? "h6" : "subtitle1"} align="left" sx={{fontFamily: "Nunito", fontWeight: "bold", color: "#3672FF", marginTop: width > 450 ? "2%" : "4%"}}>Software Developer</Typography>
+                                    <Typography variant={width > 1700 ? "h6" : width > 1300 ? "subtitle1" : "subtitle2"} align="left" sx={{fontFamily: "Nunito", marginTop: width > 450 ? "3%" : "4%"}}>A 4th year computer science student at the University of Guelph</Typography>
+
+                                    <Grid container spacing={3} sx={{marginTop: "4px"}}>
+                                        <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                            <Tooltip title="Github" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                                <IconButton target="_blank" href="https://github.com/brandenphan" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                                    <GitHubIcon style={{fontSize: width > 1000 ? ("35px") : ("33px")}} />
+                                                </IconButton>
+                                            </Tooltip>
+                                        </Grid>
+                                        <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                            <Tooltip title="LinkedIn" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                                <IconButton target="_blank" href="https://www.linkedin.com/in/brandenphan/" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                                    <LinkedInIcon style={{fontSize: width > 1000 ? ("42px") : ("40px")}} />
+                                                </IconButton>
+                                            </Tooltip>
+                                        </Grid>
+                                        <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                            <Tooltip title="Email" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                                <IconButton target="_blank" href="mailto: branden.phan@gmail.com" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                                    <EmailIcon style={{fontSize: width > 1000 ? ("45px") : ("43px")}} />
+                                                </IconButton>
+                                            </Tooltip>
+                                        </Grid>
+                                        <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                            <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                                <IconButton target="_blank" href={resume} sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                                    <HistoryEduIcon style={{fontSize: width > 1000 ? ("45px") : ("43px")}} />
+                                                </IconButton>
+                                            </Tooltip>
+                                        </Grid>
+                                    </Grid>
+                                    <div style={{border: "1px solid black", width: "100px", marginTop: "40px"}} />
+                                </div>
                             </Grid>
-                            <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <Tooltip title="LinkedIn" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                    <IconButton target="_blank" href="https://www.linkedin.com/in/brandenphan/" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
-                                        <LinkedInIcon style={{fontSize: width > 1000 ? ("42px") : ("40px")}} />
-                                    </IconButton>
-                                </Tooltip>
+                            <Grid item xs={6}>
+                                <img src={test3} alt="" height={width > 1700 ? "700px" : width > 1500 ? "650px" : width > 1300 ? "550px" : "500px"} width="auto" />
                             </Grid>
-                            <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <Tooltip title="Email" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                    <IconButton target="_blank" href="mailto: branden.phan@gmail.com" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
-                                        <EmailIcon style={{fontSize: width > 1000 ? ("45px") : ("43px")}} />
-                                    </IconButton>
-                                </Tooltip>
+                        </>
+                    :
+                        <Grid item xs={12} sx={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingLeft: "30px", paddingRight: "30px"}}>
+                            <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                <Typography variant={width > 1700 ? "h3" : width > 1300 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito"}}>Hi, I'm Branden Phan</Typography>
+                                <img src={wave} alt="" height="30px" width="auto" style={{marginLeft: "15px"}} />
+                            </div>
+
+                            <Typography variant={width > 1700 ? "h5" : width > 1300 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Nunito", fontWeight: "bold", color: "#3672FF", marginTop: width > 450 ? "1%" : "4%"}}>Software Developer</Typography>
+                            <Typography variant={width > 1700 ? "h6" : width > 1300 ? "subtitle1" : "subtitle2"} align="center" sx={{fontFamily: "Nunito", marginTop: width > 450 ? "1%" : "4%"}}>A 4th year computer science student at the University of Guelph</Typography>
+
+                            <Grid container spacing={3} sx={{marginTop: "2px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center"}}>
+                                <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <Tooltip title="Github" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                        <IconButton target="_blank" href="https://github.com/brandenphan" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                            <GitHubIcon style={{fontSize: width > 1200 ? "35px" : "33px"}} />
+                                        </IconButton>
+                                    </Tooltip>
+                                </Grid>
+                                <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <Tooltip title="LinkedIn" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                        <IconButton target="_blank" href="https://www.linkedin.com/in/brandenphan/" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                            <LinkedInIcon style={{fontSize: width > 1200 ? "42px" : "40px"}} />
+                                        </IconButton>
+                                    </Tooltip>
+                                </Grid>
+                                <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <Tooltip title="Email" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                        <IconButton target="_blank" href="mailto: branden.phan@gmail.com" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                            <EmailIcon style={{fontSize: width > 1200 ? "45px" : "43px"}} />
+                                        </IconButton>
+                                    </Tooltip>
+                                </Grid>
+                                <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                                        <IconButton target="_blank" href={resume} sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                            <HistoryEduIcon style={{fontSize: width > 1200 ? "45px" : "43px"}} />
+                                        </IconButton>
+                                    </Tooltip>
+                                </Grid>
                             </Grid>
-                            <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                    <IconButton target="_blank" href={resume} sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
-                                        <HistoryEduIcon style={{fontSize: width > 1000 ? ("45px") : ("43px")}} />
-                                    </IconButton>
-                                </Tooltip>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                    {width > 1000 &&
-                        <Grid item xs={6} sx={{display: "flex", justifyContent: "center"}}>
-                            <img src={profilePic} alt="ProfilePicture" />
+                        <div style={{border: "1px solid black", width: "100px", marginTop: "35px"}} />
                         </Grid>
                     }
                 </Grid>
-
-                <Grid container sx={{position: "absolute", bottom: "50px", paddingLeft: "24px", paddingRight: "24px"}}>
-                    <Grid item xs={6}>
-                        <IconButton href="#Education" sx={{marginLeft: width > 1000 ? "16%" : "", transition: "0.4s", "&:hover": {transform: "translateY(6px)"}}}>
-                            <CgArrowLongDown style={{color: "#E60268"}} />
-                        </IconButton>
-                    </Grid>
-                </Grid>
             </div>
-            
+
+
 
             {/* Education Section */}
             <div id="Education" style={{marginTop: "-20px"}} />
             <div>
                 <Grid container sx={{marginTop: "15vh", paddingLeft: width > 1300 ? "24%" : width > 1000 ? "16%" : "4%", paddingRight: width > 1300 ? "24%" : width > 1000 ? "16%" : "4%"}}>
                     <Grid item xs={12} sx={{marginBottom: "5vh"}}>
-                        <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Education</Typography>
+                        <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Education</Typography>
                     </Grid>
 
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item xs={12} sx={{padding: width > 1000 ? "2%" : width > 600 ? "4%" : "6%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
+                    <Grid item xs={12} sx={{padding: width > 1000 ? "2%" : width > 600 ? "4%" : "6%", borderRadius: "10px", backgroundColor: "#efe5dc"}}>
                         <Grid container>
                             <Grid item xs={width > 650 ? 6 : 12}>
                                 <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>University of Guelph</Typography>
@@ -223,347 +237,93 @@ const Index = () => {
 
 
 
-            {/* Skill Section */}
-            <div id="Skills" style={{marginTop: "-20px"}} />
-            <div>
-                {/* Languages Section */}
-                <Grid container sx={{display: "flex", justifyContent: "center"}}>
-                    <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: "5vh"}}>
-                        <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Languages</Typography>
-                    </Grid>
-
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <img src={javascriptLogo} alt="JavaScriptLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        {width > 600 ?
-                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>JavaScript</Typography>
-                        :
-                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>JS</Typography>
-                        }
-                    </Grid>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    {width > 600 &&
-                        <>
-                            &nbsp;&nbsp;&nbsp;
-                        </>
-                    }
-
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <img src={htmlLogo} alt="HTMLLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>HTML</Typography>
-                    </Grid>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    {width > 600 &&
-                        <>
-                            &nbsp;&nbsp;&nbsp;
-                        </>
-                    }
-
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <img src={cssLogo} alt="CSSLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>CSS</Typography>
-                    </Grid>
-
-                    {width > 1200 &&
-                        <>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            {width > 600 &&
-                                <>
-                                    &nbsp;&nbsp;&nbsp;
-                                </>
-                            }
-                            <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                                <img src={cLogo} alt="CLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>C</Typography>
-                            </Grid>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            {width > 600 &&
-                                <>
-                                    &nbsp;&nbsp;&nbsp;
-                                </>
-                            }
-
-                            <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                                <img src={javaLogo} alt="JavaLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Java</Typography>
-                            </Grid>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            {width > 600 &&
-                                <>
-                                    &nbsp;&nbsp;&nbsp;
-                                </>
-                            }
-
-                            <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                                <img src={pythonLogo} alt="PythonLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Python</Typography>
-                            </Grid>
-                        </>
-                    }
-                </Grid>
-                {width <= 1200 &&
-                    <Grid container sx={{marginTop: width > 650 ? "6vh" : "4vh", display: "flex", justifyContent: "center"}}>
-                        <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                            <img src={cLogo} alt="CLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>C</Typography>
-                        </Grid>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {width > 600 &&
-                            <>
-                                &nbsp;&nbsp;&nbsp;
-                            </>
-                        }
-
-                        <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                            <img src={javaLogo} alt="JavaLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Java</Typography>
-                        </Grid>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {width > 600 &&
-                            <>
-                                &nbsp;&nbsp;&nbsp;
-                            </>
-                        }
-
-                        <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                            <img src={pythonLogo} alt="PythonLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Python</Typography>
-                        </Grid>
-                    </Grid>
-                }
-
-
-                {/* Technologies Section */}
-                <Grid container sx={{display: "flex", justifyContent: "center"}}>
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item xs={12} sx={{marginTop: "15vh", marginBottom: "5vh"}}>
-                        <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Technologies</Typography>
-                    </Grid>
-
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <img src={reactLogo} alt="ReactLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>React</Typography>
-                    </Grid>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    {width > 600 &&
-                        <>
-                            &nbsp;&nbsp;&nbsp;
-                        </>
-                    }
-
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <img src={gatsbyLogo} alt="GatsbyLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Gatsby</Typography>
-                    </Grid>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    {width > 600 &&
-                        <>
-                            &nbsp;&nbsp;&nbsp;
-                        </>
-                    }
-
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <img src={nextLogo} alt="NextJSLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>NextJS</Typography>
-                    </Grid>
-
-                    {width > 1200 &&
-                        <>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            {width > 600 &&
-                                <>
-                                    &nbsp;&nbsp;&nbsp;
-                                </>
-                            }
-                            <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                                <img src={graphLogo} alt="GraphQLLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>GraphQL</Typography>
-                            </Grid>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            {width > 600 &&
-                                <>
-                                    &nbsp;&nbsp;&nbsp;
-                                </>
-                            }
-
-                            <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                                <img src={nodeLogo} alt="NodeLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Node</Typography>
-                            </Grid>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            {width > 600 &&
-                                <>
-                                    &nbsp;&nbsp;&nbsp;
-                                </>
-                            }
-
-                            <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                                <img src={expressLogo} alt="ExpressLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Express</Typography>
-                            </Grid>
-                        </>
-                    }
-                </Grid>
-                {width <= 1200 &&
-                    <Grid container sx={{marginTop: width > 650 ? "6vh" : "4vh", display: "flex", justifyContent: "center"}}>
-                        <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                            <img src={graphLogo} alt="GraphQLLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>GraphQL</Typography>
-                        </Grid>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {width > 600 &&
-                            <>
-                                &nbsp;&nbsp;&nbsp;
-                            </>
-                        }
-
-                        <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                            <img src={nodeLogo} alt="NodeLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Node</Typography>
-                        </Grid>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {width > 600 &&
-                            <>
-                                &nbsp;&nbsp;&nbsp;
-                            </>
-                        }
-
-                        <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                            <img src={expressLogo} alt="ExpressLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Express</Typography>
-                        </Grid>
-                    </Grid>
-                }
-
-                <Grid container sx={{display: "flex", justifyContent: "center", marginTop: width > 650 ? "6vh" : "4vh"}}>
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <img src={mysqlLogo} alt="MySQLLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>MySQL</Typography>
-                    </Grid>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    {width > 600 &&
-                        <>
-                            &nbsp;&nbsp;&nbsp;
-                        </>
-                    }
-
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <img src={mongoLogo} alt="MongoDBLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Mongo</Typography>
-                    </Grid>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    {width > 600 &&
-                        <>
-                            &nbsp;&nbsp;&nbsp;
-                        </>
-                    }
-
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <img src={firebaseLogo} alt="FirebaseLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                        <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Firebase</Typography>
-                    </Grid>
-
-                    {width > 1200 &&
-                        <>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            {width > 600 &&
-                                <>
-                                    &nbsp;&nbsp;&nbsp;
-                                </>
-                            }
-                            <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                                <img src={gitLogo} alt="GitLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Git</Typography>
-                            </Grid>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            {width > 600 &&
-                                <>
-                                    &nbsp;&nbsp;&nbsp;
-                                </>
-                            }
-
-                            <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                                <img src={herokuLogo} alt="HerokuLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Heroku</Typography>
-                            </Grid>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            {width > 600 &&
-                                <>
-                                    &nbsp;&nbsp;&nbsp;
-                                </>
-                            }
-
-                            <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                                <img src={mochaLogo} alt="MochaLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                                <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Mocha</Typography>
-                            </Grid>
-                        </>
-                    }
-                </Grid>
-                {width <= 1200 &&
-                    <Grid container sx={{marginTop: width > 650 ? "6vh" : "4vh", display: "flex", justifyContent: "center"}}>
-                        <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                            <img src={gitLogo} alt="GitLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Git</Typography>
-                        </Grid>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {width > 600 &&
-                            <>
-                                &nbsp;&nbsp;&nbsp;
-                            </>
-                        }
-
-                        <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                            <img src={herokuLogo} alt="HerokuLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Heroku</Typography>
-                        </Grid>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {width > 600 &&
-                            <>
-                                &nbsp;&nbsp;&nbsp;
-                            </>
-                        }
-
-                        <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                            <img src={mochaLogo} alt="MochaLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                            <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Mocha</Typography>
-                        </Grid>
-                    </Grid>
-                }
-            </div>
-
-
-            
-            {/* Design Tools */}
+            {/* Languages Section */}
             <Grid container sx={{display: "flex", justifyContent: "center"}}>
                 <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: "5vh"}}>
-                    <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Design Tools</Typography>
+                    <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Languages</Typography>
                 </Grid>
 
-                <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                    <img src={figmaLogo} alt="FigmaLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                    <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Figma</Typography>
-                </Grid>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                {width > 600 &&
-                    <>
-                        &nbsp;&nbsp;&nbsp;
-                    </>
-                }
+                <div style={{display: "flex", flexDirection: "row"}}>
+                    {["TypeScript", "JavaScript", "HTML", "CSS", "C", "Java", "Python"].map((language, ID) => (
+                        <div key={ID} style={{width: "150px", height: "70px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 6 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <Typography variant="h6" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
+                        </div>
+                    ))}
+                </div>
+            </Grid>
 
-                <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item sx={{padding: width > 1200 ? "1%" : width > 900 ? "1.5%" : width > 600 ? "2%" : "2.5%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                    <img src={gimpLogo} alt="GimpLogo" height={width > 600 ? "100px" : "80px"} width={width > 600 ? "100px" : "80px"} />
-                    <Typography align="center" variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "8%"}}>Gimp</Typography>
+
+
+            {/* Skills Section */}
+            <Grid container sx={{display: "flex", justifyContent: "center"}}>
+                <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: "5vh"}}>
+                    <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Skills</Typography>
+                </Grid>
+
+                <Grid container style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                    {["React", "Gatsby", "NextJS", "GraphQL", "Node", "Express"].map((skill, ID) => (
+                        <Grid item key={ID} style={{width: "150px", height: "70px", backgroundColor: "#ffc4d6", borderRadius: "20px", marginRight: ID !== 5 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <Typography variant="h6" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{skill}</Typography>
+                        </Grid>
+                    ))}
+                </Grid>
+
+                <Grid container style={{display: "flex", flexDirection: "row", justifyContent: "center", marginTop: "20px"}}>
+                    {["MySQL", "Mongo", "Firebase", "Git", "Heroku", "Mocha"].map((skill, ID) => (
+                        <Grid item key={ID} style={{width: "150px", height: "70px", backgroundColor: "#ffc4d6", borderRadius: "20px", marginRight: ID !== 5 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <Typography variant="h6" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{skill}</Typography>
+                        </Grid>
+                    ))}
                 </Grid>
             </Grid>
 
 
 
+            {/* Design Tools Section */}
+            <Grid container sx={{display: "flex", justifyContent: "center"}}>
+                <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: "5vh"}}>
+                    <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Design Tools</Typography>
+                </Grid>
 
-            {/* Project Section */}
-            <div id="Projects" style={{marginTop: "-20px"}} />
-            <div style={{backgroundColor: "#D9D9D9", boxShadow: "0 5px 13px 10px rgba(0, 0, 0, 0.3), 0 3px 5px 5px rgba(54, 114, 255, 0.2), 0 10px 20px 10px rgba(54, 114, 255, 0.2)"}}>
+                <Grid container style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                    {["Figma", "Gimp"].map((tool, ID) => (
+                        <Grid item key={ID} style={{width: "150px", height: "70px", backgroundColor: "#e7c6ff", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <Typography variant="h6" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{tool}</Typography>
+                        </Grid>
+                    ))}
+                </Grid>
+            </Grid>
+
+
+
+            {/* Work Section */}
+            <div id="Work" style={{marginTop: "-20px"}} />
+            <div style={{backgroundColor: "#F2F2F2"}}>
                 <Grid container sx={{marginTop: "15vh", display: "flex", justifyContent: "center"}}>
                     <Grid item xs={12} sx={{marginBottom: "5vh", marginTop: "10vh"}}>
-                        <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Projects</Typography>
+                        <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Work</Typography>
+                    </Grid>
+
+                    <Grid container columnSpacing={width > 1400 ? 8 : width > 1000 ? 6 : 0} sx={{marginTop: "1%", paddingLeft: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%", paddingRight: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%"}}>
+                        {workArray.map((instance, ID) => (
+                            <CardComponent key={ID} width={width} projectName={instance.name} description={instance.description} github={instance.github} live={instance.live} techs={instance.technologies} imageNamePNG={instance.imageNamePNG} imageNameWEBP={instance.imageNameWEBP} />
+                        ))}
+                    </Grid>
+                </Grid>
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+
+
+
+            {/* Project Section */}
+            <div id="Porjects" style={{marginTop: "-20px"}} />
+            <div style={{backgroundColor: "#F2F2F2"}}>
+                <Grid container sx={{display: "flex", justifyContent: "center"}}>
+                    <Grid item xs={12} sx={{marginBottom: "5vh", marginTop: "10vh"}}>
+                        <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Projects</Typography>
                     </Grid>
 
                     <Grid container columnSpacing={width > 1400 ? 8 : width > 1000 ? 6 : 0} sx={{marginTop: "1%", paddingLeft: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%", paddingRight: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%"}}>
@@ -580,230 +340,60 @@ const Index = () => {
 
 
 
-            {/* Work Section */}
-            <div id="Work" style={{marginTop: "-20px"}} />
-            <div id="Work">
-                <Grid container sx={{marginTop: "15vh", paddingLeft: width > 1300 ? "22%" : width > 1000 ? "16%" : "4%", paddingRight: width > 1300 ? "22%" : width > 1000 ? "16%" : "4%"}}>
-                    <Grid item xs={12} sx={{marginBottom: "5vh"}}>
-                        <Typography variant="h4" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}}>Work</Typography>
-                    </Grid>
 
-                    {/* Guelph Dental Section */}
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item xs={12} sx={{padding: width > 1000 ? "2%" : width > 600 ? "4%" : "6%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <Grid container>
-                            <Grid item xs={width > 1500 ? 8 : 12}>
-                                <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Guelph Dental</Typography>
-                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "1%"}}>Guelph, Ontario</Typography>
-                                {width <= 1500 && <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "1%"}}>May 2022 - June 2022</Typography>}
-                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Full-stack Developer</Typography>
-                                {width <= 700 &&
-                                    (openGuelphDental ? 
-                                        <>
-                                        <br />
-                                        <Button sx={{padding: "0", color: "#E60268", fontFamily: "Montserrat", fontWeight: "bold"}} onClick={() => {handleOpenGuelphDental()}}>Collapse</Button>
-                                        </>
-                                    :
-                                        <>
-                                            <br />
-                                            <Button sx={{padding: "0", color: "#E60268", fontFamily: "Montserrat", fontWeight: "bold"}} onClick={() => {handleOpenGuelphDental()}}>Read More</Button>
-                                        </>
-                                    )
-                                }
-                                
-                                {width > 700 ?
-                                    <ul style={{marginTop: "3%"}}>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Developing a full-stack web-application using React JS and Express JS to create a modern and visually appealing web-application regarding Guelph Dental</Typography>
-                                        </li>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Front-end developed to target an optimized SEO, while creating an aesthetic, efficient and easy-to-use interface</Typography>
-                                        </li>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Back-end utilizes Express and Node JS, providing endpoints utilized by the front-end to securely retrieve and manipulate MongoDB data</Typography>
-                                        </li>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Future proofing supported through various front-end components combined with the back-end, allowing the company to easily and securely change the web-application with zero coding knowledge</Typography>
-                                        </li>
-                                    </ul>
-                                :
-                                    <Collapse in={openGuelphDental}>
-                                        <ul style={{marginTop: "3%"}}>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Developing a full-stack web-application using React JS and Express JS to create a modern and visually appealing web-application regarding Guelph Dental</Typography>
-                                            </li>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Front-end developed to target an optimized SEO, while creating an aesthetic, efficient and easy-to-use interface</Typography>
-                                            </li>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Back-end utilizes Express and Node JS, providing endpoints utilized by the front-end to securely retrieve and manipulate MongoDB data</Typography>
-                                            </li>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Future proofing supported through various front-end components combined with the back-end, allowing the company to easily and securely change the  web-application with zero coding knowledge</Typography>
-                                            </li>
-                                        </ul>
-                                    </Collapse>
-                            }
-                            </Grid>
 
-                            {width > 1500 &&
-                                <Grid item xs={4} sx={{display: "flex", justifyContent: "flex-end", alignItems: "flex-start"}}>
-                                    <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF"}}>May 2022 - June 2022</Typography>
-                                </Grid>
-                            }
-                        </Grid>
-                    </Grid>
 
-                    {/* Lotus Section */}
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item xs={12} sx={{marginTop: width > 650 ? "6vh" : "4vh", padding: width > 1000 ? "2%" : width > 600 ? "4%" : "6%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <Grid container>
-                            <Grid item xs={width > 1500 ? 8 : 12}>
-                                <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Lotus Thai & Vietnamese Cuisine</Typography>
-                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "1%"}}>Hamilton, Ontario</Typography>
-                                {width <= 1500 && <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "1%"}}>Dec 2021 - Mar 2022</Typography>}
-                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Frontend Developer</Typography>
-                                {width <= 700 &&
-                                    (openLotus ? 
-                                        <>
-                                        <br />
-                                        <Button sx={{padding: "0", color: "#E60268", fontFamily: "Montserrat", fontWeight: "bold"}} onClick={() => {handleOpenLotus()}}>Collapse</Button>
-                                        </>
-                                    :
-                                        <>
-                                            <br />
-                                            <Button sx={{padding: "0", color: "#E60268", fontFamily: "Montserrat", fontWeight: "bold"}} onClick={() => {handleOpenLotus()}}>Read More</Button>
-                                        </>
-                                    )
-                                }
-                                
-                                {width > 700 ?
-                                    <ul style={{marginTop: "3%"}}>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Developing a front-end web-application using React JavaScript, creating a modern and responsive user interface, displaying various information pertaining to the Lotus restaurant</Typography>
-                                        </li>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Optimizing SEO through concise and updated metadata to increase customer traffic to the Lotus web-application</Typography>
-                                        </li>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Utilizing different techniques to improve website speed such as image optimization and CDN usage</Typography>
-                                        </li>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Numerous test to ensure the web-application is supported by major web browsers and responsive for different screen sizes</Typography>
-                                        </li>
-                                    </ul>
-                                :
-                                    <Collapse in={openLotus}>
-                                        <ul style={{marginTop: "3%"}}>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Developing a front-end web-application using React JavaScript, creating a modern and responsive user interface, displaying various information pertaining to the Lotus restaurant</Typography>
-                                            </li>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Optimizing SEO through concise and updated metadata to increase customer traffic to the Lotus web-application</Typography>
-                                            </li>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Utilizing different techniques to improve website speed such as image optimization and CDN usage</Typography>
-                                            </li>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Numerous test to ensure the web-application is supported by major web browsers and responsive for different screen sizes</Typography>
-                                            </li>
-                                        </ul>
-                                    </Collapse>
-                            }
-                            </Grid>
 
-                            {width > 1500 &&
-                                <Grid item xs={4} sx={{display: "flex", justifyContent: "flex-end", alignItems: "flex-start"}}>
-                                    <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF"}}>Dec 2021 - Mar 2022</Typography>
-                                </Grid>
-                            }
-                        </Grid>
-                    </Grid>
 
-                    {/* Extreme PC Section */}
-                    <Grid component={motion.div} whileHover={{scale: 1.02, transition: {duration: 0.3}}} item xs={12} sx={{marginTop: width > 650 ? "6vh" : "4vh", marginBottom: width > 650 ? "6vh" : "4vh", padding: width > 1000 ? "2%" : width > 600 ? "4%" : "6%", borderRadius: "10px", backgroundColor: "rgb(237, 242, 251, 0.45)", boxShadow: "2px 2px 5px 5px rgb(10, 70, 144, 0.2)"}}>
-                        <Grid container>
-                            <Grid item xs={width > 1500 ? 8 : 12}>
-                                <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Extreme PC</Typography>
-                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", marginTop: "1%"}}>Guelph, Ontario</Typography>
-                                {width <= 1500 && <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "1%"}}>Oct 2018 - Jan 2019</Typography>}
-                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Tech Associate</Typography>
-                                {width <= 700 &&
-                                    (openExtremePC ? 
-                                        <>
-                                        <br />
-                                        <Button sx={{padding: "0", color: "#E60268", fontFamily: "Montserrat", fontWeight: "bold"}} onClick={() => {handleOpenExtremePC()}}>Collapse</Button>
-                                        </>
-                                    :
-                                        <>
-                                            <br />
-                                            <Button sx={{padding: "0", color: "#E60268", fontFamily: "Montserrat", fontWeight: "bold"}} onClick={() => {handleOpenExtremePC()}}>Read More</Button>
-                                        </>
-                                    )
-                                }
-                                
-                                {width > 700 ?
-                                    <ul style={{marginTop: "3%"}}>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Worked as a team to complete various tasks and projects such as, working together to do research on a product, subsequently updating the company website with the new product</Typography>
-                                        </li>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Built high quality computers to meet company standards, setting up the computers software and ensuring everything was up to date</Typography>
-                                        </li>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Troubleshoot and repaired computer hardware and software problems</Typography>
-                                        </li>
-                                        <li>
-                                            <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Assisted with customer service</Typography>
-                                        </li>
-                                    </ul>
-                                :
-                                    <Collapse in={openExtremePC}>
-                                        <ul style={{marginTop: "3%"}}>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Worked as a team to complete various tasks and projects such as, working together to do research on a product, subsequently updating the company website with the new product</Typography>
-                                            </li>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Built high quality computers to meet company standards, setting up the computers software and ensuring everything was up to date</Typography>
-                                            </li>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Troubleshoot and repaired computer hardware and software problems</Typography>
-                                            </li>
-                                            <li>
-                                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Assisted with customer service</Typography>
-                                            </li>
-                                        </ul>
-                                    </Collapse>
-                            }
-                            </Grid>
 
-                            {width > 1500 &&
-                                <Grid item xs={4} sx={{display: "flex", justifyContent: "flex-end", alignItems: "flex-start"}}>
-                                    <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF"}}>Oct 2018 - Jan 2019</Typography>
-                                </Grid>
-                            }
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </div>
 
 
 
             {/* Footer Section */}
-            <div>
+            <div style={{backgroundColor: "#F2F2F2"}}>
                 <br />
                 <br />
-                <Typography variant="subtitle2" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268"}} align="center">Designed by Branden Phan</Typography>
-                <Typography variant="subtitle2" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#6794FF"}} align="center">Copyright © 2022 - All Rights Reserved.</Typography>
+                <Grid container spacing={2} sx={{marginTop: "4px", display: "flex", justifyContent: "center"}}>
+                    <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                        <Tooltip title="Github" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                            <IconButton target="_blank" href="https://github.com/brandenphan" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                <GitHubIcon style={{fontSize: width > 1000 ? ("23px") : ("18px")}} />
+                            </IconButton>
+                        </Tooltip>
+                    </Grid>
+                    <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                        <Tooltip title="LinkedIn" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                            <IconButton target="_blank" href="https://www.linkedin.com/in/brandenphan/" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                <LinkedInIcon style={{fontSize: width > 1000 ? ("30px") : ("25px")}} />
+                            </IconButton>
+                        </Tooltip>
+                    </Grid>
+                    <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                        <Tooltip title="Email" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                            <IconButton target="_blank" href="mailto: branden.phan@gmail.com" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                <EmailIcon style={{fontSize: width > 1000 ? ("33px") : ("28px")}} />
+                            </IconButton>
+                        </Tooltip>
+                    </Grid>
+                    <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                        <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                            <IconButton target="_blank" href={resume} sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                <HistoryEduIcon style={{fontSize: width > 1000 ? ("33px") : ("28px")}} />
+                            </IconButton>
+                        </Tooltip>
+                    </Grid>
+                </Grid>
+                <Typography variant="subtitle2" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#E60268", marginTop: "8px"}} align="center">Designed by Branden Phan</Typography>
+                <Typography variant="subtitle2" sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#6794FF", marginTop: "4px"}} align="center">Copyright © 2022 - All Rights Reserved.</Typography>
                 <br />
                 <br />
                 <br />
             </div>
 
-            
-            {/* NavBar Section */}
-            <NavBar />
+            <Nav />
         </div>
     )
-};
+}
 
 export default Index;
 
@@ -997,11 +587,28 @@ const CardComponent = ({projectName, description, github, live, techs, imageName
     )
 }
 
-// Project arrays holding project information
-const projectArray = [
+// Work array holding work information
+const workArray = [
     {
-        imageNamePNG: GuelphDentalPNG,
-        imageNameWEBP: GuelphDentalWEBP,
+        imageNamePNG: cutsbyjzPNG,
+        imageNameWEBP: cutsbyjzWEBP,
+        name: "cutsbyjz",
+        description: "Full-stack web-application, showcasing various information regarding Guelph Dental while also allowing future proofing capability features.",
+        github: "",
+        live: "https://guelphdental.com/",
+        technologies: [
+            "JavaScript",
+            "React",
+            "Node",
+            "Express",
+            "Heroku",
+            "MongoDB",
+            "Git"
+        ]
+    },
+    {
+        imageNamePNG: GuelphDenPNG,
+        imageNameWEBP: GuelphDenWEBP,
         name: "Guelph Dental",
         description: "Full-stack web-application, showcasing various information regarding Guelph Dental while also allowing future proofing capability features.",
         github: "",
@@ -1017,8 +624,8 @@ const projectArray = [
         ]
     },
     {
-        imageNamePNG: LotusImagePNG,
-        imageNameWEBP: LotusImageWEBP,
+        imageNamePNG: LotusPNG,
+        imageNameWEBP: LotusWEBP,
         name: "Lotus",
         description: "Front-end web-application, displaying a modern and responsive user interface to showcase various information pertaining to the Lotus restaurant.",
         github: "",
@@ -1030,6 +637,11 @@ const projectArray = [
             "Git"
         ]
     },
+]
+
+
+// Project array holding projects information
+const projectArray = [
     {
         imageNamePNG: PortfolioImageNewPNG,
         imageNameWEBP: PortfolioImageNewWEBP,
