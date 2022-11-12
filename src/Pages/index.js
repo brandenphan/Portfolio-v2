@@ -597,7 +597,7 @@ const Index = () => {
                                 {width <= 1500 && <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "1%"}}>May 2022 - June 2022</Typography>}
                                 <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Full-stack Developer</Typography>
                                 {width <= 700 &&
-                                    (openLotus ? 
+                                    (openGuelphDental ? 
                                         <>
                                         <br />
                                         <Button sx={{padding: "0", color: "#E60268", fontFamily: "Montserrat", fontWeight: "bold"}} onClick={() => {handleOpenGuelphDental()}}>Collapse</Button>
