@@ -17,7 +17,7 @@ const GuelphDental = () => {
         window.scrollTo(0, 0);
 
     }, []);
-    
+
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
             <div style={{backgroundColor: "#C1D3FE", display: "flex", justifyContent: "center"}}>
@@ -66,7 +66,7 @@ const GuelphDental = () => {
                 <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "flex-start", marginTop: "20px"}}>
                     {width > 1500 ? 
                         <>
-                            {["JavaScript", "React", "Mpde", "Express", "Heroku", "Mongo", "Git"].map((language, ID) => (
+                            {["JavaScript", "React", "Node", "Express", "Heroku", "Mongo", "Git"].map((language, ID) => (
                                 <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 6 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
                                     <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
                                 </Grid>
