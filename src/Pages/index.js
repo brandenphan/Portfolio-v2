@@ -293,10 +293,10 @@ const Index = () => {
 
 
 
-            {/* Skills Section */}
+            {/* Technologies Section */}
             <Grid container sx={{display: "flex", justifyContent: "center"}}>
                 <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: width > 600 ? "5vh" : "3vh"}}>
-                    <Typography variant={width > 600 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito"}}>Skills</Typography>
+                    <Typography variant={width > 600 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito"}}>Technologies</Typography>
                 </Grid>
 
                 {width > 1000 ?
