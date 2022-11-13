@@ -438,7 +438,7 @@ const Index = () => {
 
 
             {/* Project Section */}
-            <div id="Porjects" style={{marginTop: "-20px"}} />
+            <div id="Projects" style={{marginTop: "-20px"}} />
             <div style={{backgroundColor: "#F2F2F2"}}>
                 <Grid container sx={{display: "flex", justifyContent: "center"}}>
                     <Grid item xs={12} sx={{marginBottom: "5vh", marginTop: "10vh"}}>

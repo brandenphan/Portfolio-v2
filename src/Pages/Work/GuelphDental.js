@@ -1,3 +1,4 @@
+import React from "react";
 import { Grid, Typography } from "@mui/material";
 import BackNav from "../../Components/BackNav";
 import { useWidth } from "../../Context/WidthContext";
@@ -11,6 +12,12 @@ import GuelphDentalImage5 from "../../Images/Work/GuelphDentalImage5.png";
 const GuelphDental = () => {
     const { width } = useWidth();
 
+    // Forces the page to start at the top if the page is loaded
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+
+    }, []);
+    
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
             <div style={{backgroundColor: "#C1D3FE", display: "flex", justifyContent: "center"}}>
@@ -29,7 +36,7 @@ const GuelphDental = () => {
             </div>
 
             <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: width > 700 ? "100px" : "80px", display: "flex", flexDirection: "column"}}>
-                <div style={{border: "1px solid black", marginBottom: "15px", width: "60px"}} />
+                <div style={{border: "1px solid black", marginBottom: "20px", width: "60px"}} />
                 <Typography variant="h5" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
                     Guelph Dental
                 </Typography>
@@ -46,20 +53,20 @@ const GuelphDental = () => {
                 <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
                     Description
                 </Typography>
-                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "30px"}}>• Developing a full-stack web-application using React JS and Express JS to create a modern and visually appealing web-application regarding Guelph Dental</Typography>
-                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "30px"}}>• Front-end developed to target an optimized SEO, while creating an aesthetic, efficient and easy-to-use interface</Typography>
-                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "30px"}}>• Back-end utilizes Express and Node JS, providing endpoints utilized by the front-end to securely retrieve and manipulate MongoDB data</Typography>
-                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "30px"}}>• Future proofing supported through various front-end components combined with the back-end, allowing the company to easily and securely change the web-application with zero coding</Typography>
+                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Developing a full-stack web-application using React JS and Express JS to create a modern and visually appealing web-application regarding Guelph Dental</Typography>
+                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Front-end developed to target an optimized SEO, while creating an aesthetic, efficient and easy-to-use interface</Typography>
+                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Back-end utilizes Express and Node JS, providing endpoints utilized by the front-end to securely retrieve and manipulate MongoDB data</Typography>
+                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Future proofing supported through various front-end components combined with the back-end, allowing the company to easily and securely change the web-application with zero coding</Typography>
             </Grid>
 
-            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "100px" : "80px"}}>
+            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "110px" : "80px"}}>
                 <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
                     Technologies
                 </Typography>
                 <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "flex-start", marginTop: "20px"}}>
                     {width > 1500 ? 
                         <>
-                            {["TypeScript", "JavaScript", "HTML", "CSS", "C", "Java", "Python"].map((language, ID) => (
+                            {["JavaScript", "React", "Mpde", "Express", "Heroku", "Mongo", "Git"].map((language, ID) => (
                                 <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 6 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
                                     <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
                                 </Grid>
@@ -68,14 +75,14 @@ const GuelphDental = () => {
                     : width > 700 ?
                         <>
                             <Grid container>
-                                {["TypeScript", "JavaScript", "HTML", "CSS"].map((language, ID) => (
+                                {["JavaScript", "React", "Node", "Express"].map((language, ID) => (
                                     <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 3 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
                                         <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
                                     </Grid>
                                 ))}
                             </Grid>
                             <Grid container sx={{marginTop: "20px"}}>
-                                {["C", "Java", "Python"].map((language, ID) => (
+                                {["Heroku", "Mongo", "Git"].map((language, ID) => (
                                     <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 2 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
                                         <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
                                     </Grid>
@@ -85,48 +92,48 @@ const GuelphDental = () => {
                     : width > 500 ?
                         <>
                             <Grid container>
-                                {["TypeScript", "JavaScript", "HTML"].map((language, ID) => (
+                                {["JavaScript", "React", "Node"].map((language, ID) => (
                                     <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 2 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
                                         <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
                                     </Grid>
                                 ))}
                             </Grid>
                             <Grid container sx={{marginTop: "20px"}}>
-                                {["CSS", "C", "Java"].map((language, ID) => (
+                                {["Express", "Heroku", "Mongo"].map((language, ID) => (
                                     <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 2 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
                                         <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
                                     </Grid>
                                 ))}
                             </Grid>
                             <Grid item sx={{width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", display: "flex", justifyContent: "center", alignItems: "center", marginTop: "20px"}}>
-                                <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Python</Typography>
+                                <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Git</Typography>
                             </Grid>
                         </>
                     :
                         <>
                             <Grid container>
-                                {["TypeScript", "JavaScript"].map((language, ID) => (
+                                {["JavaScript", "React"].map((language, ID) => (
                                     <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
                                         <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
                                     </Grid>
                                 ))}
                             </Grid>
                             <Grid container sx={{marginTop: "20px"}}>
-                                {["HTML", "CSS"].map((language, ID) => (
+                                {["Node", "Express"].map((language, ID) => (
                                     <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
                                         <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
                                     </Grid>
                                 ))}
                             </Grid>
                             <Grid container sx={{marginTop: "20px"}}>
-                                {["C", "Java"].map((language, ID) => (
+                                {["Heroku", "Mongo"].map((language, ID) => (
                                     <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
                                         <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
                                     </Grid>
                                 ))}
                             </Grid>
                             <Grid item sx={{width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", display: "flex", justifyContent: "center", alignItems: "center", marginTop: "20px"}}>
-                                <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Python</Typography>
+                                <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Git</Typography>
                             </Grid>
                         </>
                 }
