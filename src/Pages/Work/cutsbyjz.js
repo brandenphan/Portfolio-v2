@@ -48,7 +48,7 @@ const Cutsbyjz = () => {
                     Description
                 </Typography>
                 <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Developing a full-stack web-application using React TypeScript, designing a modern and responsive user interface to showcase various information regarding the barbershop</Typography>
-                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Working in a team of two, utilizing Git tools such as issues, print boards, and pull requests while following AGILE methodologies</Typography>
+                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Working in a team of two, utilizing Git tools such as issues, sprint boards, and pull requests while following AGILE methodologies</Typography>
                 <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Throughly testing all code to ensure the web-application is supported by major web browsers and bug free</Typography>
             </Grid>
 
