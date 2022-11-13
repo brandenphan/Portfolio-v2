@@ -3,6 +3,7 @@ import { Grid, Typography } from "@mui/material";
 import BackNav from "../../Components/BackNav";
 import { useWidth } from "../../Context/WidthContext";
 import LotusImage1 from "../../Images/Work/LotusImage1.png";
+import LotusImage2 from "../../Images/Work/LotusImage2.png";
 
 
 const Lotus = () => {
@@ -16,8 +17,12 @@ const Lotus = () => {
 
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
-            <div style={{backgroundColor: "#C1D3FE", display: "flex", justifyContent: "center"}}>
-                <img src={LotusImage1} alt="LotusImage1" height="500px" width="auto" />
+            <div style={{backgroundColor: "#E3D5CA", display: "flex", justifyContent: "center"}}>
+                {width > 1000 ?
+                    <img src={LotusImage1} alt="LotusImage1" height="500px" width="auto" />
+                :
+                    <img src={LotusImage2} alt="LotusImage2" height={width > 800 ? "500px" : width > 500 ? "350px" : "275px"} width="auto" style={{marginTop: width > 800 ? "50px" : "60px", marginBottom: width > 800 ? "50px" : "60px"}} />
+                }
             </div>
 
             <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: width > 700 ? "100px" : "80px", display: "flex", flexDirection: "column"}}>
