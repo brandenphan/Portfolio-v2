@@ -167,8 +167,8 @@ const Index = () => {
             <div id="Education" style={{marginTop: "-20px"}} />
             <div>
                 <Grid container sx={{marginTop: "15vh", paddingLeft: width > 1300 ? "24%" : width > 1000 ? "16%" : "4%", paddingRight: width > 1300 ? "24%" : width > 1000 ? "16%" : "4%"}}>
-                    <Grid item xs={12} sx={{marginBottom: "5vh"}}>
-                        <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Education</Typography>
+                    <Grid item xs={12} sx={{marginBottom: width > 600 ? "5vh" : "3vh"}}>
+                        <Typography variant={width > 600 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Education</Typography>
                     </Grid>
 
                     <Grid item xs={12} sx={{padding: width > 1000 ? "2%" : width > 600 ? "4%" : "6%", borderRadius: "10px", backgroundColor: "#efe5dc"}}>
@@ -231,8 +231,8 @@ const Index = () => {
 
             {/* Languages Section */}
             <Grid container sx={{display: "flex", justifyContent: "center"}}>
-                <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: "5vh"}}>
-                    <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Languages</Typography>
+                <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: width > 600 ? "5vh" : "3vh"}}>
+                    <Typography variant={width > 600 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Languages</Typography>
                 </Grid>
 
 
@@ -295,8 +295,8 @@ const Index = () => {
 
             {/* Skills Section */}
             <Grid container sx={{display: "flex", justifyContent: "center"}}>
-                <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: "5vh"}}>
-                    <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Skills</Typography>
+                <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: width > 600 ? "5vh" : "3vh"}}>
+                    <Typography variant={width > 600 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Skills</Typography>
                 </Grid>
 
                 {width > 1000 ?
@@ -400,8 +400,8 @@ const Index = () => {
 
             {/* Design Tools Section */}
             <Grid container sx={{display: "flex", justifyContent: "center"}}>
-                <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: "5vh"}}>
-                    <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Design Tools</Typography>
+                <Grid item xs={12} sx={{marginTop: "15vh", marginBottom: width > 600 ? "5vh" : "3vh"}}>
+                    <Typography variant={width > 600 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Design Tools</Typography>
                 </Grid>
 
                 <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
@@ -419,8 +419,8 @@ const Index = () => {
             <div id="Work" style={{marginTop: "-20px"}} />
             <div style={{backgroundColor: "#F2F2F2"}}>
                 <Grid container sx={{marginTop: "15vh", display: "flex", justifyContent: "center"}}>
-                    <Grid item xs={12} sx={{marginBottom: "5vh", marginTop: "10vh"}}>
-                        <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Work</Typography>
+                    <Grid item xs={12} sx={{marginBottom: width > 600 ? "5vh" : "3vh", marginTop: "10vh"}}>
+                        <Typography variant={width > 600 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Work</Typography>
                     </Grid>
 
                     <Grid container columnSpacing={width > 1400 ? 8 : width > 1000 ? 6 : 0} sx={{marginTop: "1%", paddingLeft: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%", paddingRight: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%"}}>
@@ -441,8 +441,8 @@ const Index = () => {
             <div id="Projects" style={{marginTop: "-20px"}} />
             <div style={{backgroundColor: "#F2F2F2"}}>
                 <Grid container sx={{display: "flex", justifyContent: "center"}}>
-                    <Grid item xs={12} sx={{marginBottom: "5vh", marginTop: "10vh"}}>
-                        <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Projects</Typography>
+                    <Grid item xs={12} sx={{marginBottom: width > 600 ? "5vh" : "3vh", marginTop: "10vh"}}>
+                        <Typography variant={width > 600 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Projects</Typography>
                     </Grid>
 
                     <Grid container columnSpacing={width > 1400 ? 8 : width > 1000 ? 6 : 0} sx={{marginTop: "1%", paddingLeft: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%", paddingRight: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%"}}>
