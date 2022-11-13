@@ -39,7 +39,7 @@ const Nav = () => {
                                 :
                                     <>
                                         <IconButton onClick={handleClick}>
-                                            <MenuIcon sx={{fontSize: "32px", color: "#E60268"}} />
+                                            <MenuIcon sx={{fontSize: "32px", color: "black"}} />
                                         </IconButton>
                                         <Menu anchorEl={menuElement} open={open} onClose={handleClose}>
                                             <MenuItem onClick={handleClose}>
@@ -56,11 +56,11 @@ const Nav = () => {
                                                 <a href="#Work" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Source Sans Pro"}}>
                                                     Work
                                                 </a>
+                                            </MenuItem>
                                             <MenuItem onClick={handleClose}>
                                                 <a href="#Projects" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Source Sans Pro"}}>
                                                     Projects
                                                 </a>
-                                            </MenuItem>
                                             </MenuItem>
                                         </Menu>
                                     </>
