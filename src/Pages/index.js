@@ -14,34 +14,24 @@ import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import CloseIcon from '@mui/icons-material/Close';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import GitHub from "@mui/icons-material/GitHub";
-
 import { FaScroll } from 'react-icons/fa';
 import { AiOutlineCalendar } from 'react-icons/ai'
 import transcript from '../Images/transcript.pdf';
 import resume from '../Images/resume.pdf';
-
 import javascriptLogo from '../Images/LanguageIcons/javascript.svg';
 import cssLogo from '../Images/LanguageIcons/css.svg';
 import htmlLogo from '../Images/LanguageIcons/html.svg';
 import cLogo from '../Images/LanguageIcons/cLanguage.svg';
-// import javaLogo from '../Images/LanguageIcons/java.svg';
 import pythonLogo from '../Images/LanguageIcons/python.svg';
 import reactLogo from '../Images/TechnologyIcons/react.svg';
 import gatsbyLogo from '../Images/TechnologyIcons/gatsby.svg';
 import nextLogo from '../Images/TechnologyIcons/nextjs.svg';
 import nodeLogo from '../Images/TechnologyIcons/node.svg';
 import expressLogo from '../Images/TechnologyIcons/express.svg';
-// import graphLogo from '../Images/TechnologyIcons/graphql.svg';
 import mongoLogo from '../Images/TechnologyIcons/mongo.svg';
-// import mysqlLogo from '../Images/TechnologyIcons/mysql.svg';
-// import firebaseLogo from '../Images/TechnologyIcons/firebase.svg';
 import mochaLogo from '../Images/TechnologyIcons/mocha.svg';
 import gitLogo from '../Images/TechnologyIcons/git.svg';
 import herokuLogo from '../Images/TechnologyIcons/heroku.svg';
-// import figmaLogo from '../Images/DesignIcons/figma.svg';
-// import gimpLogo from '../Images/DesignIcons/gimp.svg';
-
-// import LotusImagePNG from '../Images/Projects/LotusImage.png';
 import PortfolioImageNewPNG from '../Images/Projects/PortfolioImageNew.png';
 import PortfolioImageOldPNG from '../Images/Projects/PortfolioImageOld.png';
 import ScheduleMakerImagePNG from '../Images/Projects/ScheduleMakerImage.png';
@@ -50,17 +40,12 @@ import DiscordImagePNG from '../Images/Projects/DiscordImage.png';
 import BrawlhallaImagePNG from '../Images/Projects/BrawlhallaImage.webp';
 import courseSearchWEBP from '../Images/Projects/CourseSearch.png';
 import courseSearchPNG from '../Images/Projects/CourseSearch.png';
-// import LotusImageWEBP from '../Images/Projects/LotusImage.webp';
 import PortfolioImageNewWEBP from '../Images/Projects/PortfolioImageNew.webp';
 import PortfolioImageOldWEBP from '../Images/Projects/PortfolioImageOld.webp';
 import ScheduleMakerImageWEBP from '../Images/Projects/ScheduleMakerImage.webp';
 import GpxImageWEBP from '../Images/Projects/GpxImage.webp';
 import DiscordImageWEBP from '../Images/Projects/DiscordImage.webp';
 import BrawlhallaImageWEBP from '../Images/Projects/BrawlhallaImage.webp';
-// import GuelphDentalPNG from '../Images/Projects/GuelphDental.png';
-// import GuelphDentalWEBP from '../Images/Projects/GuelphDental.webp';
-
-
 import LotusWEBP from "../Images/Work/Lotus.webp";
 import LotusPNG from "../Images/Work/Lotus.png";
 import GuelphDenWEBP from "../Images/Work/GuelphDental.webp";

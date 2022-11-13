@@ -12,7 +12,7 @@ const GuelphDental = () => {
     const { width } = useWidth();
 
     return (
-        <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)", height: "150vh"}}>
+        <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
             <div style={{backgroundColor: "#C1D3FE", display: "flex", justifyContent: "center"}}>
                 {width > 900 ?
                     <>
@@ -52,7 +52,7 @@ const GuelphDental = () => {
                 <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "30px"}}>• Future proofing supported through various front-end components combined with the back-end, allowing the company to easily and securely change the web-application with zero coding</Typography>
             </Grid>
 
-            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%"}}>
+            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "100px" : "80px"}}>
                 <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
                     Technologies
                 </Typography>
@@ -132,9 +132,6 @@ const GuelphDental = () => {
                 }
                 </Grid>
             </Grid>
-
-
-
 
             <BackNav />
         </div>
