@@ -174,9 +174,9 @@ const Index = () => {
                     <Grid item xs={12} sx={{padding: width > 1000 ? "2%" : width > 600 ? "4%" : "6%", borderRadius: "10px", backgroundColor: "#efe5dc"}}>
                         <Grid container>
                             <Grid item xs={width > 650 ? 6 : 12}>
-                                <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Nunito", fontWeight: "bold"}}>University of Guelph</Typography>
-                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Sep 2019 - Present</Typography>
-                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Bachelor of Computing</Typography>
+                                <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Nunito", fontWeight: width > 700 ? "bold" : ""}}>University of Guelph</Typography>
+                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito", fontWeight: width > 700 ? "bold" : "", color: "#3672FF", marginTop: "2%"}}>Sep 2019 - Present</Typography>
+                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito", fontWeight: width > 700 ? "bold" : "", color: "#3672FF", marginTop: "2%"}}>Bachelor of Computing</Typography>
                                 <ul style={{marginTop: "3%"}}>
                                     <li>
                                         <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito"}}>Major in Computer Science</Typography>
