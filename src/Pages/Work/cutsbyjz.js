@@ -33,7 +33,7 @@ const Cutsbyjz = () => {
                 }
             </div>
 
-            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: width > 700 ? "100px" : "80px", display: "flex", flexDirection: "column"}}>
+            <Grid container sx={{paddingLeft: "35px", paddingRight: "35px", marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "", marginTop: width > 700 ? "100px" : "80px", display: "flex", flexDirection: "column"}}>
                 <div style={{border: "1px solid black", marginBottom: "20px", width: "60px"}} />
                 <Typography variant="h5" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
                     Cutsbyjz
