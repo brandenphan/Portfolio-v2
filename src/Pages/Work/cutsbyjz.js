@@ -29,7 +29,7 @@ const Cutsbyjz = () => {
                         }
                     </>
                 :
-                    <img src={CutsbyjzImage3} alt="CutsbyjzImage3" height={width > 450 ? "250px" : "200px"} width="auto" style={{marginTop: width > 600 ? "100px" : "80px", marginBottom: width > 600 ? "60px" : "40px", marginLeft: "-5px"}} />
+                    <img src={CutsbyjzImage3} alt="CutsbyjzImage3" height={width > 450 ? "250px" : "200px"} width="auto" style={{marginTop: width > 600 ? "100px" : "80px", marginBottom: width > 600 ? "60px" : "40px", marginLeft: "-10px"}} />
                 }
             </div>
 
