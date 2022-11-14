@@ -174,21 +174,21 @@ const Index = () => {
                     <Grid item xs={12} sx={{padding: width > 1000 ? "2%" : width > 600 ? "4%" : "6%", borderRadius: "10px", backgroundColor: "#efe5dc"}}>
                         <Grid container>
                             <Grid item xs={width > 650 ? 6 : 12}>
-                                <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>University of Guelph</Typography>
-                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Sep 2019 - Present</Typography>
-                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Bachelor of Computing</Typography>
+                                <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Nunito", fontWeight: "bold"}}>University of Guelph</Typography>
+                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Sep 2019 - Present</Typography>
+                                <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito", fontWeight: "bold", color: "#3672FF", marginTop: "2%"}}>Bachelor of Computing</Typography>
                                 <ul style={{marginTop: "3%"}}>
                                     <li>
-                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Major in Computer Science</Typography>
+                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito"}}>Major in Computer Science</Typography>
                                     </li>
                                     <li>
-                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Minor in Business</Typography>
+                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito"}}>Minor in Business</Typography>
                                     </li>
                                     <li>
-                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>4.0 GPA (88%)</Typography>
+                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito"}}>4.0 GPA (88%)</Typography>
                                     </li>
                                     <li>
-                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Montserrat"}}>Dean's List: 2019, 2020, 2021, 2022</Typography>
+                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito"}}>Dean's List: 2019, 2020, 2021, 2022</Typography>
                                     </li>
                                 </ul>
                             </Grid>
@@ -266,26 +266,26 @@ const Index = () => {
                         <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             {["TypeScript", "JavaScript"].map((language, ID) => (
                                 <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
+                                    <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: ""}}>{language}</Typography>
                                 </Grid>
                             ))}
                         </Grid>
                         <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center", marginTop: "20px"}}>
                             {["HTML", "CSS"].map((language, ID) => (
                                 <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
+                                    <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: ""}}>{language}</Typography>
                                 </Grid>
                             ))}
                         </Grid>
                         <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "center", marginTop: "20px"}}>
                             {["C", "Java"].map((language, ID) => (
                                 <Grid item key={ID} sx={{width: width > 1400 ? "150px" : "120px", height: "70px", backgroundColor: "#ccdbfd", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
+                                    <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: ""}}>{language}</Typography>
                                 </Grid>
                             ))}
                         </Grid>
                         <Grid item sx={{width: width > 1400 ? "150px" : "120px", height: "70px", marginTop: "20px", backgroundColor: "#ccdbfd", borderRadius: "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                            <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>Python</Typography>
+                            <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: ""}}>Python</Typography>
                         </Grid>
                     </>
                 }
