@@ -177,7 +177,7 @@ const Index = () => {
                                 <Typography variant={width > 600 ? "h5" : "h6"} sx={{fontFamily: "Nunito", fontWeight: width > 700 ? "bold" : ""}}>University of Guelph</Typography>
                                 <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito", fontWeight: width > 700 ? "bold" : "", color: "#3672FF", marginTop: "2%"}}>Sep 2019 - Present</Typography>
                                 <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito", fontWeight: width > 700 ? "bold" : "", color: "#3672FF", marginTop: "2%"}}>Bachelor of Computing</Typography>
-                                <ul style={{marginTop: width > 600 ? "3%" : "3.5%"}}>
+                                <ul style={{marginTop: width > 600 ? "3%" : "4%"}}>
                                     <li>
                                         <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito"}}>Major in Computer Science</Typography>
                                     </li>
