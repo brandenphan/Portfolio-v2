@@ -65,8 +65,8 @@ const GuelphDental = () => {
                 </Typography>
                 <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "flex-start", marginTop: "20px"}}>
                     {["JavaScript", "React", "Node", "Express", "Heroku", "Mongo", "Git"].map((language, ID) => (
-                        <Grid item key={ID} sx={{marginRight: "20px", marginBottom: "20px", width: "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                            <Typography variant="subtitle2" align="center" sx={{fontFamily: "Nunito", fontWeight: width > 700 ? "bold" : ""}}>{language}</Typography>
+                        <Grid item key={ID} sx={{marginRight: "20px", marginBottom: "20px", width: width > 700 ? "130px" : "110px", height: "50px", backgroundColor: "#ccdbfd", borderRadius: "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <Typography variant={width > 700 ? "subtitle1" : "subtitle2"} align="center" sx={{fontFamily: "Nunito", fontWeight: width > 700 ? "bold" : ""}}>{language}</Typography>
                         </Grid>
                     ))}
                 </Grid>
