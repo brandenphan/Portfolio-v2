@@ -12,9 +12,9 @@ const Cutsbyjz = () => {
     const { width } = useWidth();
 
     // Forces the page to start at the top if the page is loaded
-    // React.useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>

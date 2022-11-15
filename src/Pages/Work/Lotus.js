@@ -12,7 +12,6 @@ const Lotus = () => {
     // Forces the page to start at the top if the page is loaded
     React.useEffect(() => {
         window.scrollTo(0, 0);
-
     }, []);
 
     return (
