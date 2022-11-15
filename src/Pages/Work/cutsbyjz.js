@@ -12,10 +12,9 @@ const Cutsbyjz = () => {
     const { width } = useWidth();
 
     // Forces the page to start at the top if the page is loaded
-    React.useEffect(() => {
-        window.scrollTo(0, 0);
-
-    }, []);
+    // React.useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
 
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
@@ -52,37 +51,16 @@ const Cutsbyjz = () => {
                 <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Throughly testing all code to ensure the web-application is supported by major web browsers and bug free</Typography>
             </Grid>
 
-            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "110px" : "80px"}}>
+            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "90px" : "60px"}}>
                 <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
                     Technologies
                 </Typography>
                 <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "flex-start", marginTop: "20px"}}>
-                    {width > 700 ? 
-                        <>
-                            {["TypeScript", "React", "Netlify", "Node"].map((language, ID) => (
-                                <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#DADADA", borderRadius: "20px", marginRight: ID !== 3 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
-                                </Grid>
-                            ))}
-                        </>
-                    :
-                        <>
-                            <Grid container>
-                                {["TypeScript", "React"].map((language, ID) => (
-                                    <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#DADADA", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                        <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
-                                    </Grid>
-                                ))}
-                            </Grid>
-                            <Grid container sx={{marginTop: "20px"}}>
-                                {["Netlify", "Node"].map((language, ID) => (
-                                    <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#DADADA", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                        <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
-                                    </Grid>
-                                ))}
-                            </Grid>
-                        </>
-                }
+                    {["TypeScript", "React", "Netlify", "Node"].map((language, ID) => (
+                        <Grid item key={ID} sx={{marginRight: "20px", marginBottom: "20px", width: "110px", height: "50px", backgroundColor: "#DADADA", borderRadius: "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
+                        </Grid>
+                    ))}
                 </Grid>
             </Grid>
 
