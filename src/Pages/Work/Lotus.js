@@ -49,37 +49,16 @@ const Lotus = () => {
                 <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Numerous test to ensure the web-application is supported by major web browsers and responsive for different screen sizes</Typography>
             </Grid>
 
-            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "110px" : "80px"}}>
+            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "90px" : "60px"}}>
                 <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
                     Technologies
                 </Typography>
                 <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "flex-start", marginTop: "20px"}}>
-                    {width > 700 ? 
-                        <>
-                            {["JavaScript", "React", "Node", "Git"].map((language, ID) => (
-                                <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#E3D5CA", borderRadius: "20px", marginRight: ID !== 3 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
-                                </Grid>
-                            ))}
-                        </>
-                    :
-                        <>
-                            <Grid container>
-                                {["JavaScript", "React"].map((language, ID) => (
-                                    <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#E3D5CA", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                        <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
-                                    </Grid>
-                                ))}
-                            </Grid>
-                            <Grid container sx={{marginTop: "20px"}}>
-                                {["Node", "Git"].map((language, ID) => (
-                                    <Grid item key={ID} sx={{width: "110px", height: "50px", backgroundColor: "#E3D5CA", borderRadius: "20px", marginRight: ID !== 1 && "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                        <Typography variant="subtitle2" align="center" sx={{fontFamily: "Montserrat", fontWeight: "bold"}}>{language}</Typography>
-                                    </Grid>
-                                ))}
-                            </Grid>
-                        </>
-                }
+                    {["JavaScript", "React", "Node", "Git"].map((language, ID) => (
+                        <Grid item key={ID} sx={{marginRight: "20px", marginBottom: "20px", width: "110px", height: "50px", backgroundColor: "#E3D5CA", borderRadius: "20px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <Typography variant="subtitle2" align="center" sx={{fontFamily: "Nunito", fontWeight: width > 700 ? "bold" : ""}}>{language}</Typography>
+                        </Grid>
+                    ))}
                 </Grid>
             </Grid>
 
