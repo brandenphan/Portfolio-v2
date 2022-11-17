@@ -6,32 +6,15 @@ import wave from "../Images/Projects/wave.png";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useWidth } from "../Context/WidthContext";
-import { Grid, Typography, IconButton, Tooltip, Button, Dialog, Card, CardContent } from "@mui/material";
+import { Grid, Typography, IconButton, Tooltip, Button } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
-import CloseIcon from '@mui/icons-material/Close';
-import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import GitHub from "@mui/icons-material/GitHub";
 import { FaScroll } from 'react-icons/fa';
 import { AiOutlineCalendar } from 'react-icons/ai'
 import transcript from '../Images/transcript.pdf';
 import resume from '../Images/resume.pdf';
-import javascriptLogo from '../Images/LanguageIcons/javascript.svg';
-import cssLogo from '../Images/LanguageIcons/css.svg';
-import htmlLogo from '../Images/LanguageIcons/html.svg';
-import cLogo from '../Images/LanguageIcons/cLanguage.svg';
-import pythonLogo from '../Images/LanguageIcons/python.svg';
-import reactLogo from '../Images/TechnologyIcons/react.svg';
-import gatsbyLogo from '../Images/TechnologyIcons/gatsby.svg';
-import nextLogo from '../Images/TechnologyIcons/nextjs.svg';
-import nodeLogo from '../Images/TechnologyIcons/node.svg';
-import expressLogo from '../Images/TechnologyIcons/express.svg';
-import mongoLogo from '../Images/TechnologyIcons/mongo.svg';
-import mochaLogo from '../Images/TechnologyIcons/mocha.svg';
-import gitLogo from '../Images/TechnologyIcons/git.svg';
-import herokuLogo from '../Images/TechnologyIcons/heroku.svg';
 import PortfolioImageNewPNG from '../Images/Projects/PortfolioImageNew.png';
 import PortfolioImageOldPNG from '../Images/Projects/PortfolioImageOld.png';
 import ScheduleMakerImagePNG from '../Images/Projects/ScheduleMakerImage.png';
@@ -425,7 +408,7 @@ const Index = () => {
 
                     <Grid container columnSpacing={width > 1400 ? 8 : width > 1000 ? 6 : 0} sx={{marginTop: "1%", paddingLeft: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%", paddingRight: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%"}}>
                         {workArray.map((instance, ID) => (
-                            <CardComponentWork key={ID} width={width} link={instance.link} projectName={instance.name} description={instance.description} github={instance.github} live={instance.live} techs={instance.technologies} imageNamePNG={instance.imageNamePNG} imageNameWEBP={instance.imageNameWEBP} />
+                            <CardComponent key={ID} width={width} link={instance.link} projectName={instance.name} description={instance.description} github={instance.github} live={instance.live} techs={instance.technologies} imageNamePNG={instance.imageNamePNG} imageNameWEBP={instance.imageNameWEBP} />
                         ))}
                     </Grid>
                 </Grid>
@@ -447,7 +430,7 @@ const Index = () => {
 
                     <Grid container columnSpacing={width > 1400 ? 8 : width > 1000 ? 6 : 0} sx={{marginTop: "1%", paddingLeft: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%", paddingRight: width > 1400 ? "14%" : width > 1000 ? "10%" : "4%"}}>
                         {projectArray.map((instance, ID) => (
-                            <CardComponent key={ID} width={width} projectName={instance.name} description={instance.description} github={instance.github} live={instance.live} techs={instance.technologies} imageNamePNG={instance.imageNamePNG} imageNameWEBP={instance.imageNameWEBP} />
+                            <CardComponent key={ID} width={width} link={instance.link} projectName={instance.name} imageNamePNG={instance.imageNamePNG} imageNameWEBP={instance.imageNameWEBP} />
                         ))}
                     </Grid>
                 </Grid>
@@ -469,383 +452,20 @@ const Index = () => {
 export default Index;
 
 
-const CardComponentWork = ({projectName, description, github, live, techs, imageNamePNG, imageNameWEBP, width, link}) => {
-    const [open, setOpen] = React.useState(false);
-
-    return (
-        <>
-            <Grid item xs={width > 1000 ? 6 : 12}>
-                <Button component={Link} to={link} sx={{marginBottom: width > 900 ? "20px" : width > 600 ? "15px" : "", padding: "0", borderRadius: "20px", transition: "0.4s", "&:hover": {transform: "translateY(-4px)"}}}>
-                    <picture style={{height: "100%"}}>
-                        <source srcSet={imageNameWEBP} type="image/webp" />
-                        <source srcSet={imageNamePNG} type="image/png" />
-                        <img src={imageNamePNG} alt={projectName} height="100%" width="100%" style={{display: "block", borderRadius: "20px"}} />
-                    </picture>
-                </Button>
-                <br />
-                <br />
-                <br />
-            </Grid>
-        
-            <Dialog open={open} onClose={() => {setOpen(false);}} disableScrollLock={true}>
-                <Card>
-                    <CardContent>
-                        <Grid container sx={{borderBottom: "1px solid #D7DEE6"}}>
-                            <Grid item xs={10} sx={{display: "flex", alignItems: "center"}}>
-                                <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", color: "black"}}>
-                                    {projectName}
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </Typography> 
-                            </Grid>
-                            <Grid item xs={2} sx={{display: "flex", justifyContent: "flex-end"}}>
-                                <IconButton onClick={() => {setOpen(false);}}>
-                                    <CloseIcon sx={{color: "black"}} />
-                                </IconButton>
-                            </Grid>
-                        </Grid>
-
-                        <br />
-                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", fontWeight: "bold"}}>Description</Typography>
-                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro"}}>{description}</Typography>
-
-                        <br />
-                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", marginBottom: "2%"}}>Technologies</Typography>
-                        {techs.map((instance, ID) => (
-                            <React.Fragment key={ID}>
-                                {instance === "JavaScript" &&
-                                    <>
-                                        <Tooltip title="JavaScript" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={javascriptLogo} alt="JavaScriptLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "HTML" &&
-                                    <>
-                                        <Tooltip title="HTML" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={htmlLogo} alt="HTMLLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "CSS" &&
-                                    <>
-                                        <Tooltip title="CSS" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={cssLogo} alt="CSSLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "C" &&
-                                    <>
-                                        <Tooltip title="C" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={cLogo} alt="CLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Heroku" &&
-                                    <>
-                                        <Tooltip title="Heroku" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={herokuLogo} alt="HerokuLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Python" &&
-                                    <>
-                                        <Tooltip title="Python" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={pythonLogo} alt="PythonLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "React" &&
-                                    <>
-                                        <Tooltip title="React" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={reactLogo} alt="ReactLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "NextJS" &&
-                                    <>
-                                        <Tooltip title="NextJS" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={nextLogo} alt="NextJSLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Gatsby" &&
-                                    <>
-                                        <Tooltip title="Gatsby" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={gatsbyLogo} alt="GatsbyLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Node" &&
-                                    <>
-                                        <Tooltip title="Node" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={nodeLogo} alt="NodeLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Express" &&
-                                    <>
-                                        <Tooltip title="Express" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={expressLogo} alt="ExpressLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Git" &&
-                                    <>
-                                        <Tooltip title="Git" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={gitLogo} alt="GitLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Mocha" &&
-                                    <>
-                                        <Tooltip title="Mocha" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={mochaLogo} alt="MochaLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "MongoDB" &&
-                                    <>
-                                        <Tooltip title="MongoDB" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={mongoLogo} alt="MongoDBLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                            </React.Fragment>
-                        ))}
-
-                        <br />
-                        <br />
-                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", fontWeight: "bold"}}>External Links</Typography>
-                        {github !== "" &&
-                            <>
-                                <Button href={`${github}`} target="_blank" variant="outlined" sx={{textTransform: "none", marginTop: "2%"}}>
-                                    <GitHub />
-                                    &nbsp;&nbsp;
-                                    <Typography sx={{fontFamily: "Source Sans Pro", fontSize: width > 600 ? "18px" : "16px"}}>Github</Typography>
-                                </Button>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </>
-                        }
-                        {live !== "" &&
-                            <>
-                                <Button href={`${live}`} target="_blank" variant="outlined" sx={{textTransform: "none", marginTop: "2%", color: "white", backgroundColor: "#3672FF", "&:hover": {backgroundColor: "#1B5FFF"}}}>
-                                    <ExitToAppIcon />
-                                    &nbsp;&nbsp;
-                                    <Typography sx={{fontFamily: "Source Sans Pro", fontSize: width > 600 ? "18px" : "16px"}}>Live</Typography>
-                                </Button>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </>
-                        }
-                    </CardContent>
-                </Card>
-            </Dialog>
-        </>
-    )
-}
-
-
-// Card Component for projects and work
-const CardComponent = ({projectName, description, github, live, techs, imageNamePNG, imageNameWEBP, width}) => {
-    const [open, setOpen] = React.useState(false);
-
-    return (
-        <>
-            <Grid item xs={width > 1000 ? 6 : 12}>
-                <Button onClick={() => {setOpen(true);}} sx={{marginBottom: width > 900 ? "20px" : width > 600 ? "15px" : "", padding: "0", borderRadius: "20px", transition: "0.4s", "&:hover": {transform: "translateY(-4px)"}}}>
-                    <picture style={{height: "100%"}}>
-                        <source srcSet={imageNameWEBP} type="image/webp" />
-                        <source srcSet={imageNamePNG} type="image/png" />
-                        <img src={imageNamePNG} alt={projectName} height="100%" width="100%" style={{display: "block", borderRadius: "20px"}} />
-                    </picture>
-                </Button>
-                <br />
-                <br />
-                <br />
-            </Grid>
-        
-            <Dialog open={open} onClose={() => {setOpen(false);}} disableScrollLock={true}>
-                <Card>
-                    <CardContent>
-                        <Grid container sx={{borderBottom: "1px solid #D7DEE6"}}>
-                            <Grid item xs={10} sx={{display: "flex", alignItems: "center"}}>
-                                <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", color: "black"}}>
-                                    {projectName}
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </Typography> 
-                            </Grid>
-                            <Grid item xs={2} sx={{display: "flex", justifyContent: "flex-end"}}>
-                                <IconButton onClick={() => {setOpen(false);}}>
-                                    <CloseIcon sx={{color: "black"}} />
-                                </IconButton>
-                            </Grid>
-                        </Grid>
-
-                        <br />
-                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", fontWeight: "bold"}}>Description</Typography>
-                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro"}}>{description}</Typography>
-
-                        <br />
-                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", fontWeight: "bold", marginBottom: "2%"}}>Technologies</Typography>
-                        {techs.map((instance, ID) => (
-                            <React.Fragment key={ID}>
-                                {instance === "JavaScript" &&
-                                    <>
-                                        <Tooltip title="JavaScript" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={javascriptLogo} alt="JavaScriptLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "HTML" &&
-                                    <>
-                                        <Tooltip title="HTML" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={htmlLogo} alt="HTMLLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "CSS" &&
-                                    <>
-                                        <Tooltip title="CSS" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={cssLogo} alt="CSSLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "C" &&
-                                    <>
-                                        <Tooltip title="C" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={cLogo} alt="CLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Heroku" &&
-                                    <>
-                                        <Tooltip title="Heroku" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={herokuLogo} alt="HerokuLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Python" &&
-                                    <>
-                                        <Tooltip title="Python" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={pythonLogo} alt="PythonLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "React" &&
-                                    <>
-                                        <Tooltip title="React" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={reactLogo} alt="ReactLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "NextJS" &&
-                                    <>
-                                        <Tooltip title="NextJS" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={nextLogo} alt="NextJSLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Gatsby" &&
-                                    <>
-                                        <Tooltip title="Gatsby" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={gatsbyLogo} alt="GatsbyLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Node" &&
-                                    <>
-                                        <Tooltip title="Node" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={nodeLogo} alt="NodeLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Express" &&
-                                    <>
-                                        <Tooltip title="Express" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={expressLogo} alt="ExpressLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Git" &&
-                                    <>
-                                        <Tooltip title="Git" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={gitLogo} alt="GitLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "Mocha" &&
-                                    <>
-                                        <Tooltip title="Mocha" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={mochaLogo} alt="MochaLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                                {instance === "MongoDB" &&
-                                    <>
-                                        <Tooltip title="MongoDB" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                            <img src={mongoLogo} alt="MongoDBLogo" height="80px" width="80px" style={{marginBottom: "2%"}} />
-                                        </Tooltip>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </>
-                                }
-                            </React.Fragment>
-                        ))}
-
-                        <br />
-                        <br />
-                        <Typography variant={width > 600 ? "h6" : "subtitle1"} sx={{fontFamily: "Source Sans Pro", fontWeight: "bold"}}>External Links</Typography>
-                        {github !== "" &&
-                            <>
-                                <Button href={`${github}`} target="_blank" variant="outlined" sx={{textTransform: "none", marginTop: "2%"}}>
-                                    <GitHub />
-                                    &nbsp;&nbsp;
-                                    <Typography sx={{fontFamily: "Source Sans Pro", fontSize: width > 600 ? "18px" : "16px"}}>Github</Typography>
-                                </Button>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </>
-                        }
-                        {live !== "" &&
-                            <>
-                                <Button href={`${live}`} target="_blank" variant="outlined" sx={{textTransform: "none", marginTop: "2%", color: "white", backgroundColor: "#3672FF", "&:hover": {backgroundColor: "#1B5FFF"}}}>
-                                    <ExitToAppIcon />
-                                    &nbsp;&nbsp;
-                                    <Typography sx={{fontFamily: "Source Sans Pro", fontSize: width > 600 ? "18px" : "16px"}}>Live</Typography>
-                                </Button>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </>
-                        }
-                    </CardContent>
-                </Card>
-            </Dialog>
-        </>
-    )
-}
+const CardComponent = ({projectName, imageNamePNG, imageNameWEBP, width, link}) => (
+    <Grid item xs={width > 1000 ? 6 : 12}>
+        <Button component={Link} to={link} sx={{marginBottom: width > 900 ? "20px" : width > 600 ? "15px" : "", padding: "0", borderRadius: "20px", transition: "0.4s", "&:hover": {transform: "translateY(-4px)"}}}>
+            <picture style={{height: "100%"}}>
+                <source srcSet={imageNameWEBP} type="image/webp" />
+                <source srcSet={imageNamePNG} type="image/png" />
+                <img src={imageNamePNG} alt={projectName} height="100%" width="100%" style={{display: "block", borderRadius: "20px"}} />
+            </picture>
+        </Button>
+        <br />
+        <br />
+        <br />
+    </Grid>
+)
 
 // Work array holding work information
 const workArray = [
@@ -917,7 +537,8 @@ const projectArray = [
             "React",
             "Node",
             "Git"
-        ]
+        ],
+        link: "/PersonalPortfolioNew"
     },
     {
         imageNamePNG: courseSearchPNG,
@@ -934,7 +555,8 @@ const projectArray = [
             "Express",
             "Git",
             "Mocha"
-        ]
+        ],
+        link: "/CourseSearch"
     },
     {
         imageNamePNG: DiscordImagePNG,
@@ -947,7 +569,8 @@ const projectArray = [
             "Python",
             "Heroku",
             "Git"
-        ]
+        ],
+        link: "/DiscordBot"
     },
     {
         imageNamePNG: PortfolioImageOldPNG,
@@ -962,7 +585,8 @@ const projectArray = [
             "Gatsby",
             "Node",
             "Git"
-        ]
+        ],
+        link: "/PersonalPortfolioOld"
     },
     {
         imageNamePNG: ScheduleMakerImagePNG,
@@ -976,7 +600,8 @@ const projectArray = [
             "React",
             "Node",
             "Git"
-        ]
+        ],
+        link: "/ScheduleMaker"
     },
     {
         imageNamePNG: BrawlhallaImagePNG,
@@ -990,7 +615,8 @@ const projectArray = [
             "React",
             "Node",
             "Git"
-        ]
+        ],
+        link: "/Brawlhalla"
     },
     {
         imageNamePNG: GpxImagePNG,
@@ -1008,6 +634,7 @@ const projectArray = [
             "Express",
             "MySQL",
             "Git",
-        ]
+        ],
+        link: "/GPX"
     }
 ]
