@@ -171,7 +171,7 @@ const Index = () => {
                                         <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito"}}>4.0 GPA (88%)</Typography>
                                     </li>
                                     <li>
-                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito"}}>Dean's List: 2019, 2020, 2021, 2022</Typography>
+                                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} sx={{fontFamily: "Nunito"}}>Dean's List: 2019 - 2022</Typography>
                                     </li>
                                 </ul>
                             </Grid>
