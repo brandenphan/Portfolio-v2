@@ -2,8 +2,8 @@ import React from "react";
 import { Grid, Typography, IconButton } from "@mui/material";
 import BackNav from "../../Components/BackNav";
 import { useWidth } from "../../Context/WidthContext";
-import LotusImage1 from "../../Images/Work/LotusImage1.png";
-import LotusImage2 from "../../Images/Work/LotusImage2.png";
+import LotusImage1 from "../../Images/Work/Lotus/LotusImage1.png";
+import LotusImage2 from "../../Images/Work/Lotus/LotusImage2.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import full1 from "../../Images/Work/Lotus/full1.png";
 import full2 from "../../Images/Work/Lotus/full2.png";
@@ -71,9 +71,9 @@ const Lotus = () => {
     }
 
     // Forces the page to start at the top if the page is loaded
-    // React.useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>

@@ -29,12 +29,12 @@ import ScheduleMakerImageWEBP from '../Images/Projects/ScheduleMakerImage.webp';
 import GpxImageWEBP from '../Images/Projects/GpxImage.webp';
 import DiscordImageWEBP from '../Images/Projects/DiscordImage.webp';
 import BrawlhallaImageWEBP from '../Images/Projects/BrawlhallaImage.webp';
-import LotusWEBP from "../Images/Work/Lotus.webp";
-import LotusPNG from "../Images/Work/Lotus.png";
-import GuelphDenWEBP from "../Images/Work/GuelphDental.webp";
-import GuelphDenPNG from "../Images/Work/GuelphDental.png";
-import cutsbyjzWEBP from "../Images/Work/cutsbyjz.webp";
-import cutsbyjzPNG from "../Images/Work/cutsbyjz.png";
+import LotusWEBP from "../Images/Work/Lotus/Lotus.webp";
+import LotusPNG from "../Images/Work/Lotus/Lotus.png";
+import GuelphDenWEBP from "../Images/Work/GuelphDental/GuelphDental.webp";
+import GuelphDenPNG from "../Images/Work/GuelphDental/GuelphDental.png";
+import cutsbyjzWEBP from "../Images/Work/cutsbyjz/cutsbyjz.webp";
+import cutsbyjzPNG from "../Images/Work/cutsbyjz/cutsbyjz.png";
 
 
 const Index = () => {

@@ -2,8 +2,8 @@ import React from "react";
 import { Grid, IconButton, Typography } from "@mui/material";
 import BackNav from "../../Components/BackNav";
 import { useWidth } from "../../Context/WidthContext";
-import cutsbyjz1 from "../../Images/Work/cutsbyjz1.png";
-import cutsbyjz2 from "../../Images/Work/cutsbyjz2.png";
+import cutsbyjz1 from "../../Images/Work/cutsbyjz/cutsbyjz1.png";
+import cutsbyjz2 from "../../Images/Work/cutsbyjz/cutsbyjz2.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import full1 from "../../Images/Work/cutsbyjz/full1.png";
 import full2 from "../../Images/Work/cutsbyjz/full2.png";
@@ -17,6 +17,7 @@ import mobi3 from "../../Images/Work/cutsbyjz/mobi3.png";
 import mobi4 from "../../Images/Work/cutsbyjz/mobi4.png";
 import mobi5 from "../../Images/Work/cutsbyjz/mobi5.png";
 import mobi6 from "../../Images/Work/cutsbyjz/mobi6.png";
+
 
 const Cutsbyjz = () => {
     const { width } = useWidth();
