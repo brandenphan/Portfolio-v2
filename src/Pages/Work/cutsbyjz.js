@@ -2,11 +2,8 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 import BackNav from "../../Components/BackNav";
 import { useWidth } from "../../Context/WidthContext";
-import CutsbyjzImage1 from "../../Images/Work/CutsbyjzImage1.png";
-import CutsbyjzImage2 from "../../Images/Work/CutsbyjzImage2.png";
-import CutsbyjzImage3 from "../../Images/Work/CutsbyjzImage3.png";
-import CutsbyjzImage4 from "../../Images/Work/CutsbyjzImage4.png";
-
+import cutsbyjz1 from "../../Images/Work/cutsbyjz1.png";
+import cutsbyjz2 from "../../Images/Work/cutsbyjz2.png";
 
 const Cutsbyjz = () => {
     const { width } = useWidth();
@@ -19,16 +16,10 @@ const Cutsbyjz = () => {
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
             <div style={{backgroundColor: "#DADADA", display: "flex", justifyContent: "center"}}>
-                {width > 600 ?
-                    <>
-                        <img src={CutsbyjzImage1} alt="CutsbyjzImage1" height={width > 1600 ? "400px" : width > 900 ? "300px" : "200px"} width="auto" style={{marginTop: "100px", marginBottom: "60px"}} />
-                        <img src={CutsbyjzImage2} alt="CutsbyjzImage2" height={width > 1600 ? "400px" : width > 900 ? "300px" : "200px"} width="auto" style={{marginTop: "100px", marginBottom: "60px"}} />
-                        {width > 1300 &&
-                            <img src={CutsbyjzImage4} alt="CutsbyjzImage4" height={width > 1600 ? "400px" : width > 900 ? "300px" : "200px"} width="auto" style={{marginTop: "100px", marginBottom: "60px"}} />
-                        }
-                    </>
+                {width > 1000 ?
+                    <img src={cutsbyjz1} alt="CutsbyjzLargeLandingImage" height="500px" width="auto" />
                 :
-                    <img src={CutsbyjzImage3} alt="CutsbyjzImage3" height={width > 450 ? "250px" : "200px"} width="auto" style={{marginTop: width > 600 ? "100px" : "80px", marginBottom: width > 600 ? "60px" : "40px", marginLeft: "-10px"}} />
+                    <img src={cutsbyjz2} alt="CutsbyjzLargeMobiImage" height={width > 800 ? "500px" : width > 500 ? "350px" : "275px"} width="auto" style={{marginTop: width > 800 ? "90px" : "90px", marginBottom: width > 800 ? "50px" : "60px"}} />
                 }
             </div>
 

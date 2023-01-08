@@ -2,12 +2,8 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 import BackNav from "../../Components/BackNav";
 import { useWidth } from "../../Context/WidthContext";
-import GuelphDentalImage1 from "../../Images/Work/GuelphDentalImage1.png";
-import GuelphDentalImage2 from "../../Images/Work/GuelphDentalImage2.png";
-import GuelphDentalImage3 from "../../Images/Work/GuelphDentalImage3.png";
-import GuelphDentalImage4 from "../../Images/Work/GuelphDentalImage4.png";
-import GuelphDentalImage5 from "../../Images/Work/GuelphDentalImage5.png";
-
+import GuelphDental1 from "../../Images/Work/GuelphDental1.png";
+import GuelphDental2 from "../../Images/Work/GuelphDental2.png";
 
 const GuelphDental = () => {
     const { width } = useWidth();
@@ -20,17 +16,10 @@ const GuelphDental = () => {
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
             <div style={{backgroundColor: "#C1D3FE", display: "flex", justifyContent: "center"}}>
-                {width > 900 ?
-                    <>
-                        <img src={GuelphDentalImage1} alt="GuelphDentalImage1" height={width > 1700 ? "470px" : width > 1500 ? "420px" : width > 1000 ? "370px" : "340px"} width="auto" style={{marginTop: "100px", marginBottom: "40px"}} />
-                        <img src={GuelphDentalImage2} alt="GuelphDentalImage2" height={width > 1700 ? "470px" : width > 1500 ? "420px" : width > 1000 ? "370px" : "340px"} width="auto" style={{marginTop: "100px", marginBottom: "40px"}} />
-                        <img src={GuelphDentalImage3} alt="GuelphDentalImage3" height={width > 1700 ? "470px" : width > 1500 ? "420px" : width > 1000 ? "370px" : "340px"}width="auto" style={{marginTop: "100px", marginBottom: "40px"}} />
-                        {width > 1300 &&
-                            <img src={GuelphDentalImage4} alt="GuelphDentalImage5" height={width > 1700 ? "470px" : width > 1500 ? "420px" : width > 1000 ? "370px" : "340px"} width="auto" style={{marginTop: "100px", marginBottom: "40px"}} />
-                        }
-                    </>
+                {width > 1000 ?
+                    <img src={GuelphDental1} alt="GuelphDentalImage1" height="500px" width="auto" />
                 :
-                    <img src={GuelphDentalImage5} alt="GuelphDentalImage4" height={width > 700 ? "400px" : width > 600 ? "300px" : "200px"} width="auto" style={{marginTop: "100px", marginBottom: "80px"}} />
+                    <img src={GuelphDental2} alt="GuelphDentalImage2" height={width > 800 ? "500px" : width > 500 ? "350px" : "275px"} width="auto" style={{marginTop: width > 800 ? "90px" : "90px", marginBottom: width > 800 ? "50px" : "60px"}} />
                 }
             </div>
 

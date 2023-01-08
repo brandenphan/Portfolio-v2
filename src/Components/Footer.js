@@ -45,7 +45,7 @@ const Footer = () => {
                 </Grid>
             </Grid>
             <Typography variant="subtitle2" sx={{fontFamily: "Nunito", fontWeight: "bold", color: "#E60268", marginTop: "8px"}} align="center">Designed by Branden Phan</Typography>
-            <Typography variant="subtitle2" sx={{fontFamily: "Nunito", fontWeight: "bold", color: "#6794FF", marginTop: "4px"}} align="center">Copyright © 2022 - All Rights Reserved.</Typography>
+            <Typography variant="subtitle2" sx={{fontFamily: "Nunito", fontWeight: "bold", color: "#3672FF", marginTop: "4px"}} align="center">Copyright © 2022 - All Rights Reserved.</Typography>
             <br />
             <br />
             <br />

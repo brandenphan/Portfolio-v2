@@ -5,7 +5,6 @@ import { useWidth } from "../../Context/WidthContext";
 import LotusImage1 from "../../Images/Work/LotusImage1.png";
 import LotusImage2 from "../../Images/Work/LotusImage2.png";
 
-
 const Lotus = () => {
     const { width } = useWidth();
 
@@ -20,7 +19,7 @@ const Lotus = () => {
                 {width > 1000 ?
                     <img src={LotusImage1} alt="LotusImage1" height="500px" width="auto" />
                 :
-                    <img src={LotusImage2} alt="LotusImage2" height={width > 800 ? "500px" : width > 500 ? "350px" : "275px"} width="auto" style={{marginTop: width > 800 ? "50px" : "60px", marginBottom: width > 800 ? "50px" : "60px"}} />
+                    <img src={LotusImage2} alt="LotusImage2" height={width > 800 ? "500px" : width > 500 ? "350px" : "275px"} width="auto" style={{marginTop: width > 800 ? "90px" : "90px", marginBottom: width > 800 ? "50px" : "60px"}} />
                 }
             </div>
 
