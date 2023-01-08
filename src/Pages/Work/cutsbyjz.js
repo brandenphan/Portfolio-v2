@@ -113,14 +113,14 @@ const Cutsbyjz = () => {
                         <IconButton onClick={() => {prevFullImage()}}>
                             <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
                         </IconButton>
-                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : full6} alt="FullImage1" height={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} width={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} style={{borderRadius: "10px"}} />
+                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : full6} alt="FullImage" height={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} width={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} style={{borderRadius: "10px"}} />
                         <IconButton onClick={() => {nextFullImage()}}>
                             <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
                         </IconButton>
                     </div>
                 :
                     <div style={{marginTop: "20px", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : full6} alt="FullImage1" height="100%" width="100%" style={{borderRadius: "10px"}} />
+                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : full6} alt="MobiImage" height="100%" width="100%" style={{borderRadius: "10px"}} />
                         <div style={{marginTop: "10px"}}>
                             <IconButton onClick={() => {prevFullImage()}}>
                                 <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
@@ -143,14 +143,14 @@ const Cutsbyjz = () => {
                         <IconButton onClick={() => {prevMobiImage()}}>
                             <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
                         </IconButton>
-                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobi6} alt="FullImage1" style={{borderRadius: "10px", height: "50vh"}} />
+                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobi6} alt="FullImage" style={{borderRadius: "10px", height: "50vh"}} />
                         <IconButton onClick={() => {nextMobiImage()}}>
                             <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
                         </IconButton>
                     </div>
                 :
                     <div style={{marginTop: "20px", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobi6} alt="FullImage1" style={{borderRadius: "10px", height: "60vh"}} />
+                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobi6} alt="MobiImage" style={{borderRadius: "10px", height: "60vh"}} />
                         <div style={{marginTop: "10px"}}>
                             <IconButton onClick={() => {nextMobiImage()}}>
                                 <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
