@@ -442,6 +442,24 @@ const Index = () => {
 
 
 
+            {/* Gym Section */}
+            {/* <div id="Gym" style={{marginTop: "-20px"}} />
+            <div style={{backgroundColor: "#F2F2F2"}}>
+                <Grid container sx={{display: "flex", justifyContent: "center"}}>
+                    <Grid item xs={12} sx={{marginBottom: width > 600 ? "5vh" : "3vh", marginTop: "10vh"}}>
+                        <Typography variant={width > 600 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito"}}>Gym</Typography>
+                        <Typography variant={width > 600 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Nunito", marginTop: "10px"}}>The gym is a hobby I picked up this past year and have really been enjoying it. <br />Join me on the journey as I keep track of my progress!</Typography>
+                    </Grid>
+
+                </Grid>
+                <br />
+                <br />
+                <br />
+                <br />
+            </div> */}
+
+
+
             {/* Footer and NavbBar */}
             <Footer />
             <Nav />

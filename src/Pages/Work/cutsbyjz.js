@@ -1,17 +1,65 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, IconButton, Typography } from "@mui/material";
 import BackNav from "../../Components/BackNav";
 import { useWidth } from "../../Context/WidthContext";
 import cutsbyjz1 from "../../Images/Work/cutsbyjz1.png";
 import cutsbyjz2 from "../../Images/Work/cutsbyjz2.png";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import full1 from "../../Images/Work/cutsbyjz/full1.png";
+import full2 from "../../Images/Work/cutsbyjz/full2.png";
+import full3 from "../../Images/Work/cutsbyjz/full3.png";
+import full4 from "../../Images/Work/cutsbyjz/full4.png";
+import full5 from "../../Images/Work/cutsbyjz/full5.png";
+import full6 from "../../Images/Work/cutsbyjz/full6.png";
+import mobi1 from "../../Images/Work/cutsbyjz/mobi1.png";
+import mobi2 from "../../Images/Work/cutsbyjz/mobi2.png";
+import mobi3 from "../../Images/Work/cutsbyjz/mobi3.png";
+import mobi4 from "../../Images/Work/cutsbyjz/mobi4.png";
+import mobi5 from "../../Images/Work/cutsbyjz/mobi5.png";
+import mobi6 from "../../Images/Work/cutsbyjz/mobi6.png";
 
 const Cutsbyjz = () => {
     const { width } = useWidth();
 
+    const [fullImageNumber, setFullImageNumber] = React.useState(0);
+    const nextFullImage = () => {
+        if (fullImageNumber === 5) {
+            setFullImageNumber(0);
+        }
+        else {
+            setFullImageNumber(fullImageNumber + 1);
+        }
+    }
+    const prevFullImage = () => {
+        if (fullImageNumber === 0) {
+            setFullImageNumber(5);
+        }
+        else {
+            setFullImageNumber(fullImageNumber - 1);
+        }
+    }
+    const [mobiImageNumber, setMobiImageNumber] = React.useState(0);
+    const nextMobiImage = () => {
+        if (mobiImageNumber === 5) {
+            setMobiImageNumber(0);
+        }
+        else {
+            setMobiImageNumber(mobiImageNumber + 1);
+        }
+    }
+    const prevMobiImage = () => {
+        if (mobiImageNumber === 0) {
+            setMobiImageNumber(5);
+        }
+        else {
+            setMobiImageNumber(mobiImageNumber - 1);
+        }
+    }
+
     // Forces the page to start at the top if the page is loaded
-    React.useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // React.useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
 
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
@@ -53,6 +101,66 @@ const Cutsbyjz = () => {
                         </Grid>
                     ))}
                 </Grid>
+            </Grid>
+
+            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginRight: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "90px" : "60px"}}>
+                <div style={{border: "1px solid black", marginBottom: "20px", width: "60px"}} />
+                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
+                    Full Screen Design - {fullImageNumber + 1}/6
+                </Typography>
+                {width > 800 ? 
+                    <div style={{marginTop: "20px", display: "flex", flexDirection: "row", alignItems: "center"}}>
+                        <IconButton onClick={() => {prevFullImage()}}>
+                            <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                        </IconButton>
+                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : full6} alt="FullImage1" height={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} width={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} style={{borderRadius: "10px"}} />
+                        <IconButton onClick={() => {nextFullImage()}}>
+                            <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                        </IconButton>
+                    </div>
+                :
+                    <div style={{marginTop: "20px", display: "flex", flexDirection: "column", alignItems: "center"}}>
+                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : full6} alt="FullImage1" height="100%" width="100%" style={{borderRadius: "10px"}} />
+                        <div style={{marginTop: "10px"}}>
+                            <IconButton onClick={() => {prevFullImage()}}>
+                                <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                            </IconButton>
+                            <IconButton onClick={() => {nextFullImage()}}>
+                                <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                            </IconButton>
+                        </div>
+                    </div>
+                }
+            </Grid>
+
+            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginRight: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "90px" : "60px"}}>
+                <div style={{border: "1px solid black", marginBottom: "20px", width: "60px"}} />
+                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
+                    Mobile Design - {mobiImageNumber + 1}/6
+                </Typography>
+                {width > 800 ? 
+                    <div style={{marginTop: "20px", display: "flex", flexDirection: "row", alignItems: "center"}}>
+                        <IconButton onClick={() => {prevMobiImage()}}>
+                            <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                        </IconButton>
+                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobi6} alt="FullImage1" style={{borderRadius: "10px", height: "50vh"}} />
+                        <IconButton onClick={() => {nextMobiImage()}}>
+                            <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                        </IconButton>
+                    </div>
+                :
+                    <div style={{marginTop: "20px", display: "flex", flexDirection: "column", alignItems: "center"}}>
+                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobi6} alt="FullImage1" style={{borderRadius: "10px", height: "70vh"}} />
+                        <div style={{marginTop: "10px"}}>
+                            <IconButton onClick={() => {nextMobiImage()}}>
+                                <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                            </IconButton>
+                            <IconButton onClick={() => {nextMobiImage()}}>
+                                <IoIosArrowForward style={{prevMobiImage: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                            </IconButton>
+                        </div>
+                    </div>
+                }
             </Grid>
 
             <BackNav />
