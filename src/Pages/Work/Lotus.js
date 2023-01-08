@@ -1,17 +1,79 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, IconButton } from "@mui/material";
 import BackNav from "../../Components/BackNav";
 import { useWidth } from "../../Context/WidthContext";
 import LotusImage1 from "../../Images/Work/LotusImage1.png";
 import LotusImage2 from "../../Images/Work/LotusImage2.png";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import full1 from "../../Images/Work/Lotus/full1.png";
+import full2 from "../../Images/Work/Lotus/full2.png";
+import full3 from "../../Images/Work/Lotus/full3.png";
+import full4 from "../../Images/Work/Lotus/full4.png";
+import full5 from "../../Images/Work/Lotus/full5.png";
+import full6 from "../../Images/Work/Lotus/full6.png";
+import full7 from "../../Images/Work/Lotus/full7.png";
+import full8 from "../../Images/Work/Lotus/full8.png";
+import full9 from "../../Images/Work/Lotus/full9.png";
+import full10 from "../../Images/Work/Lotus/full10.png";
+import full11 from "../../Images/Work/Lotus/full11.png";
+import full12 from "../../Images/Work/Lotus/full12.png";
+import mobi1 from "../../Images/Work/Lotus/mobi1.png";
+import mobi2 from "../../Images/Work/Lotus/mobi2.png";
+import mobi3 from "../../Images/Work/Lotus/mobi3.png";
+import mobi4 from "../../Images/Work/Lotus/mobi4.png";
+import mobi5 from "../../Images/Work/Lotus/mobi5.png";
+import mobi6 from "../../Images/Work/Lotus/mobi6.png";
+import mobi7 from "../../Images/Work/Lotus/mobi7.png";
+import mobi8 from "../../Images/Work/Lotus/mobi8.png";
+import mobi9 from "../../Images/Work/Lotus/mobi9.png";
+import mobi10 from "../../Images/Work/Lotus/mobi10.png";
+import mobi11 from "../../Images/Work/Lotus/mobi11.png";
+import mobi12 from "../../Images/Work/Lotus/mobi12.png";
+import mobi13 from "../../Images/Work/Lotus/mobi13.png";
+
 
 const Lotus = () => {
     const { width } = useWidth();
 
+    const [fullImageNumber, setFullImageNumber] = React.useState(0);
+    const nextFullImage = () => {
+        if (fullImageNumber === 11) {
+            setFullImageNumber(0);
+        }
+        else {
+            setFullImageNumber(fullImageNumber + 1);
+        }
+    }
+    const prevFullImage = () => {
+        if (fullImageNumber === 0) {
+            setFullImageNumber(11);
+        }
+        else {
+            setFullImageNumber(fullImageNumber - 1);
+        }
+    }
+    const [mobiImageNumber, setMobiImageNumber] = React.useState(0);
+    const nextMobiImage = () => {
+        if (mobiImageNumber === 12) {
+            setMobiImageNumber(0);
+        }
+        else {
+            setMobiImageNumber(mobiImageNumber + 1);
+        }
+    }
+    const prevMobiImage = () => {
+        if (mobiImageNumber === 0) {
+            setMobiImageNumber(12);
+        }
+        else {
+            setMobiImageNumber(mobiImageNumber - 1);
+        }
+    }
+
     // Forces the page to start at the top if the page is loaded
-    React.useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // React.useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
 
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
@@ -58,6 +120,66 @@ const Lotus = () => {
                         </Grid>
                     ))}
                 </Grid>
+            </Grid>
+
+            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginRight: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "90px" : "60px"}}>
+                <div style={{border: "1px solid black", marginBottom: "20px", width: "60px"}} />
+                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
+                    Full Screen Design - {fullImageNumber + 1}/12
+                </Typography>
+                {width > 800 ? 
+                    <div style={{marginTop: "20px", display: "flex", flexDirection: "row", alignItems: "center"}}>
+                        <IconButton onClick={() => {prevFullImage()}}>
+                            <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                        </IconButton>
+                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : fullImageNumber === 5 ? full6 : fullImageNumber === 6 ? full7 : fullImageNumber === 7 ? full8 : fullImageNumber === 8 ? full9 : fullImageNumber === 9 ? full10 : fullImageNumber === 10 ? full11 : full12} alt="FullImage" height={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} width={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} style={{borderRadius: "10px", border: "1px solid #CAC8C8"}} />
+                        <IconButton onClick={() => {nextFullImage()}}>
+                            <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                        </IconButton>
+                    </div>
+                :
+                    <div style={{marginTop: "20px", display: "flex", flexDirection: "column", alignItems: "center"}}>
+                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : fullImageNumber === 5 ? full6 : fullImageNumber === 6 ? full7 : fullImageNumber === 7 ? full8 : fullImageNumber === 8 ? full9 : fullImageNumber === 9 ? full10 : fullImageNumber === 10 ? full11 : full12} alt="MobiImage" height="100%" width="100%" style={{borderRadius: "10px", border: "1px solid #CAC8C8"}} />
+                        <div style={{marginTop: "10px"}}>
+                            <IconButton onClick={() => {prevFullImage()}}>
+                                <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                            </IconButton>
+                            <IconButton onClick={() => {nextFullImage()}}>
+                                <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                            </IconButton>
+                        </div>
+                    </div>
+                }
+            </Grid>
+
+            <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginRight: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "90px" : "60px"}}>
+                <div style={{border: "1px solid black", marginBottom: "20px", width: "60px"}} />
+                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
+                    Mobile Design - {mobiImageNumber + 1}/13
+                </Typography>
+                {width > 800 ? 
+                    <div style={{marginTop: "20px", display: "flex", flexDirection: "row", alignItems: "center"}}>
+                        <IconButton onClick={() => {prevMobiImage()}}>
+                            <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                        </IconButton>
+                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobiImageNumber === 5 ? mobi6 : mobiImageNumber === 6 ? mobi7 : mobiImageNumber === 7 ? mobi8 : mobiImageNumber === 8 ? mobi9 : mobiImageNumber === 9 ? mobi10 : mobiImageNumber === 10 ? mobi11 : mobiImageNumber === 11 ? mobi12 : mobi13} alt="FullImage" style={{borderRadius: "10px", height: "50vh", border: "1px solid #CAC8C8"}} />
+                        <IconButton onClick={() => {nextMobiImage()}}>
+                            <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                        </IconButton>
+                    </div>
+                :
+                    <div style={{marginTop: "20px", display: "flex", flexDirection: "column", alignItems: "center"}}>
+                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobiImageNumber === 5 ? mobi6 : mobiImageNumber === 6 ? mobi7 : mobiImageNumber === 7 ? mobi8 : mobiImageNumber === 8 ? mobi9 : mobiImageNumber === 9 ? mobi10 : mobiImageNumber === 10 ? mobi11 : mobiImageNumber === 11 ? mobi12 : mobi13} alt="MobiImage" style={{borderRadius: "10px", height: "60vh", border: "1px solid #CAC8C8"}} />
+                        <div style={{marginTop: "10px"}}>
+                            <IconButton onClick={() => {nextMobiImage()}}>
+                                <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                            </IconButton>
+                            <IconButton onClick={() => {nextMobiImage()}}>
+                                <IoIosArrowForward style={{prevMobiImage: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                            </IconButton>
+                        </div>
+                    </div>
+                }
             </Grid>
 
             <BackNav />
