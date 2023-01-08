@@ -36,8 +36,6 @@ import GuelphDenPNG from "../Images/Work/GuelphDental/GuelphDental.png";
 import cutsbyjzWEBP from "../Images/Work/cutsbyjz/cutsbyjz.webp";
 import cutsbyjzPNG from "../Images/Work/cutsbyjz/cutsbyjz.png";
 // import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-
-
 // import gym1 from "../Images/Gym/gym1.jpg";
 // import gym2 from "../Images/Gym/gym2.png";
 // import gym3 from "../Images/Gym/gym3.png";
@@ -46,6 +44,22 @@ import cutsbyjzPNG from "../Images/Work/cutsbyjz/cutsbyjz.png";
 // import gym6 from "../Images/Gym/gym6.png";
 // import gym7 from "../Images/Gym/gym7.jpg";
 // import gym8 from "../Images/Gym/gym8.png";
+// import gym9 from "../Images/Gym/gym9.png";
+// import gym10 from "../Images/Gym/gym10.png";
+// import gym11 from "../Images/Gym/gym11.png";
+// import gym12 from "../Images/Gym/gym12.png";
+// import gym13 from "../Images/Gym/gym13.png";
+// import gym14 from "../Images/Gym/gym14.png";
+// import gym15 from "../Images/Gym/gym15.png";
+// import gym16 from "../Images/Gym/gym16.png";
+// import gym17 from "../Images/Gym/gym17.png";
+// import gym18 from "../Images/Gym/gym18.png";
+// import gym19 from "../Images/Gym/gym19.png";
+// import gym20 from "../Images/Gym/gym20.png";
+// import gym21 from "../Images/Gym/gym21.png";
+// import gym22 from "../Images/Gym/gym22.png";
+// import gym23 from "../Images/Gym/gym23.png";
+// import gym24 from "../Images/Gym/gym24.png";
 
 
 const Index = () => {
@@ -53,7 +67,7 @@ const Index = () => {
 
     // const [gymNumber, setGymNumber] = React.useState(0);
     // const nextGymNumber = () => {
-    //     if (gymNumber === 1) {
+    //     if (gymNumber === 5) {
     //         setGymNumber(0);
     //     }
     //     else {
@@ -62,10 +76,27 @@ const Index = () => {
     // }
     // const prevGymNumber = () => {
     //     if (gymNumber === 0) {
-    //         setGymNumber(1);
+    //         setGymNumber(5);
     //     }
     //     else {
     //         setGymNumber(gymNumber - 1);
+    //     }
+    // }
+    // const [gymNumberMini, setGymNumberMini] = React.useState(0);
+    // const nextGymNumberMini = () => {
+    //     if (gymNumberMini === 11) {
+    //         setGymNumberMini(0);
+    //     }
+    //     else {
+    //         setGymNumberMini(gymNumberMini + 1);
+    //     }
+    // }
+    // const prevGymNumberMini = () => {
+    //     if (gymNumberMini === 0) {
+    //         setGymNumberMini(11);
+    //     }
+    //     else {
+    //         setGymNumberMini(gymNumberMini - 1);
     //     }
     // }
 
@@ -472,42 +503,63 @@ const Index = () => {
 
 
             {/* Gym Section */}
-            <div id="Gym" style={{marginTop: "-20px"}} />
+            {/* <div id="Gym" style={{marginTop: "-20px"}} />
             <div style={{backgroundColor: "#F2F2F2"}}>
                 <Grid container sx={{display: "flex", justifyContent: "center"}}>
                     <Grid item xs={12} sx={{marginBottom: width > 600 ? "5vh" : "3vh", marginTop: "10vh"}}>
                         <Typography variant={width > 600 ? "h4" : "h5"} align="center" sx={{fontFamily: "Nunito"}}>Gym</Typography>
-                        <Typography variant={width > 600 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Nunito", marginTop: "10px"}}>The gym is a hobby I picked up this past year and have really been enjoying it. <br />Join me on the journey as I keep track of my progress!</Typography>
+                        <Typography variant={width > 600 ? "subtitle1" : "subtitle2"} align="center" sx={{fontFamily: "Nunito", marginTop: "10px"}}>The gym is a hobby I picked up this past year and have really been enjoying it. <br />Join me on the journey as I keep track of my progress!</Typography>
                     </Grid>
-
-                    {/* Remove this typography tag once finished gym section */}
-                    <Typography variant={width > 600 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Work in progress!</Typography>
                     
-                    {/* <div style={{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
-                        <IconButton onClick={() => {nextGymNumber()}}>
-                            <IoIosArrowBack style={{color: "black"}} />
-                        </IconButton>
-                        <Typography variant="h6" style={{fontFamily: "Montserrat", marginLeft: "10px", marginRight: "10px", fontWeight: "bold"}}>{gymNumber + 1}/2</Typography>
-                        <IconButton onClick={() => {prevGymNumber()}}>
-                            <IoIosArrowForward style={{color: "black"}} />
-                        </IconButton>
+                    <div style={{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
+                        {width > 800 ?
+                            <>
+                                <IconButton onClick={() => {prevGymNumber()}}>
+                                    <IoIosArrowBack style={{color: "black"}} />
+                                </IconButton>
+                                <Typography variant="h6" style={{fontFamily: "Montserrat", marginLeft: "10px", marginRight: "10px", fontWeight: "bold"}}>{gymNumber + 1}/6</Typography>
+                                <IconButton onClick={() => {nextGymNumber()}}>
+                                    <IoIosArrowForward style={{color: "black"}} />
+                                </IconButton>
+                            </>    
+                        :
+                            <>
+                                <IconButton onClick={() => {prevGymNumberMini()}}>
+                                    <IoIosArrowBack style={{color: "black", height: "0.8em", width: "0.8em"}} />
+                                </IconButton>
+                                <Typography variant="subtitle1" style={{fontFamily: "Montserrat", marginLeft: "10px", marginRight: "10px", fontWeight: "bold"}}>{gymNumberMini + 1}/12</Typography>
+                                <IconButton onClick={() => {nextGymNumberMini()}}>
+                                    <IoIosArrowForward style={{color: "black", height: "0.8em", width: "0.8em"}} />
+                                </IconButton>
+                            </>
+                        }
                     </div>
 
                     <Grid container sx={{display: "flex", flexDirection: "center", alignItems: "center", justifyContent: "center", marginTop: "20px"}}>
-                        {[...Array(4)].map((x, i) => (
-                            <div key={i} style={{marginLeft: "10px", marginRight: "10px"}}>
-                                <img src={GymArray[i+(gymNumber*4)].image} alt={GymArray[i+(gymNumber*4)].date} style={{width: "12vw"}} />
-                                <Typography sx={{fontFamily: "Montserrat", marginTop: "5px"}}>{GymArray[i+(gymNumber*4)].date}</Typography>
-                                <Typography sx={{fontFamily: "Montserrat", marginTop: "5px"}}>{GymArray[i+(gymNumber*4)].desc}</Typography>
-                            </div>                            
-                        ))}
-                    </Grid> */}
+                        {width > 800 ?
+                            [...Array(4)].map((x, i) => (
+                                <div key={i} style={{marginLeft: width > 1200 ? "10px" : "15px", marginRight: width > 1200 ? "10px" : "15px"}}>
+                                    <img src={GymArray[i+(gymNumber*4)].image} alt={GymArray[i+(gymNumber*4)].date} style={{width: width > 1200 ? "12vw" : "15vw"}} />
+                                    <Typography sx={{fontFamily: "Montserrat", marginTop: "5px", fontSize: width > 1000 ? "1rem" : "0.8rem"}}>{GymArray[i+(gymNumber*4)].date}</Typography>
+                                    <Typography sx={{fontFamily: "Montserrat", marginTop: "5px", fontSize: width > 1000 ? "1rem" : "0.8rem"}}>{GymArray[i+(gymNumber*4)].desc}</Typography>
+                                </div>                            
+                            ))
+                        :
+                            [...Array(2)].map((x, i) => (
+                                <div key={i} style={{marginLeft: width > 1200 ? "10px" : "15px", marginRight: width > 1200 ? "10px" : "15px"}}>
+                                    <img src={GymArray[i+(gymNumberMini*2)].image} alt={GymArray[i+(gymNumberMini*2)].date} style={{width: "40vw"}} />
+                                    <Typography sx={{fontFamily: "Montserrat", marginTop: "5px", fontSize: "0.8rem"}}>{GymArray[i+(gymNumberMini*2)].date}</Typography>
+                                    <Typography sx={{fontFamily: "Montserrat", marginTop: "5px", fontSize: "0.8rem"}}>{GymArray[i+(gymNumberMini*2)].desc}</Typography>
+                                </div>                            
+                            ))
+                        }
+                    </Grid>
                 </Grid>
                 <br />
                 <br />
                 <br />
                 <br />
-            </div>
+            </div> */}
 
 
 
@@ -524,11 +576,27 @@ export default Index;
 //     { image: gym1, date: "28/12/2022", desc: "Deadlift: 1x8 @235lb"},
 //     { image: gym2, date: "27/12/2022", desc: "Bench: 1x8 @160lb"},
 //     { image: gym3, date: "26/12/2022", desc: "Squat: 1x8 @235lb"},
-//     { image: gym4, date: "09/12/2022", desc: "Bench: 1x1 @235lb"},
+//     { image: gym4, date: "09/12/2022", desc: "Bench: 1x1 @190lb"},
 //     { image: gym5, date: "09/12/2022", desc: "Squat: 1x1 @280lb"},
 //     { image: gym6, date: "28/11/2022", desc: "Squat: 1x1 @275lb"},
 //     { image: gym7, date: "25/11/2022", desc: "Bench: 3x1 @185lb"},
-//     { image: gym8, date: "21/11/2022", desc: "Squat: 5x5 @215lb"}
+//     { image: gym8, date: "21/11/2022", desc: "Squat: 5x5 @215lb"},
+//     { image: gym9, date: "21/11/2022", desc: "Squat: 1x1 @265lb"},
+//     { image: gym10, date: "18/11/2022", desc: "Squat: 4x4 @225lb"},
+//     { image: gym11, date: "15/11/2022", desc: "Bench: 1x1 @185lb"},
+//     { image: gym12, date: "7/11/2022", desc: "Squat(FAIL): 1x1 @275lb"},
+//     { image: gym13, date: "31/10/2022", desc: "Squat: 1x1 @255lb"},
+//     { image: gym14, date: "26/10/2022", desc: "Deadlift: 1x1 @280lb"},
+//     { image: gym15, date: "18/10/2022", desc: "Bench: 1x1 @185lb"},
+//     { image: gym16, date: "10/10/2022", desc: "Squat: 1x1 @240lb"},
+//     { image: gym17, date: "3/10/2022", desc: "Squat: 4x7 @195lb"},
+//     { image: gym18, date: "26/09/2022", desc: "Squat: 1x1 @225lb"},
+//     { image: gym19, date: "23/09/2022", desc: "Squat: 4x4 @195lb"},
+//     { image: gym20, date: "09/09/2022", desc: "Squat: 5x4 @175lb"},
+//     { image: gym21, date: "01/09/2022", desc: "Bench: 5x5 @160lb"},
+//     { image: gym22, date: "30/08/2022", desc: "Bench: 4x8 @145lb"},
+//     { image: gym23, date: "29/08/2022", desc: "Squat: 4x8 @160lb"},
+//     { image: gym24, date: "16/07/2022", desc: "Squat: 4x8 @135lb"}
 // ]
 
 
