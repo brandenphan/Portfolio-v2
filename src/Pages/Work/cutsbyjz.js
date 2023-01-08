@@ -57,9 +57,9 @@ const Cutsbyjz = () => {
     }
 
     // Forces the page to start at the top if the page is loaded
-    // React.useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
@@ -150,7 +150,7 @@ const Cutsbyjz = () => {
                     </div>
                 :
                     <div style={{marginTop: "20px", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobi6} alt="FullImage1" style={{borderRadius: "10px", height: "70vh"}} />
+                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobi6} alt="FullImage1" style={{borderRadius: "10px", height: "60vh"}} />
                         <div style={{marginTop: "10px"}}>
                             <IconButton onClick={() => {nextMobiImage()}}>
                                 <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />

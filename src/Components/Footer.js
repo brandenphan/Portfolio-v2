@@ -18,7 +18,7 @@ const Footer = () => {
                 <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                     <Tooltip title="Github" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
                         <IconButton target="_blank" href="https://github.com/brandenphan" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
-                            <GitHubIcon style={{fontSize: width > 1000 ? ("21px") : ("16px")}} />
+                            <GitHubIcon style={{fontSize: width > 1000 ? ("22px") : ("17px")}} />
                         </IconButton>
                     </Tooltip>
                 </Grid>
