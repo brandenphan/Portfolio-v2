@@ -5,6 +5,7 @@ import Index from "./Pages/index";
 import Cutsbyjz from "./Pages/Work/cutsbyjz";
 import GuelphDental from "./Pages/Work/GuelphDental";
 import Lotus from "./Pages/Work/Lotus";
+import NotFound from "./Pages/NotFound";
 
 import PersonalPortfolioNew from "./Pages/Project/PersonalPortfolioNew";
 import CourseSearch from "./Pages/Project/CourseSearch";
@@ -24,6 +25,7 @@ const App = () => {
 					<Route path="/Cutsbyjz" element={<Cutsbyjz />} />
 					<Route path="/GuelphDental" element={<GuelphDental />} />
 					<Route path="/Lotus" element={<Lotus />} />
+					<Route path="*" element={<NotFound />} />
 
 					<Route path="/PersonalPortfolioNew" element={<PersonalPortfolioNew />} />
 					<Route path="/CourseSearch" element={<CourseSearch />} />
