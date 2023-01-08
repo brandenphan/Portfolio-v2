@@ -35,10 +35,39 @@ import GuelphDenWEBP from "../Images/Work/GuelphDental/GuelphDental.webp";
 import GuelphDenPNG from "../Images/Work/GuelphDental/GuelphDental.png";
 import cutsbyjzWEBP from "../Images/Work/cutsbyjz/cutsbyjz.webp";
 import cutsbyjzPNG from "../Images/Work/cutsbyjz/cutsbyjz.png";
+// import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
+
+// import gym1 from "../Images/Gym/gym1.jpg";
+// import gym2 from "../Images/Gym/gym2.png";
+// import gym3 from "../Images/Gym/gym3.png";
+// import gym4 from "../Images/Gym/gym4.png";
+// import gym5 from "../Images/Gym/gym5.png";
+// import gym6 from "../Images/Gym/gym6.png";
+// import gym7 from "../Images/Gym/gym7.jpg";
+// import gym8 from "../Images/Gym/gym8.png";
 
 
 const Index = () => {
     const { width } = useWidth();
+
+    // const [gymNumber, setGymNumber] = React.useState(0);
+    // const nextGymNumber = () => {
+    //     if (gymNumber === 1) {
+    //         setGymNumber(0);
+    //     }
+    //     else {
+    //         setGymNumber(gymNumber + 1);
+    //     }
+    // }
+    // const prevGymNumber = () => {
+    //     if (gymNumber === 0) {
+    //         setGymNumber(1);
+    //     }
+    //     else {
+    //         setGymNumber(gymNumber - 1);
+    //     }
+    // }
 
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
@@ -443,7 +472,7 @@ const Index = () => {
 
 
             {/* Gym Section */}
-            {/* <div id="Gym" style={{marginTop: "-20px"}} />
+            <div id="Gym" style={{marginTop: "-20px"}} />
             <div style={{backgroundColor: "#F2F2F2"}}>
                 <Grid container sx={{display: "flex", justifyContent: "center"}}>
                     <Grid item xs={12} sx={{marginBottom: width > 600 ? "5vh" : "3vh", marginTop: "10vh"}}>
@@ -451,12 +480,34 @@ const Index = () => {
                         <Typography variant={width > 600 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Nunito", marginTop: "10px"}}>The gym is a hobby I picked up this past year and have really been enjoying it. <br />Join me on the journey as I keep track of my progress!</Typography>
                     </Grid>
 
+                    {/* Remove this typography tag once finished gym section */}
+                    <Typography variant={width > 600 ? "h6" : "subtitle1"} align="center" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>Work in progress!</Typography>
+                    
+                    {/* <div style={{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
+                        <IconButton onClick={() => {nextGymNumber()}}>
+                            <IoIosArrowBack style={{color: "black"}} />
+                        </IconButton>
+                        <Typography variant="h6" style={{fontFamily: "Montserrat", marginLeft: "10px", marginRight: "10px", fontWeight: "bold"}}>{gymNumber + 1}/2</Typography>
+                        <IconButton onClick={() => {prevGymNumber()}}>
+                            <IoIosArrowForward style={{color: "black"}} />
+                        </IconButton>
+                    </div>
+
+                    <Grid container sx={{display: "flex", flexDirection: "center", alignItems: "center", justifyContent: "center", marginTop: "20px"}}>
+                        {[...Array(4)].map((x, i) => (
+                            <div key={i} style={{marginLeft: "10px", marginRight: "10px"}}>
+                                <img src={GymArray[i+(gymNumber*4)].image} alt={GymArray[i+(gymNumber*4)].date} style={{width: "12vw"}} />
+                                <Typography sx={{fontFamily: "Montserrat", marginTop: "5px"}}>{GymArray[i+(gymNumber*4)].date}</Typography>
+                                <Typography sx={{fontFamily: "Montserrat", marginTop: "5px"}}>{GymArray[i+(gymNumber*4)].desc}</Typography>
+                            </div>                            
+                        ))}
+                    </Grid> */}
                 </Grid>
                 <br />
                 <br />
                 <br />
                 <br />
-            </div> */}
+            </div>
 
 
 
@@ -468,6 +519,17 @@ const Index = () => {
 }
 
 export default Index;
+
+// const GymArray = [
+//     { image: gym1, date: "28/12/2022", desc: "Deadlift: 1x8 @235lb"},
+//     { image: gym2, date: "27/12/2022", desc: "Bench: 1x8 @160lb"},
+//     { image: gym3, date: "26/12/2022", desc: "Squat: 1x8 @235lb"},
+//     { image: gym4, date: "09/12/2022", desc: "Bench: 1x1 @235lb"},
+//     { image: gym5, date: "09/12/2022", desc: "Squat: 1x1 @280lb"},
+//     { image: gym6, date: "28/11/2022", desc: "Squat: 1x1 @275lb"},
+//     { image: gym7, date: "25/11/2022", desc: "Bench: 3x1 @185lb"},
+//     { image: gym8, date: "21/11/2022", desc: "Squat: 5x5 @215lb"}
+// ]
 
 
 const CardComponent = ({projectName, imageNamePNG, imageNameWEBP, width, link}) => (
