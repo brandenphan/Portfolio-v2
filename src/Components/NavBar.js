@@ -30,7 +30,7 @@ const Nav = () => {
                         <Grid container>
                             <Grid item xs={width > 800 ? 6 : 9}>
                                 <Button href="#Home" sx={{fontFamily: "Sacramento", fontSize: width > 1000 ? "36px" : "28px", color: theme === "light" ? "black" : "white", marginLeft: width > 1000 ? "16%" : "", textTransform: "none", paddingBottom: "0px", marginTop: "2px", transition: "0.3s", "&:hover": {backgroundColor: theme === "light" ? "#e2eafc" : "#575757"}}}>Branden Phan</Button>
-                                <IconButton onClick={() => {theme === "light" ? ChangeDark() : ChangeLight()}} sx={{fontFamily: "Sacramento", fontSize: width > 1000 ? "36px" : "28px", color: theme === "light" ? "black" : "white", marginLeft: "10px", textTransform: "none"}}>
+                                <IconButton onClick={() => {theme === "light" ? ChangeDark() : ChangeLight()}} sx={{fontFamily: "Sacramento", fontSize: width > 1000 ? "36px" : "28px", color: theme === "light" ? "black" : "white", marginLeft: "10px", textTransform: "none", "&:hover": {backgroundColor: theme === "light" ? "#e2eafc" : "#575757"}}}>
                                     {theme === "light" ? 
                                         <DarkModeIcon />
                                     :

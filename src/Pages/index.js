@@ -57,34 +57,34 @@ const Index = () => {
                                         <img src={wave} alt="" height={width > 1700 ? "50px" : width > 1300 ? "40px" : "30px"} width="auto" style={{marginLeft: width > 1300 ? "20px" : "15px"}} />
                                     </div>
 
-                                    <Typography variant={width > 1700 ? "h5" : width > 1300 ? "h6" : "subtitle1"} align="left" sx={{fontFamily: "Nunito", fontWeight: "bold", color: "#3672FF", marginTop: width > 450 ? "2%" : "4%"}}>Software Developer</Typography>
+                                    <Typography variant={width > 1700 ? "h5" : width > 1300 ? "h6" : "subtitle1"} align="left" sx={{fontFamily: "Nunito", fontWeight: "bold", color: theme === "light" ? "#3672FF" : "#EE82B2", transition: "0.3s", marginTop: width > 450 ? "2%" : "4%"}}>Software Developer</Typography>
                                     <Typography variant={width > 1700 ? "h6" : width > 1300 ? "subtitle1" : "subtitle2"} align="left" sx={{fontFamily: "Nunito", marginTop: width > 450 ? "3%" : "4%", color: theme === "light" ? "black" : "white", transition: "0.3s"}}>A 4th year computer science student at the University of Guelph</Typography>
 
                                     <Grid container spacing={3} sx={{marginTop: "4px"}}>
                                         <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                                             <Tooltip title="Github" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                                <IconButton target="_blank" href="https://github.com/brandenphan" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                                <IconButton target="_blank" href="https://github.com/brandenphan" sx={{padding: "0", color: theme === "light" ? "#3672FF" : "#EE82B2", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
                                                     <GitHubIcon style={{fontSize: width > 1000 ? ("35px") : ("33px")}} />
                                                 </IconButton>
                                             </Tooltip>
                                         </Grid>
                                         <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                                             <Tooltip title="LinkedIn" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                                <IconButton target="_blank" href="https://www.linkedin.com/in/brandenphan/" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                                <IconButton target="_blank" href="https://www.linkedin.com/in/brandenphan/" sx={{padding: "0", color: theme === "light" ? "#3672FF" : "#EE82B2", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
                                                     <LinkedInIcon style={{fontSize: width > 1000 ? ("42px") : ("40px")}} />
                                                 </IconButton>
                                             </Tooltip>
                                         </Grid>
                                         <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                                             <Tooltip title="Email" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                                <IconButton target="_blank" href="mailto: branden.phan@gmail.com" sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                                <IconButton target="_blank" href="mailto: branden.phan@gmail.com" sx={{padding: "0", color: theme === "light" ? "#3672FF" : "#EE82B2", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
                                                     <EmailIcon style={{fontSize: width > 1000 ? ("45px") : ("43px")}} />
                                                 </IconButton>
                                             </Tooltip>
                                         </Grid>
                                         <Grid item sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                                             <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                                                <IconButton target="_blank" href={resume} sx={{padding: "0", color: "#3672FF", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
+                                                <IconButton target="_blank" href={resume} sx={{padding: "0", color: theme === "light" ? "#3672FF" : "#EE82B2", transition: "0.6s", "&:hover": {color: "#E60268", transform: "translateY(-4px)"}}}>
                                                     <HistoryEduIcon style={{fontSize: width > 1000 ? ("45px") : ("43px")}} />
                                                 </IconButton>
                                             </Tooltip>
