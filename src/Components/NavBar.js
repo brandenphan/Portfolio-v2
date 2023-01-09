@@ -3,10 +3,13 @@ import { useWidth } from "../Context/WidthContext";
 import { Box, Toolbar, AppBar, Button, Grid, IconButton, Menu, MenuItem } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import { Scroll } from "react-fns";
-
+import { useTheme } from "../Context/ThemeContext";
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
 
 const Nav = () => {
     const { width } = useWidth();
+    const { theme, ChangeLight, ChangeDark } = useTheme();
 
     const [menuElement, setMenuElement] = React.useState(null);
     const open = Boolean(menuElement);
@@ -26,20 +29,27 @@ const Nav = () => {
                     <Toolbar>
                         <Grid container>
                             <Grid item xs={width > 800 ? 6 : 9}>
-                                <Button href="#Home" sx={{fontFamily: "Sacramento", fontSize: width > 1000 ? "36px" : "28px", color: "black", marginLeft: width > 1000 ? "16%" : "", textTransform: "none", paddingBottom: "0px"}}>Branden Phan</Button>
+                                <Button href="#Home" sx={{fontFamily: "Sacramento", fontSize: width > 1000 ? "36px" : "28px", color: theme === "light" ? "black" : "white", marginLeft: width > 1000 ? "16%" : "", textTransform: "none", paddingBottom: "0px", marginTop: "2px", transition: "0.3s", "&:hover": {backgroundColor: theme === "light" ? "#e2eafc" : "#575757"}}}>Branden Phan</Button>
+                                <IconButton onClick={() => {theme === "light" ? ChangeDark() : ChangeLight()}} sx={{fontFamily: "Sacramento", fontSize: width > 1000 ? "36px" : "28px", color: theme === "light" ? "black" : "white", marginLeft: "10px", textTransform: "none"}}>
+                                    {theme === "light" ? 
+                                        <DarkModeIcon />
+                                    :
+                                        <LightModeIcon />
+                                    }
+                                </IconButton>
                             </Grid>
                             <Grid item xs={width > 800 ? 6 : 3} sx={{display: "flex", justifyContent: width > 1000 ? "center" : "flex-end"}}>
                                 {width > 1000 ? 
                                     <>
-                                        <Button href="#Home" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "#e2eafc"}}}>HOME</Button>
-                                        <Button href="#Education" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "#e2eafc"}}}>EDUCATION</Button>
-                                        <Button href="#Work" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "#e2eafc"}}}>WORK</Button>
-                                        <Button href="#Projects" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: "black", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: "#e2eafc"}}}>PROJECTS</Button>
+                                        <Button href="#Home" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: theme === "light" ? "black" : "white", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: theme === "light" ? "#e2eafc" : "#575757"}}}>HOME</Button>
+                                        <Button href="#Education" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: theme === "light" ? "black" : "white", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: theme === "light" ? "#e2eafc" : "#575757"}}}>EDUCATION</Button>
+                                        <Button href="#Work" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: theme === "light" ? "black" : "white", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: theme === "light" ? "#e2eafc" : "#575757"}}}>WORK</Button>
+                                        <Button href="#Projects" sx={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "16px", color: theme === "light" ? "black" : "white", marginLeft: "4%", transition: "0.3s", "&:hover": {backgroundColor: theme === "light" ? "#e2eafc" : "#575757"}}}>PROJECTS</Button>
                                     </>
                                 :
                                     <>
                                         <IconButton onClick={handleClick}>
-                                            <MenuIcon sx={{fontSize: "32px", color: "black"}} />
+                                            <MenuIcon sx={{fontSize: "32px", color: theme === "light" ? "black" : "white", transition: "0.3s"}} />
                                         </IconButton>
                                         <Menu anchorEl={menuElement} open={open} onClose={handleClose}>
                                             <MenuItem onClick={handleClose}>

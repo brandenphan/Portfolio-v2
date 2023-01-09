@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ContextProvider from "./Context/WidthContext"
+import ContextProvider from "./Context/WidthContext";
+import ThemeProvider from "./Context/ThemeContext";
 import Index from "./Pages/index";
 import Cutsbyjz from "./Pages/Work/cutsbyjz";
 import GuelphDental from "./Pages/Work/GuelphDental";
@@ -15,26 +16,29 @@ import ScheduleMaker from "./Pages/Project/ScheduleMaker";
 import Brawlhalla from "./Pages/Project/Brawlhalla";
 import GPX from "./Pages/Project/GPX";
 
+
 const App = () => {
 	return (
 		<Router>
 			<ContextProvider>
-				<Routes>
-					<Route exact path="/" element={<Index />} />
+				<ThemeProvider>
+					<Routes>
+						<Route exact path="/" element={<Index />} />
 
-					<Route path="/Cutsbyjz" element={<Cutsbyjz />} />
-					<Route path="/GuelphDental" element={<GuelphDental />} />
-					<Route path="/Lotus" element={<Lotus />} />
-					<Route path="*" element={<NotFound />} />
+						<Route path="/Cutsbyjz" element={<Cutsbyjz />} />
+						<Route path="/GuelphDental" element={<GuelphDental />} />
+						<Route path="/Lotus" element={<Lotus />} />
+						<Route path="*" element={<NotFound />} />
 
-					<Route path="/PersonalPortfolioNew" element={<PersonalPortfolioNew />} />
-					<Route path="/CourseSearch" element={<CourseSearch />} />
-					<Route path="/DiscordBot" element={<DiscordBot />} />
-					<Route path="/PersonalPortfolioOld" element={<PersonalPortfolioOld />} />
-					<Route path="/ScheduleMaker" element={<ScheduleMaker />} />
-					<Route path="/Brawlhalla" element={<Brawlhalla />} />
-					<Route path="/GPX" element={<GPX />} />
-				</Routes>
+						<Route path="/PersonalPortfolioNew" element={<PersonalPortfolioNew />} />
+						<Route path="/CourseSearch" element={<CourseSearch />} />
+						<Route path="/DiscordBot" element={<DiscordBot />} />
+						<Route path="/PersonalPortfolioOld" element={<PersonalPortfolioOld />} />
+						<Route path="/ScheduleMaker" element={<ScheduleMaker />} />
+						<Route path="/Brawlhalla" element={<Brawlhalla />} />
+						<Route path="/GPX" element={<GPX />} />
+					</Routes>
+				</ThemeProvider>
 			</ContextProvider>
 		</Router>
 	)

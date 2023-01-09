@@ -4,14 +4,16 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import { useWidth } from "../Context/WidthContext";
+import { useTheme } from "../Context/ThemeContext";
 import resume from '../Images/resume.pdf';
 
 
 const Footer = () => {
     const { width } = useWidth();
+    const { theme } = useTheme();
 
     return (
-        <div style={{backgroundColor: "#F2F2F2"}}>
+        <div style={{backgroundColor: theme === "light" ? "#F2F2F2" : "#4E4E4E", transition: "0.3s"}}>
             <br />
             <br />
             <Grid container spacing={2} sx={{marginTop: "4px", display: "flex", justifyContent: "center"}}>
