@@ -42,7 +42,6 @@ const Index = () => {
     const { width } = useWidth();
     const { theme } = useTheme();
 
-
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: theme === "light" ? "rgb(237, 242, 251, 0.45)" : "#2D2D2D", transition: "0.3s"}}>
             {/* Home Page Section */}
