@@ -15,7 +15,7 @@ const Brawlhalla = () => {
     return (
         <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
             <div style={{backgroundColor: "#CAC6E1", display: "flex", justifyContent: "center", alignItems: "center", height: "50vh"}}>
-                <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold", color: "#FFF800"}}>Brawlhalla</Typography>
+                <Typography variant="h4" align="center" sx={{fontFamily: "Nunito", fontWeight: "bold", color: "black"}}>Brawlhalla</Typography>
             </div>
 
             <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: width > 700 ? "100px" : "80px", display: "flex", flexDirection: "column"}}>
