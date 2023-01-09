@@ -35,31 +35,6 @@ import GuelphDenWEBP from "../Images/Work/GuelphDental/GuelphDental.webp";
 import GuelphDenPNG from "../Images/Work/GuelphDental/GuelphDental.png";
 import cutsbyjzWEBP from "../Images/Work/cutsbyjz/cutsbyjz.webp";
 import cutsbyjzPNG from "../Images/Work/cutsbyjz/cutsbyjz.png";
-// import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-// import gym1 from "../Images/Gym/gym1.jpg";
-// import gym2 from "../Images/Gym/gym2.png";
-// import gym3 from "../Images/Gym/gym3.png";
-// import gym4 from "../Images/Gym/gym4.png";
-// import gym5 from "../Images/Gym/gym5.png";
-// import gym6 from "../Images/Gym/gym6.png";
-// import gym7 from "../Images/Gym/gym7.jpg";
-// import gym8 from "../Images/Gym/gym8.png";
-// import gym9 from "../Images/Gym/gym9.png";
-// import gym10 from "../Images/Gym/gym10.png";
-// import gym11 from "../Images/Gym/gym11.png";
-// import gym12 from "../Images/Gym/gym12.png";
-// import gym13 from "../Images/Gym/gym13.png";
-// import gym14 from "../Images/Gym/gym14.png";
-// import gym15 from "../Images/Gym/gym15.png";
-// import gym16 from "../Images/Gym/gym16.png";
-// import gym17 from "../Images/Gym/gym17.png";
-// import gym18 from "../Images/Gym/gym18.png";
-// import gym19 from "../Images/Gym/gym19.png";
-// import gym20 from "../Images/Gym/gym20.png";
-// import gym21 from "../Images/Gym/gym21.png";
-// import gym22 from "../Images/Gym/gym22.png";
-// import gym23 from "../Images/Gym/gym23.png";
-// import gym24 from "../Images/Gym/gym24.png";
 
 
 const Index = () => {
