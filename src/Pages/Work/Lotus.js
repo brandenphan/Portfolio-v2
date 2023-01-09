@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Typography, IconButton } from "@mui/material";
 import BackNav from "../../Components/BackNav";
 import { useWidth } from "../../Context/WidthContext";
+import { useTheme } from "../../Context/ThemeContext";
 import LotusImage1 from "../../Images/Work/Lotus/LotusImage1.png";
 import LotusImage2 from "../../Images/Work/Lotus/LotusImage2.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -34,6 +35,7 @@ import mobi13 from "../../Images/Work/Lotus/mobi13.png";
 
 const Lotus = () => {
     const { width } = useWidth();
+    const { theme } = useTheme();
 
     const [fullImageNumber, setFullImageNumber] = React.useState(0);
     const nextFullImage = () => {
@@ -76,7 +78,7 @@ const Lotus = () => {
     }, []);
 
     return (
-        <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: "rgb(237, 242, 251, 0.45)"}}>
+        <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: theme === "light" ? "rgb(237, 242, 251, 0.45)" : "#2D2D2D", transition: "0.3s"}}>
             <div style={{backgroundColor: "#E3D5CA", display: "flex", justifyContent: "center"}}>
                 {width > 1000 ?
                     <img src={LotusImage1} alt="LotusImage1" height="500px" width="auto" />
@@ -86,31 +88,31 @@ const Lotus = () => {
             </div>
 
             <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: width > 700 ? "100px" : "80px", display: "flex", flexDirection: "column"}}>
-                <div style={{border: "1px solid black", marginBottom: "20px", width: "60px"}} />
-                <Typography variant="h5" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
+                <div style={{border: theme === "light" ? "1px solid black" : "1px solid white", transition: "0.3s", marginBottom: "20px", width: "60px"}} />
+                <Typography variant="h5" sx={{fontFamily: "Nunito", fontWeight: "bold", color: theme === "light" ? "black" : "white", transition: "0.3s"}}>
                     Lotus
                 </Typography>
-                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px"}}>Front-end Developer</Typography>
+                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", color: theme === "light" ? "black" : "white", transition: "0.3s"}}>Front-end Developer</Typography>
 
                 <span style={{marginTop: "10px"}}>
-                    <a href="https://lotusrestaurant.ca/" target="_blank" rel="noreferrer" style={{textDecoration: "none", color: "#3672FF", fontFamily: "Nunito", fontsize: "16px"}}>
+                    <a href="https://lotusrestaurant.ca/" target="_blank" rel="noreferrer" style={{textDecoration: "none", color: theme === "light" ? "#3672FF" : "#6F9AFF", transition: "0.3s", fontFamily: "Nunito", fontsize: "16px"}}>
                         Find the website here!
                     </a>
                 </span>
             </Grid>
 
             <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%"}}>
-                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
+                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold", color: theme === "light" ? "black" : "white", transition: "0.3s"}}>
                     Description
                 </Typography>
-                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Developing a front-end web-application using React JavaScript, creating a modern and responsive user interface to display various information pertaining to the Lotus restaurant</Typography>
-                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Optimizing SEO through concise and updated metadata to increase customer traffic to the Lotus web-application</Typography>
-                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Utilizing different techniques to improve website speed such as image optimization and CDN usage</Typography>
-                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px"}}>• Numerous test to ensure the web-application is supported by major web browsers and responsive for different screen sizes</Typography>
+                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px", color: theme === "light" ? "black" : "white", transition: "0.3s"}}>• Developing a front-end web-application using React JavaScript, creating a modern and responsive user interface to display various information pertaining to the Lotus restaurant</Typography>
+                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px", color: theme === "light" ? "black" : "white", transition: "0.3s"}}>• Optimizing SEO through concise and updated metadata to increase customer traffic to the Lotus web-application</Typography>
+                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px", color: theme === "light" ? "black" : "white", transition: "0.3s"}}>• Utilizing different techniques to improve website speed such as image optimization and CDN usage</Typography>
+                <Typography variant="subtitle1" align="left" sx={{fontFamily: "Nunito", marginTop: "10px", marginLeft: "25px", color: theme === "light" ? "black" : "white", transition: "0.3s"}}>• Numerous test to ensure the web-application is supported by major web browsers and responsive for different screen sizes</Typography>
             </Grid>
 
             <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "90px" : "60px"}}>
-                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
+                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold", color: theme === "light" ? "black" : "white", transition: "0.3s"}}>
                     Technologies
                 </Typography>
                 <Grid container sx={{display: "flex", flexDirection: "row", justifyContent: "flex-start", marginTop: "20px"}}>
@@ -123,29 +125,29 @@ const Lotus = () => {
             </Grid>
 
             <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginRight: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "90px" : "60px"}}>
-                <div style={{border: "1px solid black", marginBottom: "20px", width: "60px"}} />
-                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
+                <div style={{border: theme === "light" ? "1px solid black" : "1px solid white", transition: "0.3s", marginBottom: "20px", width: "60px"}} />
+                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold", color: theme === "light" ? "black" : "white", transition: "0.3s"}}>
                     Full Screen Design - {fullImageNumber + 1}/12
                 </Typography>
                 {width > 800 ? 
                     <div style={{marginTop: "20px", display: "flex", flexDirection: "row", alignItems: "center"}}>
                         <IconButton onClick={() => {prevFullImage()}}>
-                            <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                            <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: theme === "light" ? "black" : "white", transition: "0.3s"}} />
                         </IconButton>
-                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : fullImageNumber === 5 ? full6 : fullImageNumber === 6 ? full7 : fullImageNumber === 7 ? full8 : fullImageNumber === 8 ? full9 : fullImageNumber === 9 ? full10 : fullImageNumber === 10 ? full11 : full12} alt="FullImage" height={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} width={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} style={{borderRadius: "10px", border: "1px solid #CAC8C8"}} />
+                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : fullImageNumber === 5 ? full6 : fullImageNumber === 6 ? full7 : fullImageNumber === 7 ? full8 : fullImageNumber === 8 ? full9 : fullImageNumber === 9 ? full10 : fullImageNumber === 10 ? full11 : full12} alt="FullImage" height={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} width={width > 1000 ? "70%" : width > 600 ? "90%" : "80%"} style={{borderRadius: "10px", border: theme === "light" && "1px solid #CAC8C8"}} />
                         <IconButton onClick={() => {nextFullImage()}}>
-                            <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                            <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: theme === "light" ? "black" : "white", transition: "0.3s"}} />
                         </IconButton>
                     </div>
                 :
                     <div style={{marginTop: "20px", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : fullImageNumber === 5 ? full6 : fullImageNumber === 6 ? full7 : fullImageNumber === 7 ? full8 : fullImageNumber === 8 ? full9 : fullImageNumber === 9 ? full10 : fullImageNumber === 10 ? full11 : full12} alt="MobiImage" height="100%" width="100%" style={{borderRadius: "10px", border: "1px solid #CAC8C8"}} />
+                        <img src={fullImageNumber === 0 ? full1 : fullImageNumber === 1 ? full2 : fullImageNumber === 2 ? full3 : fullImageNumber === 3 ? full4 : fullImageNumber === 4 ? full5 : fullImageNumber === 5 ? full6 : fullImageNumber === 6 ? full7 : fullImageNumber === 7 ? full8 : fullImageNumber === 8 ? full9 : fullImageNumber === 9 ? full10 : fullImageNumber === 10 ? full11 : full12} alt="MobiImage" height="100%" width="100%" style={{borderRadius: "10px", border: theme === "light" && "1px solid #CAC8C8"}} />
                         <div style={{marginTop: "10px"}}>
                             <IconButton onClick={() => {prevFullImage()}}>
-                                <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                                <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: theme === "light" ? "black" : "white", transition: "0.3s"}} />
                             </IconButton>
                             <IconButton onClick={() => {nextFullImage()}}>
-                                <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                                <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: theme === "light" ? "black" : "white", transition: "0.3s"}} />
                             </IconButton>
                         </div>
                     </div>
@@ -153,29 +155,29 @@ const Lotus = () => {
             </Grid>
 
             <Grid container sx={{marginLeft: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginRight: width > 1400 ? "150px" : width > 1100 ? "120px" : width > 900 ? "100px" : width > 700 ? "70px" : "40px", marginTop: "50px", display: "flex", flexDirection: "column", width: width > 1800 ? "50%" : width > 900 ? "60%" : "80%", marginBottom: width > 700 ? "90px" : "60px"}}>
-                <div style={{border: "1px solid black", marginBottom: "20px", width: "60px"}} />
-                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold"}}>
+                <div style={{border: theme === "light" ? "1px solid black" : "1px solid white", transition: "0.3s", marginBottom: "20px", width: "60px"}} />
+                <Typography variant="h6" sx={{fontFamily: "Nunito", fontWeight: "bold", color: theme === "light" ? "black" : "white", transition: "0.3s"}}>
                     Mobile Design - {mobiImageNumber + 1}/13
                 </Typography>
                 {width > 800 ? 
                     <div style={{marginTop: "20px", display: "flex", flexDirection: "row", alignItems: "center"}}>
                         <IconButton onClick={() => {prevMobiImage()}}>
-                            <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                            <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: theme === "light" ? "black" : "white", transition: "0.3s"}} />
                         </IconButton>
-                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobiImageNumber === 5 ? mobi6 : mobiImageNumber === 6 ? mobi7 : mobiImageNumber === 7 ? mobi8 : mobiImageNumber === 8 ? mobi9 : mobiImageNumber === 9 ? mobi10 : mobiImageNumber === 10 ? mobi11 : mobiImageNumber === 11 ? mobi12 : mobi13} alt="FullImage" style={{borderRadius: "10px", height: "50vh", border: "1px solid #CAC8C8"}} />
+                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobiImageNumber === 5 ? mobi6 : mobiImageNumber === 6 ? mobi7 : mobiImageNumber === 7 ? mobi8 : mobiImageNumber === 8 ? mobi9 : mobiImageNumber === 9 ? mobi10 : mobiImageNumber === 10 ? mobi11 : mobiImageNumber === 11 ? mobi12 : mobi13} alt="FullImage" style={{borderRadius: "10px", height: "50vh", border: theme === "light" && "1px solid #CAC8C8"}} />
                         <IconButton onClick={() => {nextMobiImage()}}>
-                            <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: "black"}} />
+                            <IoIosArrowForward style={{fontSize: width > 1000 ? "2rem" : "1.3rem", color: theme === "light" ? "black" : "white", transition: "0.3s"}} />
                         </IconButton>
                     </div>
                 :
                     <div style={{marginTop: "20px", display: "flex", flexDirection: "column", alignItems: "center"}}>
-                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobiImageNumber === 5 ? mobi6 : mobiImageNumber === 6 ? mobi7 : mobiImageNumber === 7 ? mobi8 : mobiImageNumber === 8 ? mobi9 : mobiImageNumber === 9 ? mobi10 : mobiImageNumber === 10 ? mobi11 : mobiImageNumber === 11 ? mobi12 : mobi13} alt="MobiImage" style={{borderRadius: "10px", height: "60vh", border: "1px solid #CAC8C8"}} />
+                        <img src={mobiImageNumber === 0 ? mobi1 : mobiImageNumber === 1 ? mobi2 : mobiImageNumber === 2 ? mobi3 : mobiImageNumber === 3 ? mobi4 : mobiImageNumber === 4 ? mobi5 : mobiImageNumber === 5 ? mobi6 : mobiImageNumber === 6 ? mobi7 : mobiImageNumber === 7 ? mobi8 : mobiImageNumber === 8 ? mobi9 : mobiImageNumber === 9 ? mobi10 : mobiImageNumber === 10 ? mobi11 : mobiImageNumber === 11 ? mobi12 : mobi13} alt="MobiImage" style={{borderRadius: "10px", height: "60vh", border: theme === "light" && "1px solid #CAC8C8"}} />
                         <div style={{marginTop: "10px"}}>
                             <IconButton onClick={() => {nextMobiImage()}}>
-                                <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                                <IoIosArrowBack style={{fontSize: width > 1000 ? "2rem" : "1.5rem", color: theme === "light" ? "black" : "white", transition: "0.3s"}} />
                             </IconButton>
                             <IconButton onClick={() => {nextMobiImage()}}>
-                                <IoIosArrowForward style={{prevMobiImage: width > 1000 ? "2rem" : "1.5rem", color: "black"}} />
+                                <IoIosArrowForward style={{prevMobiImage: width > 1000 ? "2rem" : "1.5rem", color: theme === "light" ? "black" : "white", transition: "0.3s"}} />
                             </IconButton>
                         </div>
                     </div>

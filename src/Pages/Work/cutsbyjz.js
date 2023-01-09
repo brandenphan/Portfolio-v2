@@ -65,7 +65,7 @@ const Cutsbyjz = () => {
     }, []);
 
     return (
-        <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: theme === "light" ? "rgb(237, 242, 251, 0.45)" : "#2D2D2D"}}>
+        <div style={{position: "absolute", top: "0", left: "0", width: "100%", overflow: "hidden", backgroundColor: theme === "light" ? "rgb(237, 242, 251, 0.45)" : "#2D2D2D", transition: "0.3s"}}>
             <div style={{backgroundColor: "#DADADA", display: "flex", justifyContent: "center"}}>
                 {width > 1000 ?
                     <img src={cutsbyjz1} alt="CutsbyjzLargeLandingImage" height="500px" width="auto" />
