@@ -16,6 +16,8 @@ import ScheduleMaker from "./Pages/Project/ScheduleMaker";
 import Brawlhalla from "./Pages/Project/Brawlhalla";
 import GPX from "./Pages/Project/GPX";
 
+import Home from "./Pages/home";
+
 
 const App = () => {
 	return (
@@ -37,6 +39,9 @@ const App = () => {
 						<Route path="/ScheduleMaker" element={<ScheduleMaker />} />
 						<Route path="/Brawlhalla" element={<Brawlhalla />} />
 						<Route path="/GPX" element={<GPX />} />
+
+
+						<Route path="/home" element={<Home />} />
 					</Routes>
 				</ThemeProvider>
 			</ContextProvider>
