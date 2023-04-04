@@ -1,15 +1,14 @@
 import Nav from "../Components/Nav";
-// import LandingWEBP from "../Images/Landing.webp";
-import Home1 from "../Images/home1.png";
-import Home2 from "../Images/home2.png";
-import Home3 from "../Images/home3.png";
-import Home4 from "../Images/home4.png";
-import Home5 from "../Images/home5.png";
+import InitialCollage from "../Components/InitialCollage";
+import Education from "../Components/Education";
+
+
+// import styled from "styled-components";
 
 const Home = () => {
     return (
         <div style={{width: "100%", overflow: "hidden", position: "absolute", top: "0", left: "0"}}>
-            <Nav />
+            {/* <Nav /> */}
 
 
             <div style={{marginTop: "180px", display: "flex", justifyContent: "center", flexDirection: "column"}}>
@@ -19,38 +18,117 @@ const Home = () => {
             </div>
 
 
-            <div style={{marginTop: "105px", width: "100vw", display: "flex", justifyContent: "center"}}>
-                <div style={{width: "690px", marginLeft: "10px", marginRight: "10px", height: "40vh", border: "1px solid #C8C8C8", borderRadius: "30px 0px 0px 0px"}}>
-                    <img src={Home1} alt="" height="100%" width="100%" style={{borderRadius: "30px 0px 0px 0px"}} />
+            <InitialCollage />
+            <Education />
+
+            <div style={{width: "100vw", height: "500px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                <div style={{width: "400px", height: "400px", backgroundColor: "#3e50b5", marginLeft: "10px", marginRight: "10px", borderRadius: "30px"}}>
+                    <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0", marginLeft: "40px", marginTop: "40px"}}>Languages</p>
+                    <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>TypeScript</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>JavaScript</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>HTML</p>
+                        </div>
+                    </div>
+                    <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>CSS</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>C</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Java</p>
+                        </div>
+                    </div>
+                    <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Python</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div style={{width: "350px", marginLeft: "10px", marginRight: "10px", height: "40vh", border: "1px solid #C8C8C8"}}>
-                    <img src={Home4} alt="" height="100%" width="100%" />
-
+                <div style={{width: "400px", height: "400px", backgroundColor: "#3e50b5", marginLeft: "10px", marginRight: "10px", borderRadius: "30px"}}>
+                    <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0", marginLeft: "40px", marginTop: "40px"}}>Skills</p>
+                    <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>React</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Gatsby</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>NextJS</p>
+                        </div>
+                    </div>
+                    <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>GraphQL</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Node</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Express</p>
+                        </div>
+                    </div>
+                    <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>MySQL</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Mongo</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Firebase</p>
+                        </div>
+                    </div>
+                    <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Git</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Heroku</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Netlify</p>
+                        </div>
+                    </div>
                 </div>
-                <div style={{width: "350px", marginLeft: "10px", marginRight: "10px", height: "40vh", border: "1px solid #C8C8C8", borderRadius: "0px 30px 0px 0px"}}>
-                    <img src={Home5} alt="" height="100%" width="100%" style={{borderRadius: "0px 30px 0px 0px"}} />
+
+                <div style={{width: "400px", height: "400px", backgroundColor: "#3e50b5", marginLeft: "10px", marginRight: "10px", borderRadius: "30px"}}>
+                    <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0", marginLeft: "40px", marginTop: "40px"}}>Design Tools</p>
+                    <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Figma</p>
+                        </div>
+                        <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Gimp</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div style={{marginTop: "20px", width: "100vw", display: "flex", justifyContent: "center"}}>
-                <div style={{width: "610px", marginLeft: "10px", marginRight: "10px", height: "40vh", border: "1px solid #C8C8C8", borderRadius: "0px 0px 0px 30px"}}>
-                <img src={Home2} alt="" height="100%" width="100%" style={{borderRadius: "0px 0px 0px 30px"}} />
+            
 
-                </div>
 
-                <div style={{width: "800px", marginLeft: "10px", marginRight: "10px", height: "40vh", border: "1px solid #C8C8C8", borderRadius: "0px 0px 30px 0px"}}>
-                    <img src={Home3} alt="" height="100%" width="100%" style={{borderRadius: "0px 0px 30px 0px"}} />
-                
-                </div>
-            </div>
+        
+
+           
 
 
             <div style={{height: "400vh"}} />
 
+            <Nav />
 
         </div>
     )
 };
 
 export default Home;
+

@@ -23,6 +23,8 @@ const NavContainer = styled.div`
     justify-content: center;
     transition: 0.2s linear;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
 `;
 
