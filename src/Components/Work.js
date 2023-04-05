@@ -37,7 +37,7 @@ const Work = () => {
             </div>
         :
             <div style={{display: "flex", justifyContent: "center", flexDirection: "column", marginTop: width > 600 ? "200px" : "170px"}}>
-                <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "2rem", margin: "0", textAlign: "center"}}>Work</p>
+                <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: width > 800 ? "2rem" : "1.6rem", margin: "0", textAlign: "center"}}>Work</p>
 
                 <div style={{marginTop: "30px", display: "flex", justifyContent: "center"}}>
                     <StyledAnchor target="_blank" href="/Cutsbyjz">

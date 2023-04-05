@@ -11,7 +11,7 @@ const NewFooter = () => {
     const { width } = useWidth();
 
     return (
-        <div id="Contact" style={{marginTop: width > 1100 ? "350px" : width > 700 ? "300px" : width > 500 ? "260px" : "220px", width: "100vw", display: "flex", justifyContent: "center"}}>
+        <div id="Contact" style={{marginTop: width > 1100 ? "330px" : width > 700 ? "300px" : width > 500 ? "260px" : "220px", width: "100vw", display: "flex", justifyContent: "center"}}>
             <div style={{height: "400px", width: width > 800 ? "70vw" : width > 600 ? "80vw" : width > 500 ? "85vw" : "90vw", borderRadius: "30px 30px 0px 0px", backgroundColor: "#3F3F3F", display: "flex", justifyContent: "center"}}>
                 <div>
                     <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", marginTop: "65px", textAlign: "center"}}>Contact</p>
