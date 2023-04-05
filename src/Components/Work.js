@@ -9,7 +9,7 @@ const Work = () => {
 
     return (
         width > 1100 ?
-            <div style={{marginTop: "250px", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+            <div style={{marginTop: "230px", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
                 <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "2rem", margin: "0"}}>Work</p>
                 
                 <div style={{marginTop: "40px", height: width > 1600 ? "450px" : width > 1400 ? "350px" : "250px", width: "83vw", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "0px 0px 30px 30px", position: "relative"}}>
