@@ -115,6 +115,14 @@ const Container = styled.div`
         flex-direction: column;
         height: 1200px;
     }
+
+    @media (max-width: 600px) {
+        height: 1100px;
+    }
+
+    @media (max-width: 500px) {
+        height: 1000px;
+    }
 `;
 
 const GreenBackground = styled.div`

@@ -5,48 +5,53 @@ import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import resume from '../Images/resume.pdf';
 import { Tooltip } from "@mui/material";
 import styled from "styled-components";
+import { useWidth } from "../Context/WidthContext";
 
-const NewFooter = () => (
-    <div id="Contact" style={{marginTop: "350px", width: "100vw", display: "flex", justifyContent: "center"}}>
-        <div style={{height: "400px", width: "70vw", borderRadius: "30px 30px 0px 0px", backgroundColor: "#3F3F3F", display: "flex", justifyContent: "center"}}>
-            <div>
-                <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", marginTop: "65px", textAlign: "center"}}>Contact</p>
-                <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                    <Tooltip title="Github" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                        <StyledAnchor target="_blank" href="https://github.com/brandenphan">
-                            <Button>
-                                <GitHubIcon sx={{color: "white", height: "25px", width: "25px"}} />
-                            </Button>
-                        </StyledAnchor>
-                    </Tooltip>
-                    <Tooltip title="Email" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                        <StyledAnchor target="_blank" href="mailto: branden.phan@gmail.com">
-                            <Button>
-                                <EmailIcon sx={{color: "white", height: "25px", width: "25px"}} />
-                            </Button>
-                        </StyledAnchor>
-                    </Tooltip>
-                    <Tooltip title="LinkedIn" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                        <StyledAnchor target="_blank" href="https://www.linkedin.com/in/brandenphan/">
-                            <Button>
-                                <LinkedInIcon sx={{color: "white", height: "25px", width: "25px"}} />
-                            </Button>
-                        </StyledAnchor>
-                    </Tooltip>
-                    <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                        <StyledAnchor target="_blank" href={resume}>
-                            <Button>
-                                <HistoryEduIcon sx={{color: "white", height: "25px", width: "25px"}} />
-                            </Button>
-                        </StyledAnchor>
-                    </Tooltip>
+const NewFooter = () => {
+    const { width } = useWidth();
+
+    return (
+        <div id="Contact" style={{marginTop: width > 1100 ? "350px" : width > 700 ? "300px" : width > 500 ? "260px" : "220px", width: "100vw", display: "flex", justifyContent: "center"}}>
+            <div style={{height: "400px", width: width > 800 ? "70vw" : width > 600 ? "80vw" : width > 500 ? "85vw" : "90vw", borderRadius: "30px 30px 0px 0px", backgroundColor: "#3F3F3F", display: "flex", justifyContent: "center"}}>
+                <div>
+                    <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", marginTop: "65px", textAlign: "center"}}>Contact</p>
+                    <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                        <Tooltip title="Github" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                            <StyledAnchor target="_blank" href="https://github.com/brandenphan">
+                                <Button>
+                                    <GitHubIcon sx={{color: "white", height: "25px", width: "25px"}} />
+                                </Button>
+                            </StyledAnchor>
+                        </Tooltip>
+                        <Tooltip title="Email" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                            <StyledAnchor target="_blank" href="mailto: branden.phan@gmail.com">
+                                <Button>
+                                    <EmailIcon sx={{color: "white", height: "25px", width: "25px"}} />
+                                </Button>
+                            </StyledAnchor>
+                        </Tooltip>
+                        <Tooltip title="LinkedIn" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                            <StyledAnchor target="_blank" href="https://www.linkedin.com/in/brandenphan/">
+                                <Button>
+                                    <LinkedInIcon sx={{color: "white", height: "25px", width: "25px"}} />
+                                </Button>
+                            </StyledAnchor>
+                        </Tooltip>
+                        <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                            <StyledAnchor target="_blank" href={resume}>
+                                <Button>
+                                    <HistoryEduIcon sx={{color: "white", height: "25px", width: "25px"}} />
+                                </Button>
+                            </StyledAnchor>
+                        </Tooltip>
+                    </div>
+                    <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1rem", color: "white", marginTop: "110px", textAlign: "center"}}>Designed by Branden Phan</p>
+                    <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1rem", color: "white", textAlign: "center"}}>Copyright © 2022 - All Rights Reserved.</p>
                 </div>
-                <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1rem", color: "white", marginTop: "110px", textAlign: "center"}}>Designed by Branden Phan</p>
-                <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1rem", color: "white", textAlign: "center"}}>Copyright © 2022 - All Rights Reserved.</p>
             </div>
         </div>
-    </div>
-);
+    )
+};
 
 export default NewFooter;
 

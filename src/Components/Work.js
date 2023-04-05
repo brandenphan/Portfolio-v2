@@ -36,7 +36,7 @@ const Work = () => {
                 </div>
             </div>
         :
-            <div style={{display: "flex", justifyContent: "center", flexDirection: "column", marginTop: "200px"}}>
+            <div style={{display: "flex", justifyContent: "center", flexDirection: "column", marginTop: width > 600 ? "200px" : "170px"}}>
                 <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "2rem", margin: "0", textAlign: "center"}}>Work</p>
 
                 <div style={{marginTop: "30px", display: "flex", justifyContent: "center"}}>
@@ -79,11 +79,16 @@ const StyledAnchor = styled.a`
     }
 
     @media (max-width: 600px) {
+        height: 350px;
+        width: 450px;
+    }
+
+    @media (max-width: 460px) {
         height: 300px;
         width: 400px;
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 410px) {
         height: 250px;
         width: 350px;
     }
@@ -127,11 +132,16 @@ const Button = styled.button`
     }
 
     @media (max-width: 600px) {
+        height: 350px;
+        width: 450px;
+    }
+
+    @media (max-width: 460px) {
         height: 300px;
         width: 400px;
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 410px) {
         height: 250px;
         width: 350px;
     }
