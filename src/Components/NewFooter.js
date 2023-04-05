@@ -14,7 +14,7 @@ const NewFooter = () => {
         <div id="Contact" style={{marginTop: width > 1100 ? "330px" : width > 700 ? "300px" : width > 500 ? "260px" : "220px", width: "100vw", display: "flex", justifyContent: "center"}}>
             <div style={{height: "400px", width: width > 800 ? "70vw" : width > 600 ? "80vw" : width > 500 ? "85vw" : "90vw", borderRadius: "30px 30px 0px 0px", backgroundColor: "#3F3F3F", display: "flex", justifyContent: "center"}}>
                 <div>
-                    <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", marginTop: "65px", textAlign: "center"}}>Contact</p>
+                    <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: "1.6rem", color: "white", marginTop: "65px", textAlign: "center"}}>Contact</p>
                     <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                         <Tooltip title="Github" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
                             <StyledAnchor target="_blank" href="https://github.com/brandenphan">
@@ -45,8 +45,8 @@ const NewFooter = () => {
                             </StyledAnchor>
                         </Tooltip>
                     </div>
-                    <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1rem", color: "white", marginTop: "110px", textAlign: "center"}}>Designed by Branden Phan</p>
-                    <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1rem", color: "white", textAlign: "center"}}>Copyright © 2022 - All Rights Reserved.</p>
+                    <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: "1rem", color: "white", marginTop: "110px", textAlign: "center"}}>Designed by Branden Phan</p>
+                    <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: "1rem", color: "white", textAlign: "center"}}>Copyright © 2022 - All Rights Reserved.</p>
                 </div>
             </div>
         </div>

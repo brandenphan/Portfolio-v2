@@ -55,7 +55,7 @@ const Education = () => {
                 <div style={{position: "absolute", top: "0", width: "100vw"}}>
                     <div style={{display: "flex", justifyContent: "center"}}>
                         <InformationContainer style={{height: "100px", borderRadius: "30px 0px 0px 0px", marginLeft: "10px", marginRight: "10px"}}>
-                            <Text style={{fontSize: width > 1000 ? "1.8rem" : width > 500 ? "1.6rem" : "1.4rem", fontWeight: "bold"}}>Education</Text>
+                            <Text style={{fontSize: width > 1000 ? "1.8rem" : width > 500 ? "1.6rem" : "1.4rem", fontWeight: width > 600 ? "bold" : ""}}>Education</Text>
                         </InformationContainer>
                         <InformationContainer style={{height: "100px", borderRadius: "0px 30px 0px 0px", marginLeft: "10px", marginRight: "10px"}}>
                             <Text style={{fontSize: width > 1000 ? "1.2rem" : width > 500 ? "1rem" : "0.8rem"}}>Sep 2019 - Present</Text>
@@ -240,6 +240,10 @@ const ButtonText = styled.p`
     font-family: Nunito;
     font-weight: bold;
     color: white;
+
+    @media (max-width: 600px) {
+        font-weight: normal;
+    }
 
     @media (max-width: 500px) {
         font-size: 1rem;

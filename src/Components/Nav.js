@@ -143,6 +143,10 @@ const Button = styled.button`
         transition: 0s;
         background-color: #6A6A6A;
     }
+
+    @media (max-width: 600px) {
+        font-weight: normal;
+    }
 `;
 
 const ContactButton = styled.button`
