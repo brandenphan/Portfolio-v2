@@ -172,7 +172,7 @@ const RightContainer = styled.div`
 
 const InformationContainer = styled.div`
     width: 300px;
-    background-color: #3591df;
+    background-color: #62a5e0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +204,7 @@ const Button = styled.button`
     height: 100px;
     border: none;
     margin-top: 20px;
-    background-color: #3591df;
+    background-color: #62a5e0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +219,7 @@ const Button = styled.button`
 
     &:active {
         transition: 0s;
-        background-color: #1A87E2;
+        background-color: #49A0EA;
     }
 
     @media (max-width: 700px) {
