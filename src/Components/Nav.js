@@ -5,11 +5,13 @@ const Nav = () => (
     <Scroll render={({y}) => (
         <NavContainer style={{marginTop: y !== 0 && "20px"}}>
             <NavBar style={{height: y > 0 ? "70px" : "80px", borderRadius: y !== 0 ? "30px" : "0px 0px 30px 30px", boxShadow: y !== 0 ? "0px 4px 6px 2px rgba(0,0,0,0.25)" : "0px 8px 10px 0px rgba(0,0,0,0.25)"}}>
-                <Button style={{position: "absolute", left: "30px"}}>Branden Phan</Button>
-                <Button>Home</Button>
+                <StyledAnchor href="#Home">
+                    <Button style={{position: "absolute", left: "30px"}}>Branden Phan</Button>
+                </StyledAnchor>
+                <Button type="button" onClick="location.href='https://google.com';">Home</Button>
                 <Button>Education</Button>
                 <Button>Work</Button>
-                <Button>Projects</Button>
+                {/* <Button>Projects</Button> */}
                 <ContactButton>Contact</ContactButton>
             </NavBar>
         </NavContainer>
@@ -33,6 +35,13 @@ const NavBar = styled.div`
     background-color: black;
     width: 80vw;
     transition: 0.2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+const StyledAnchor = styled.a`
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;

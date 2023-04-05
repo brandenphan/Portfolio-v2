@@ -52,25 +52,3 @@ const Button = styled.button`
         opacity: 90%;
     }
 `;
-
-const Button2 = styled.button`
-    border: none;
-    background-color: transparent;
-    height: 350px;
-    width: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: 0.3s linear;
-
-    &:hover {
-        transform: translateY(2px);
-        cursor: pointer;
-    }
-
-    &:active {
-        transition: 0.1s linear;
-        opacity: 90%;
-    }
-`;
