@@ -53,7 +53,7 @@ const Home = () => {
                                 <HistoryEduIcon sx={{color: "white", height: "25px", width: "25px"}} />
                             </Button>
                         </div>
-                        <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1rem", color: "white", marginTop: "100px", textAlign: "center"}}>Designed by Branden Phan</p>
+                        <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1rem", color: "white", marginTop: "110px", textAlign: "center"}}>Designed by Branden Phan</p>
                         <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1rem", color: "white", textAlign: "center"}}>Copyright © 2022 - All Rights Reserved.</p>
                         
                     </div>
