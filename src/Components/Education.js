@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Home6 from "../Images/home6.jpg";
 import Home7 from "../Images/home7.jpg";
+import transcript from '../Images/transcript.pdf';
 
 const Education = () => (
     <Container>
@@ -23,12 +24,16 @@ const Education = () => (
                     <Text style={{fontSize: "1.1rem", margin: "0", marginTop: "7px"}}>• 4.0 GPA (88%)</Text>
                     <Text style={{fontSize: "1.1rem", margin: "0", marginTop: "7px"}}>• Dean's List: 2019 - 2022</Text>
                 </InformationContainer>
-                <Button>
-                    <ButtonText>Transcript</ButtonText>
-                </Button>
-                <Button style={{borderRadius: "0px 0px 0px 30px"}}>
-                    <ButtonText>Degree Schedule</ButtonText>
-                </Button>
+                <StyledAnchor href={transcript} target="_blank">
+                    <Button>
+                        <ButtonText>Transcript</ButtonText>
+                    </Button>
+                </StyledAnchor>
+                <StyledAnchor href="https://www.uoguelph.ca/registrar/calendars/undergraduate/2019-2020/c10/c10bcomp-sofs.shtml" target="_blank">
+                    <Button style={{borderRadius: "0px 0px 0px 30px"}}>
+                        <ButtonText>Degree Schedule</ButtonText>
+                    </Button>
+                </StyledAnchor>
             </LeftContainer>
             <RightContainer>
                 <div style={{width: "300px", height: "500px", borderRadius: "0px 30px 0px 0px"}}>
@@ -99,6 +104,14 @@ const InformationContainer = styled.div`
     justify-content: center;
     align-items: center;
     box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.25);
+`;
+
+const StyledAnchor = styled.a`
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 `;
 
 const Button = styled.button`

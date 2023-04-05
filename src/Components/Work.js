@@ -9,19 +9,25 @@ const Work = () => (
         
         <div style={{marginTop: "20px", height: "450px", width: "83vw", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "0px 0px 30px 30px", border: "1px solid #C8C8C8"}}>
             <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                <Button>
-                    <img src={cutsbyjzPNG} alt="CutsbyjzImage" height="100%" width="100%" style={{borderRadius: "0px 0px 0px 30px", border: "1px solid #C8C8C8"}} />
-                </Button>
+                <StyledAnchor target="_blank" href="/Cutsbyjz">
+                    <Button>
+                        <img src={cutsbyjzPNG} alt="CutsbyjzImage" height="100%" width="100%" style={{borderRadius: "0px 0px 0px 30px", border: "1px solid #C8C8C8"}} />
+                    </Button>
+                </StyledAnchor>
             </div>
             <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                <Button>
-                    <img src={GuelphDenPNG} alt="GuelphDentalImage" height="100%" width="100%" style={{borderRadius: "0px 0px 0px 0px", border: "1px solid #C8C8C8"}} />
-                </Button>
+                <StyledAnchor target="_blank" href="/GuelphDental">
+                    <Button>
+                        <img src={GuelphDenPNG} alt="GuelphDentalImage" height="100%" width="100%" style={{borderRadius: "0px 0px 0px 0px", border: "1px solid #C8C8C8"}} />
+                    </Button>
+                </StyledAnchor>
             </div>
             <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                <Button>
-                    <img src={LotusPNG} alt="LotusImage" height="100%" width="100%" style={{borderRadius: "0px 0px 30px 0px", border: "1px solid #C8C8C8"   }} />
-                </Button>
+                <StyledAnchor target="_blank" href="/Lotus">
+                    <Button>
+                        <img src={LotusPNG} alt="LotusImage" height="100%" width="100%" style={{borderRadius: "0px 0px 30px 0px", border: "1px solid #C8C8C8"   }} />
+                    </Button>
+                </StyledAnchor>
             </div>
         </div>
     </div>
@@ -29,6 +35,13 @@ const Work = () => (
 
 export default Work;
 
+const StyledAnchor = styled.a`
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+`;
 
 const Button = styled.button`
     border: none;

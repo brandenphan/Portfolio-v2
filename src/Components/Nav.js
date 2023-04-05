@@ -1,29 +1,92 @@
 import styled from "styled-components"
 import { Scroll } from "react-fns";
+import { useWidth } from "../Context/WidthContext";
+import MenuIcon from '@mui/icons-material/Menu';
+import { Menu, MenuItem } from "@mui/material";
+import React from "react";
 
-const Nav = () => (
-    <Scroll render={({y}) => (
-        <NavContainer style={{marginTop: y !== 0 && "20px"}}>
-            <NavBar style={{height: y > 0 ? "70px" : "80px", borderRadius: y !== 0 ? "30px" : "0px 0px 30px 30px", boxShadow: y !== 0 ? "0px 4px 6px 2px rgba(0,0,0,0.25)" : "0px 8px 10px 0px rgba(0,0,0,0.25)"}}>
-                <StyledAnchor href="#Home">
-                    <Button style={{position: "absolute", left: "30px"}}>Branden Phan</Button>
-                </StyledAnchor>
-                <StyledAnchor href="#Home">
-                    <Button>Home</Button>
-                </StyledAnchor>
-                <StyledAnchor href="#Education">
-                    <Button>Education</Button>
-                </StyledAnchor>
-                <StyledAnchor href="#Work">
-                    <Button>Work</Button>
-                </StyledAnchor>
-                <StyledAnchor href="#Contact">
-                    <ContactButton>Contact</ContactButton>
-                </StyledAnchor>
-            </NavBar>
-        </NavContainer>
-    )} />
-);
+const Nav = () => {
+    const { width } = useWidth();
+
+    const [menuElement, setMenuElement] = React.useState(null);
+    const open = Boolean(menuElement);
+
+    const handleClick = (event) => {
+        setMenuElement(event.currentTarget);
+    };
+    const handleClose = () => {
+        setMenuElement(null);
+    };
+
+    return (
+        <Scroll render={({y}) => (
+            <NavContainer style={{marginTop: y !== 0 && "20px"}}>
+                <NavBar style={{height: y > 0 ? "70px" : "80px", borderRadius: y !== 0 ? "30px" : "0px 0px 30px 30px", boxShadow: y !== 0 ? "0px 4px 6px 2px rgba(0,0,0,0.25)" : "0px 8px 10px 0px rgba(0,0,0,0.25)"}}>
+                    <StyledAnchor href="#Home">
+                        <Button style={{position: "absolute", left: width > 600 ? "30px" : "10px"}}>Branden Phan</Button>
+                    </StyledAnchor>
+                    {width > 1000 ?
+                        <>
+                            <StyledAnchor href="#Home">
+                                <Button>Home</Button>
+                            </StyledAnchor>
+                            <StyledAnchor href="#Education">
+                                <Button>Education</Button>
+                            </StyledAnchor>
+                            <StyledAnchor href="#Work">
+                                <Button>Work</Button>
+                            </StyledAnchor>
+                            <StyledAnchor href="#Contact">
+                                <ContactButton>Contact</ContactButton>
+                            </StyledAnchor>
+                        </>
+                    : width > 800 ?
+                        <div style={{display: "flex", justifyContent: "center", alignItems: "center", position: "absolute", right: "30px"}}>
+                            <StyledAnchor href="#Home">
+                                <Button>Home</Button>
+                            </StyledAnchor>
+                            <StyledAnchor href="#Education">
+                                <Button>Education</Button>
+                            </StyledAnchor>
+                            <StyledAnchor href="#Work">
+                                <Button>Work</Button>
+                            </StyledAnchor>
+                        </div>
+                    :
+                        <>
+                            <Button onClick={handleClick} style={{position: "absolute", right: width > 600 ? "30px" : "10px"}}>
+                                <MenuIcon />
+                            </Button>
+                            <Menu anchorEl={menuElement} open={open} onClose={handleClose}>
+                                <MenuItem onClick={handleClose}>
+                                    <a href="#Home" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Nunito"}}>
+                                        Home
+                                    </a>
+                                </MenuItem>
+                                <MenuItem onClick={handleClose}>
+                                    <a href="#Education" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Nunito"}}>
+                                        Education
+                                    </a>
+                                </MenuItem>
+                                <MenuItem onClick={handleClose}>
+                                    <a href="#Work" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Nunito"}}>
+                                        Work
+                                    </a>
+                                </MenuItem>
+                                <MenuItem onClick={handleClose}>
+                                    <a href="#Contact" style={{textTransform: "none", textDecoration: "none", color: "black", fontFamily: "Nunito"}}>
+                                        Contact
+                                    </a>
+                                </MenuItem>
+                            </Menu>
+                        </>
+                    }
+                </NavBar>
+            </NavContainer>
+        )} />
+    )
+
+};
 
 export default Nav;
 
@@ -67,6 +130,9 @@ const Button = styled.button`
     margin-left: 10px;
     margin-right: 10px;
     transition: 0.2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     &:hover {
         background-color: #848484;

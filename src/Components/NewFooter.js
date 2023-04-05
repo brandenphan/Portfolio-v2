@@ -2,6 +2,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
+import resume from '../Images/resume.pdf';
 import { Tooltip } from "@mui/material";
 import styled from "styled-components";
 
@@ -12,24 +13,32 @@ const NewFooter = () => (
                 <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", marginTop: "65px", textAlign: "center"}}>Contact</p>
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                     <Tooltip title="Github" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                        <Button>
-                            <GitHubIcon sx={{color: "white", height: "25px", width: "25px"}} />
-                        </Button>
+                        <StyledAnchor target="_blank" href="https://github.com/brandenphan">
+                            <Button>
+                                <GitHubIcon sx={{color: "white", height: "25px", width: "25px"}} />
+                            </Button>
+                        </StyledAnchor>
                     </Tooltip>
                     <Tooltip title="Email" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                        <Button>
-                            <EmailIcon sx={{color: "white", height: "25px", width: "25px"}} />
-                        </Button>
+                        <StyledAnchor target="_blank" href="mailto: branden.phan@gmail.com">
+                            <Button>
+                                <EmailIcon sx={{color: "white", height: "25px", width: "25px"}} />
+                            </Button>
+                        </StyledAnchor>
                     </Tooltip>
                     <Tooltip title="LinkedIn" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                        <Button>
-                            <LinkedInIcon sx={{color: "white", height: "25px", width: "25px"}} />
-                        </Button>
+                        <StyledAnchor target="_blank" href="https://www.linkedin.com/in/brandenphan/">
+                            <Button>
+                                <LinkedInIcon sx={{color: "white", height: "25px", width: "25px"}} />
+                            </Button>
+                        </StyledAnchor>
                     </Tooltip>
                     <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
-                        <Button>
-                            <HistoryEduIcon sx={{color: "white", height: "25px", width: "25px"}} />
-                        </Button>
+                        <StyledAnchor target="_blank" href={resume}>
+                            <Button>
+                                <HistoryEduIcon sx={{color: "white", height: "25px", width: "25px"}} />
+                            </Button>
+                        </StyledAnchor>
                     </Tooltip>
                 </div>
                 <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1rem", color: "white", marginTop: "110px", textAlign: "center"}}>Designed by Branden Phan</p>
@@ -40,6 +49,14 @@ const NewFooter = () => (
 );
 
 export default NewFooter;
+
+const StyledAnchor = styled.a`
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+`;
 
 const Button = styled.button`
     border: none;
@@ -55,6 +72,7 @@ const Button = styled.button`
 
     &:hover {
         background-color: #5C8DFF;
+        cursor: pointer;
     }
 
     &:active {

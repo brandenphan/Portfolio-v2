@@ -5,11 +5,6 @@ import Skills from "../Components/Skills";
 import Work from "../Components/Work";
 import NewFooter from "../Components/NewFooter";
 
-
-
-
-
-
 const Home = () => {
     return (
         <div id="Home" style={{width: "100%", overflow: "hidden", position: "absolute", top: "0", left: "0"}}>
@@ -29,4 +24,3 @@ const Home = () => {
 };
 
 export default Home;
-
