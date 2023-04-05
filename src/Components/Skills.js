@@ -5,9 +5,9 @@ const Skills = () => {
 
     return (
         width > 1500 ?
-            <div style={{width: "100vw", height: "500px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                <div style={{width: width > 1500 ? "450px" : "400px", height: width > 1500 ? "450px" : "400px", border: "1px solid #C8C8C8", display: "flex", justifyContent: "center", alignItems: "center", marginLeft: "10px", marginRight: "10px", borderRadius: "30px 30px 0px 0px"}}>
-                    <div style={{width: "400px", height: "400px", backgroundColor: "#3e50b5", borderRadius: "30px 30px 0px 0px"}}>
+            <div style={{width: "100vw", height: "500px", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "#1C46DD", paddingTop: "100px", paddingBottom: "100px"}}>
+                <div style={{width: width > 1500 ? "450px" : "400px", height: width > 1500 ? "450px" : "400px", border: "1px solid #FDE618", display: "flex", justifyContent: "center", alignItems: "center", marginLeft: "10px", marginRight: "10px", borderRadius: "30px 30px 0px 0px"}}>
+                    <div style={{width: "400px", height: "400px", backgroundColor: "#5375EE", borderRadius: "30px 30px 0px 0px"}}>
                         <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0", marginLeft: "40px", marginTop: "40px"}}>Languages</p>
                         <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
                             <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
@@ -39,8 +39,8 @@ const Skills = () => {
                     </div>
                 </div>
 
-                <div style={{width: width > 1500 ? "450px" : "400px", height: width > 1500 ? "450px" : "400px", border: "1px solid #C8C8C8", display: "flex", justifyContent: "center", alignItems: "center", marginLeft: "10px", marginRight: "10px", borderRadius: "0px 0px 30px 30px"}}>
-                    <div style={{width: "400px", height: "400px", backgroundColor: "#3e50b5", borderRadius: "0px 0px 30px 30px"}}>
+                <div style={{width: width > 1500 ? "450px" : "400px", height: width > 1500 ? "450px" : "400px", border: "1px solid #FDE618", display: "flex", justifyContent: "center", alignItems: "center", marginLeft: "10px", marginRight: "10px", borderRadius: "0px 0px 30px 30px"}}>
+                    <div style={{width: "400px", height: "400px", backgroundColor: "#5375EE", borderRadius: "0px 0px 30px 30px"}}>
                         <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0", marginLeft: "40px", marginTop: "40px"}}>Skills</p>
                         <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
                             <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
@@ -89,8 +89,8 @@ const Skills = () => {
                     </div>
                 </div>
 
-                <div style={{width: "450px", height: "450px", border: "1px solid #C8C8C8", display: "flex", justifyContent: "center", alignItems: "center", marginLeft: "10px", marginRight: "10px", borderRadius: "30px 30px 0px 0px"}}>
-                    <div style={{width: "400px", height: "400px", backgroundColor: "#3e50b5", borderRadius: "30px 30px 0px 0px"}}>
+                <div style={{width: "450px", height: "450px", border: "1px solid #FDE618", display: "flex", justifyContent: "center", alignItems: "center", marginLeft: "10px", marginRight: "10px", borderRadius: "30px 30px 0px 0px"}}>
+                    <div style={{width: "400px", height: "400px", backgroundColor: "#5375EE", borderRadius: "30px 30px 0px 0px"}}>
                         <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0", marginLeft: "40px", marginTop: "40px"}}>Design Tools</p>
                         <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
                             <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>

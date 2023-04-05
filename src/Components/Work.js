@@ -9,8 +9,13 @@ const Work = () => {
 
     return (
         width > 1100 ?
-            <div style={{marginTop: "230px", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
-                <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "2rem", margin: "0"}}>Work</p>
+            <div style={{marginTop: "200px", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+                <div style={{height: "30px", display: "flex", flexDirection: "row"}}>
+                    <div style={{width: width > 1400 ? "100px" : "80px", height: width > 1400 ? "40px" : "35px", border: "1px solid #C8C8C8", marginLeft: "10px", marginRight: "10px", borderRadius: "20px 0px 0px 0px"}} />
+                    <div style={{width: width > 1400 ? "100px" : "80px", height: width > 1400 ? "40px" : "35px", border: "1px solid #C8C8C8", marginLeft: "10px", marginRight: "10px"}} />
+                    <div style={{width: width > 1400 ? "100px" : "80px", height: width > 1400 ? "40px" : "35px", border: "1px solid #C8C8C8", marginLeft: "10px", marginRight: "10px", borderRadius: "0px 20px 0px 0px"}} />
+                </div>
+                <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "2rem", marginTop: width > 1400 ? "35px" : "30px", marginBottom: "0"}}>Work</p>
                 
                 <div style={{marginTop: "40px", height: width > 1600 ? "450px" : width > 1400 ? "350px" : "250px", width: "83vw", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "0px 0px 30px 30px", position: "relative"}}>
                     <div style={{position: "absolute", height: width > 1600 ? "480px" : width > 1400 ? "380px" : "280px", width: width > 1400 ? "70vw" : "60vw", border: "1px solid #C8C8C8", borderRadius: "0px 0px 30px 30px"}} />
@@ -42,21 +47,21 @@ const Work = () => {
                 <div style={{marginTop: "30px", display: "flex", justifyContent: "center"}}>
                     <StyledAnchor target="_blank" href="/Cutsbyjz">
                         <Button>
-                            <img src={cutsbyjzPNG} alt="CutsbyjzImage" height="100%" width="100%" style={{borderRadius: "30px", border: "1px solid #C8C8C8"}} />
+                            <img src={cutsbyjzPNG} alt="CutsbyjzImage" height="100%" width="100%" style={{borderRadius: "30px"}} />
                         </Button>
                     </StyledAnchor>
                 </div>
                 <div style={{marginTop: "30px", display: "flex", justifyContent: "center"}}>
                     <StyledAnchor target="_blank" href="/GuelphDental">
                         <Button>
-                            <img src={GuelphDenPNG} alt="GuelphDentalImage" height="100%" width="100%" style={{borderRadius: "30px", border: "1px solid #C8C8C8"}} />
+                            <img src={GuelphDenPNG} alt="GuelphDentalImage" height="100%" width="100%" style={{borderRadius: "30px"}} />
                         </Button>
                     </StyledAnchor>
                 </div>
                 <div style={{marginTop: "30px", display: "flex", justifyContent: "center"}}>
                     <StyledAnchor target="_blank" href="/Lotus">
                         <Button>
-                            <img src={LotusPNG} alt="LotusImage" height="100%" width="100%" style={{borderRadius: "30px", border: "1px solid #C8C8C8"}} />
+                            <img src={LotusPNG} alt="LotusImage" height="100%" width="100%" style={{borderRadius: "30px"}} />
                         </Button>
                     </StyledAnchor>
                 </div>
