@@ -49,9 +49,9 @@ const Button = styled.button`
     padding: 10px 15px 10px 15px;
     margin-left: 10px;
     margin-right: 10px;
+    transition: 0.2s linear;
     
     &:hover {
-        transition: 0.2s linear;
         background-color: #848484;
         cursor: pointer;
     }
@@ -73,10 +73,10 @@ const ContactButton = styled.button`
     border-radius: 30px;
     position: absolute;
     right: 50px;
+    transition: 0.2s linear;
     
     &:hover {
         cursor: pointer;
-        transition: 0.2s linear;
         background-color: #6492FF;
     }
 

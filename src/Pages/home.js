@@ -83,9 +83,9 @@ const Button = styled.button`
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: 0.3s linear;
 
     &:hover {
-        transition: 0.3s linear;
         transform: translateY(-2px);
         cursor: pointer;
     }
@@ -105,9 +105,9 @@ const Button2 = styled.button`
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: 0.3s linear;
 
     &:hover {
-        transition: 0.3s linear;
         transform: translateY(2px);
         cursor: pointer;
     }
