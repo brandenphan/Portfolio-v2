@@ -32,10 +32,10 @@ const Education = () => (
             </LeftContainer>
             <RightContainer>
                 <div style={{width: "300px", height: "500px", borderRadius: "0px 30px 0px 0px"}}>
-                    <img src={Home6} alt="" height="500px" width="300px" style={{borderRadius: "0px 30px 0px 0px", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)"}} />
+                    <img src={Home6} alt="Home6" height="500px" width="300px" style={{borderRadius: "0px 30px 0px 0px", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)"}} />
                 </div>
                 <div style={{width: "300px", marginTop: "20px", height: "280px", borderRadius: "0px 0px 30px 0px"}}>
-                    <img src={Home7} alt="" height="280px" width="300px" style={{borderRadius: "0px 0px 30px 0px", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)"}} />
+                    <img src={Home7} alt="Home7" height="280px" width="300px" style={{borderRadius: "0px 0px 30px 0px", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)"}} />
                 </div>
             </RightContainer>
         </EducationContainer>

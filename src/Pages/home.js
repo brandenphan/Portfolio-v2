@@ -1,14 +1,19 @@
 import Nav from "../Components/Nav";
 import InitialCollage from "../Components/InitialCollage";
 import Education from "../Components/Education";
+import Skills from "../Components/Skills";
 
+
+import cutsbyjzPNG from "../Images/Work/cutsbyjz/cutsbyjz.png"; 
+import GuelphDenPNG from "../Images/Work/GuelphDental/GuelphDental.png";
+import LotusPNG from "../Images/Work/Lotus/Lotus.png";
+import styled from "styled-components";
 
 // import styled from "styled-components";
 
 const Home = () => {
     return (
         <div style={{width: "100%", overflow: "hidden", position: "absolute", top: "0", left: "0"}}>
-            {/* <Nav /> */}
 
 
             <div style={{marginTop: "180px", display: "flex", justifyContent: "center", flexDirection: "column"}}>
@@ -20,105 +25,36 @@ const Home = () => {
 
             <InitialCollage />
             <Education />
+            <Skills />
 
-            <div style={{width: "100vw", height: "500px", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                <div style={{width: "450px", height: "450px", border: "1px solid #C8C8C8", display: "flex", justifyContent: "center", alignItems: "center", marginLeft: "10px", marginRight: "10px", borderRadius: "30px 30px 0px 0px"}}>
-                    <div style={{width: "400px", height: "400px", backgroundColor: "#3e50b5", borderRadius: "30px 30px 0px 0px"}}>
-                        <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0", marginLeft: "40px", marginTop: "40px"}}>Languages</p>
-                        <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>TypeScript</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>JavaScript</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>HTML</p>
-                            </div>
-                        </div>
-                        <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>CSS</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>C</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Java</p>
-                            </div>
-                        </div>
-                        <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Python</p>
-                            </div>
-                        </div>
+            <div style={{marginTop: "300px", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+                <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "2rem", margin: 0}}>Work</p>
+                
+                <div style={{height: "450px", width: "80vw", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "30px"}}>
+                    <div style={{height: "500px", width: "500px", display: "flex", justifyContent: "center", alignItems: "center", position: "relative"}}>
+                        <div style={{height: "100px", width: "200px", border: "1px solid grey", position: "absolute", top: "0",  borderRadius: "30px"}} />
+                        <Button>
+                            <img src={cutsbyjzPNG} alt="CutsbyjzImage" height="100%" width="100%" style={{marginLeft: "15px", marginRight: "15px", borderRadius: "0px 0px 30px 30px", position: "absolute"}} />
+                        </Button>
                     </div>
-                </div>
-
-                <div style={{width: "450px", height: "450px", border: "1px solid #C8C8C8", display: "flex", justifyContent: "center", alignItems: "center", marginLeft: "10px", marginRight: "10px", borderRadius: "0px 0px 30px 30px"}}>
-                    <div style={{width: "400px", height: "400px", backgroundColor: "#3e50b5", borderRadius: "0px 0px 30px 30px"}}>
-                        <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0", marginLeft: "40px", marginTop: "40px"}}>Skills</p>
-                        <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>React</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Gatsby</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>NextJS</p>
-                            </div>
-                        </div>
-                        <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>GraphQL</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Node</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Express</p>
-                            </div>
-                        </div>
-                        <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>MySQL</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Mongo</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Firebase</p>
-                            </div>
-                        </div>
-                        <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Git</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Heroku</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Netlify</p>
-                            </div>
-                        </div>
+                    <div style={{height: "500px", width: "500px", display: "flex", justifyContent: "center", alignItems: "center", position: "relative"}}>
+                        <div style={{height: "100px", width: "200px", border: "1px solid grey", position: "absolute", bottom: "0",  borderRadius: "30px"}} />
+                        <Button2>
+                            <img src={GuelphDenPNG} alt="GuelphDentalImage" height="100%" width="100%" style={{marginLeft: "15px", marginRight: "15px", borderRadius: "30px 30px 0px 0px", position: "absolute"}} />
+                        </Button2>
                     </div>
-                </div>
-
-                <div style={{width: "450px", height: "450px", border: "1px solid #C8C8C8", display: "flex", justifyContent: "center", alignItems: "center", marginLeft: "10px", marginRight: "10px", borderRadius: "30px 30px 0px 0px"}}>
-                    <div style={{width: "400px", height: "400px", backgroundColor: "#3e50b5", borderRadius: "30px 30px 0px 0px"}}>
-                        <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0", marginLeft: "40px", marginTop: "40px"}}>Design Tools</p>
-                        <div style={{width: "400px", marginTop: "20px", marginLeft: "35px", display: "flex", flexDirection: "row"}}>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Figma</p>
-                            </div>
-                            <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#FDE618", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Gimp</p>
-                            </div>
-                        </div>
+                    <div style={{height: "500px", width: "500px", display: "flex", justifyContent: "center", alignItems: "center", position: "relative"}}>
+                        <div style={{height: "100px", width: "200px", border: "1px solid grey", position: "absolute", top: "0",  borderRadius: "30px"}} />
+                        <Button>
+                            <img src={LotusPNG} alt="LotusImage" height="100%" width="100%" style={{marginLeft: "15px", marginRight: "15px", borderRadius: "0px 0px 30px 30px", position: "absolute"}} />
+                        </Button>
                     </div>
                 </div>
             </div>
+
+
+    
+
 
             
 
@@ -138,3 +74,46 @@ const Home = () => {
 
 export default Home;
 
+const Button = styled.button`
+    border: none;
+    background-color: transparent;
+    height: 350px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:hover {
+        transition: 0.3s linear;
+        transform: translateY(-2px);
+        cursor: pointer;
+    }
+
+    &:active {
+        transition: 0.1s linear;
+        opacity: 90%;
+    }
+`;
+
+const Button2 = styled.button`
+    border: none;
+    background-color: transparent;
+    height: 350px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:hover {
+        transition: 0.3s linear;
+        transform: translateY(2px);
+        cursor: pointer;
+    }
+
+    &:active {
+        transition: 0.1s linear;
+        opacity: 90%;
+    }
+`;
