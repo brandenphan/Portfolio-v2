@@ -96,6 +96,8 @@ const Skills = () => (
                 </div>
             </div>
         </div>
+
+        <div id="Work" style={{marginTop: "700px"}} />
     </div>
 );
 

@@ -8,11 +8,18 @@ const Nav = () => (
                 <StyledAnchor href="#Home">
                     <Button style={{position: "absolute", left: "30px"}}>Branden Phan</Button>
                 </StyledAnchor>
-                <Button type="button" onClick="location.href='https://google.com';">Home</Button>
-                <Button>Education</Button>
-                <Button>Work</Button>
-                {/* <Button>Projects</Button> */}
-                <ContactButton>Contact</ContactButton>
+                <StyledAnchor href="#Home">
+                    <Button>Home</Button>
+                </StyledAnchor>
+                <StyledAnchor href="#Education">
+                    <Button>Education</Button>
+                </StyledAnchor>
+                <StyledAnchor href="#Work">
+                    <Button>Work</Button>
+                </StyledAnchor>
+                <StyledAnchor href="#Contact">
+                    <ContactButton>Contact</ContactButton>
+                </StyledAnchor>
             </NavBar>
         </NavContainer>
     )} />
@@ -45,6 +52,7 @@ const StyledAnchor = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 `;
 
 const Button = styled.button`

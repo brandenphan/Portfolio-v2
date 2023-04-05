@@ -6,7 +6,7 @@ import { Tooltip } from "@mui/material";
 import styled from "styled-components";
 
 const NewFooter = () => (
-    <div style={{marginTop: "350px", width: "100vw", display: "flex", justifyContent: "center"}}>
+    <div id="Contact" style={{marginTop: "350px", width: "100vw", display: "flex", justifyContent: "center"}}>
         <div style={{height: "400px", width: "70vw", borderRadius: "30px 30px 0px 0px", backgroundColor: "#3F3F3F", display: "flex", justifyContent: "center"}}>
             <div>
                 <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", marginTop: "65px", textAlign: "center"}}>Contact</p>
