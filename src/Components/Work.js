@@ -40,7 +40,7 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-        :
+        : width > 700 ?
             <div style={{display: "flex", justifyContent: "center", flexDirection: "column", marginTop: width > 600 ? "200px" : "170px"}}>
                 <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: width > 800 ? "2rem" : "1.6rem", margin: "0", textAlign: "center"}}>Work</p>
 
@@ -66,6 +66,32 @@ const Work = () => {
                     </StyledAnchor>
                 </div>
             </div>
+        :
+            <div style={{display: "flex", justifyContent: "center", flexDirection: "column", marginTop: width > 600 ? "200px" : "170px"}}>
+                <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: width > 800 ? "2rem" : "1.6rem", margin: "0", textAlign: "center"}}>Work</p>
+
+                <div style={{marginTop: "20px", display: "flex", justifyContent: "center", marginLeft: "20px", marginRight: "20px"}}>
+                    <a style={{padding: "0", textDecoration: "none", display: "flex", justifyContent: "center", alignItems: "center"}} target="_blank" href="/Cutsbyjz">
+                        <Button>
+                            <img src={cutsbyjzPNG} alt="CutsbyjzImage" height="100%" width="100%" style={{borderRadius: "30px"}} />
+                        </Button>
+                    </a>
+                </div>
+                <div style={{marginTop: "20px", display: "flex", justifyContent: "center", marginLeft: "20px", marginRight: "20px"}}>
+                    <a style={{padding: "0", textDecoration: "none", display: "flex", justifyContent: "center", alignItems: "center"}} target="_blank" href="/GuelphDental">
+                        <Button>
+                            <img src={GuelphDenPNG} alt="GuelphDentalImage" height="100%" width="100%" style={{borderRadius: "30px"}} />
+                        </Button>
+                    </a>
+                </div>
+                <div style={{marginTop: "20px", display: "flex", justifyContent: "center", marginLeft: "20px", marginRight: "20px"}}>
+                    <a style={{padding: "0", textDecoration: "none", display: "flex", justifyContent: "center", alignItems: "center"}} target="_blank" href="/Lotus">
+                        <Button>
+                            <img src={LotusPNG} alt="LotusImage" height="100%" width="100%" style={{borderRadius: "30px"}} />
+                        </Button>
+                    </a>
+                </div>
+            </div>
     )
 };
 
@@ -81,21 +107,6 @@ const StyledAnchor = styled.a`
     @media (max-width: 1100px) {
         height: 400px;
         width: 500px;
-    }
-
-    @media (max-width: 600px) {
-        height: 350px;
-        width: 450px;
-    }
-
-    @media (max-width: 460px) {
-        height: 300px;
-        width: 400px;
-    }
-
-    @media (max-width: 410px) {
-        height: 250px;
-        width: 350px;
     }
 `;
 
@@ -136,18 +147,10 @@ const Button = styled.button`
         width: 500px;
     }
 
-    @media (max-width: 600px) {
-        height: 350px;
-        width: 450px;
-    }
-
-    @media (max-width: 460px) {
-        height: 300px;
-        width: 400px;
-    }
-
-    @media (max-width: 410px) {
-        height: 250px;
-        width: 350px;
+    @media (max-width: 700px) {
+        height: 100%;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 `;
