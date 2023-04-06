@@ -53,7 +53,7 @@ const InitialCollage = () => {
                     </div>
                 </div>
             :
-                <div style={{marginTop: "105px", paddingLeft: "30px", paddingRight: "30px"}}>
+                <div style={{marginTop: "105px", paddingLeft: "20px", paddingRight: "20px"}}>
                     <img src={Home8} alt="HomeImage8" height="100%" width="100%" style={{borderRadius: "30px 30px 0px 0px", marginRight: "5px", border: "1px solid #C8C8C8"}} />
                     <img src={Home9} alt="HomeImage9" height="100%" width="100%" style={{borderRadius: "0px 0px 0px 0px", marginRight: "5px", marginTop: "10px", border: "1px solid #C8C8C8"}} />
                     <img src={Home10} alt="HomeImage10" height="100%" width="100%" style={{borderRadius: "0px 0px 0px 0px", marginRight: "5px", marginTop: "10px", border: "1px solid #C8C8C8"}} />
