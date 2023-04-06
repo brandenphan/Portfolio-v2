@@ -24,9 +24,9 @@ const Education = () => {
                         </InformationContainer>
                         <InformationContainer style={{marginTop: "20px", height: "200px", flexDirection: "column"}}>
                             <Text style={{fontSize: width > 1000 ? "1.1rem" : "0.9rem", margin: "0"}}>• Major in Computer Science</Text>
-                            <Text style={{fontSize: width > 1000 ? "1.1rem" : "0.9rem", margin: "0", marginTop: "7px"}}>• Minor in Business</Text>
-                            <Text style={{fontSize: width > 1000 ? "1.1rem" : "0.9rem", margin: "0", marginTop: "7px"}}>• 4.0 GPA (88%)</Text>
-                            <Text style={{fontSize: width > 1000 ? "1.1rem" : "0.9rem", margin: "0", marginTop: "7px"}}>• Dean's List: 2019 - 2022</Text>
+                            <Text style={{fontSize: width > 1000 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• Minor in Business</Text>
+                            <Text style={{fontSize: width > 1000 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• 4.0 GPA (88%)</Text>
+                            <Text style={{fontSize: width > 1000 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• Dean's List: 2019 - 2022</Text>
                         </InformationContainer>
                         <StyledAnchor href={transcript} target="_blank">
                             <Button>
@@ -84,11 +84,11 @@ const Education = () => {
                         <div style={{width: "100%", height: "340px", marginRight: "20px", backgroundColor: "transparent", marginLeft: "10px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", borderRadius: "0px 0px 0px 0px"}}>
                             <div style={{width: "100%", height: "160px", backgroundColor: "#62a5e0", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
                                 <Text style={{fontSize: "0.9rem", margin: "0", paddingLeft: "5px", paddingRight: "5px"}}>• Major in Computer Science</Text>
-                                <Text style={{fontSize: "0.9rem", margin: "0", marginTop: "7px", paddingLeft: "5px", paddingRight: "5px"}}>• Minor in Business</Text>
+                                <Text style={{fontSize: "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px", paddingLeft: "5px", paddingRight: "5px"}}>• Minor in Business</Text>
                             </div>
                             <div style={{width: "100%", height: "160px", backgroundColor: "#62a5e0", marginTop: "20px", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
                                 <Text style={{fontSize: "0.9rem", margin: "0", paddingLeft: "5px", paddingRight: "5px"}}>• 4.0 GPA (88%)</Text>
-                                <Text style={{fontSize: "0.9rem", margin: "0", marginTop: "7px", paddingLeft: "5px", paddingRight: "5px"}}>• Dean's List: 2019 - 2022</Text>
+                                <Text style={{fontSize: "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px", paddingLeft: "5px", paddingRight: "5px"}}>• Dean's List: 2019 - 2022</Text>
                             </div>
                         </div>
                     </div>
