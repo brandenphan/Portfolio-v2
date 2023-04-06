@@ -70,21 +70,21 @@ const Work = () => {
             <div style={{display: "flex", justifyContent: "center", flexDirection: "column", marginTop: width > 600 ? "200px" : "170px", width: "100%"}}>
                 <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: width > 800 ? "2rem" : "1.6rem", margin: "0", textAlign: "center"}}>Work</p>
 
-                <div style={{marginTop: "20px", display: "flex", justifyContent: "center", marginLeft: "20px", marginRight: "20px"}}>
+                <div style={{marginTop: "20px", display: "flex", justifyContent: "center", marginLeft: "10px", marginRight: "10px"}}>
                     <a style={{padding: "0", textDecoration: "none", display: "flex", justifyContent: "center", alignItems: "center"}} target="_blank" href="/Cutsbyjz">
                         <Button>
                             <img src={cutsbyjzPNG} alt="CutsbyjzImage" height="100%" width="100%" style={{borderRadius: "30px"}} />
                         </Button>
                     </a>
                 </div>
-                <div style={{marginTop: "20px", display: "flex", justifyContent: "center", marginLeft: "20px", marginRight: "20px"}}>
+                <div style={{marginTop: "20px", display: "flex", justifyContent: "center", marginLeft: "10px", marginRight: "10px"}}>
                     <a style={{padding: "0", textDecoration: "none", display: "flex", justifyContent: "center", alignItems: "center"}} target="_blank" href="/GuelphDental">
                         <Button>
                             <img src={GuelphDenPNG} alt="GuelphDentalImage" height="100%" width="100%" style={{borderRadius: "30px"}} />
                         </Button>
                     </a>
                 </div>
-                <div style={{marginTop: "20px", display: "flex", justifyContent: "center", marginLeft: "20px", marginRight: "20px"}}>
+                <div style={{marginTop: "20px", display: "flex", justifyContent: "center", marginLeft: "10px", marginRight: "10px"}}>
                     <a style={{padding: "0", textDecoration: "none", display: "flex", justifyContent: "center", alignItems: "center"}} target="_blank" href="/Lotus">
                         <Button>
                             <img src={LotusPNG} alt="LotusImage" height="100%" width="100%" style={{borderRadius: "30px"}} />
