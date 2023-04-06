@@ -337,7 +337,7 @@ const Skills = () => {
             <div style={{width: "100%", display: "flex", alignItems: "center", flexDirection: "column", backgroundColor: "#d7e3fc", paddingTop: "100px", paddingBottom: "100px"}}>
                 <div style={{width: "100%"}}>
                     <div style={{marginLeft: "20px", marginRight: "20px", paddingTop: "40px", paddingBottom: "40px", backgroundColor: "#667AEB", borderRadius: "30px 30px 0px 0px", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
-                        <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0"}}>Languages</p>
+                        <p style={{fontFamily: "Nunito", fontSize: "1.6rem", color: "white", margin: "0"}}>Languages</p>
                         <div style={{width: "400px", marginTop: "30px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
@@ -379,7 +379,7 @@ const Skills = () => {
 
                 <div style={{width: "100%", marginTop: "20px"}}>
                     <div style={{marginLeft: "20px", marginRight: "20px", paddingTop: "40px", paddingBottom: "40px", backgroundColor: "#667AEB", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
-                        <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0"}}>Skills</p>
+                        <p style={{fontFamily: "Nunito", fontSize: "1.6rem", color: "white", margin: "0"}}>Skills</p>
                         <div style={{width: "400px", marginTop: "30px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
@@ -437,7 +437,7 @@ const Skills = () => {
 
                 <div style={{width: "100%", marginTop: "20px"}}>
                     <div style={{marginLeft: "20px", marginRight: "20px", paddingTop: "40px", paddingBottom: "40px", backgroundColor: "#667AEB", borderRadius: "0px 0px 30px 30px", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
-                        <p style={{fontFamily: "Nunito", fontWeight: "bold", fontSize: "1.6rem", color: "white", margin: "0"}}>Design Tools</p>
+                        <p style={{fontFamily: "Nunito", fontSize: "1.6rem", color: "white", margin: "0"}}>Design Tools</p>
                         <div style={{width: "400px", marginTop: "30px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
