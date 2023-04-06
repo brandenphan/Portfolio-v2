@@ -14,19 +14,19 @@ const Education = () => {
                 <EducationContainer>
                     <LeftContainer>
                         <InformationContainer style={{height: "100px", borderRadius: "30px 0px 0px 0px"}}>
-                            <Text style={{fontSize: width > 1000 ? "1.8rem" : "1.6rem", fontWeight: "bold"}}>Education</Text>
+                            <Text style={{fontSize: width > 1400 ? "1.8rem" : "1.6rem", fontWeight: "bold"}}>Education</Text>
                         </InformationContainer>
                         <InformationContainer style={{marginTop: "20px", height: "100px"}}>
-                            <Text style={{fontSize: width > 1000 ? "1.2rem" : "1rem"}}>Sep 2019 - Present</Text>
+                            <Text style={{fontSize: width > 1400 ? "1.1rem": "0.9rem"}}>Sep 2019 - Present</Text>
                         </InformationContainer>
                         <InformationContainer style={{marginTop: "20px", height: "100px"}}>
-                            <Text style={{fontSize: "1.2rem"}}>Bachelor of Computing</Text>
+                            <Text style={{fontSize: width > 1400 ? "1.1rem": "0.9rem"}}>Bachelor of Computing</Text>
                         </InformationContainer>
                         <InformationContainer style={{marginTop: "20px", height: "200px", flexDirection: "column"}}>
-                            <Text style={{fontSize: width > 1000 ? "1.1rem" : "0.9rem", margin: "0"}}>• Major in Computer Science</Text>
-                            <Text style={{fontSize: width > 1000 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• Minor in Business</Text>
-                            <Text style={{fontSize: width > 1000 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• 4.0 GPA (88%)</Text>
-                            <Text style={{fontSize: width > 1000 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• Dean's List: 2019 - 2022</Text>
+                            <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", margin: "0"}}>• Major in Computer Science</Text>
+                            <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• Minor in Business</Text>
+                            <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• 4.0 GPA (88%)</Text>
+                            <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• Dean's List: 2019 - 2022</Text>
                         </InformationContainer>
                         <StyledAnchor href={transcript} target="_blank">
                             <Button>
@@ -55,26 +55,26 @@ const Education = () => {
                 <div style={{position: "absolute", top: "0", width: "100vw"}}>
                     <div style={{width: "100vw", display: "flex", justifyContent: "center"}}>
                         <div style={{width: "100%", height: "100px", backgroundColor: "#62a5e0", marginLeft: "20px", marginRight: "10px", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "30px 0px 0px 0px", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)"}}>
-                            <Text style={{fontSize: "1.6rem", fontWeight: width > 600 ? "bold" : "", paddingLeft: "5px", paddingRight: "5px"}}>Education</Text>
+                            <Text style={{fontSize: "1.6rem", fontWeight: width > 600 ? "bold" : "", paddingLeft: "10px", paddingRight: "10px"}}>Education</Text>
                         </div>
                         <div style={{width: "100%", height: "100px", backgroundColor: "#62a5e0", marginRight: "20px", marginLeft: "10px", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "0px 30px 0px 0px", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)"}}>
-                            <Text style={{fontSize: "1rem", paddingLeft: "5px", paddingRight: "5px"}}>Sep 2019 - Present</Text>
+                            <Text style={{fontSize: "1rem", paddingLeft: "10px", paddingRight: "10px"}}>Sep 2019 - Present</Text>
                         </div>
                     </div>
                     <div style={{width: "100vw", display: "flex", justifyContent: "center", marginTop: "20px"}}>
                         <div style={{width: "100%", height: "340px", marginLeft: "20px", backgroundColor: "transparent", marginRight: "10px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", borderRadius: "0px 0px 0px 0px"}}>
                             <div style={{width: "100%", height: "100px", backgroundColor: "#62a5e0", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <Text style={{fontSize: "1rem", paddingLeft: "5px", paddingRight: "5px"}}>Bachelor of Computing</Text>
+                                <Text style={{fontSize: "1rem", paddingLeft: "10px", paddingRight: "10px"}}>Bachelor of Computing</Text>
                             </div>
                             <div style={{width: "100%", height: "100px", backgroundColor: "#62a5e0", marginTop: "20px", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <StyledAnchor style={{width: "100%", height: "100%", paddingLeft: "5px", paddingRight: "5px"}} href={transcript} target="_blank">
+                                <StyledAnchor style={{width: "100%", height: "100%", paddingLeft: "10px", paddingRight: "10px"}} href={transcript} target="_blank">
                                     <MobileButton>
                                         <ButtonText>Transcript</ButtonText>
                                     </MobileButton>
                                 </StyledAnchor>
                             </div>
                             <div style={{width: "100%", height: "100px", backgroundColor: "#62a5e0", marginTop: "20px", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                <StyledAnchor style={{width: "100%", height: "100%", paddingLeft: "5px", paddingRight: "5px"}} href="https://www.uoguelph.ca/registrar/calendars/undergraduate/2019-2020/c10/c10bcomp-sofs.shtml" target="_blank">
+                                <StyledAnchor style={{width: "100%", height: "100%", paddingLeft: "10px", paddingRight: "10px"}} href="https://www.uoguelph.ca/registrar/calendars/undergraduate/2019-2020/c10/c10bcomp-sofs.shtml" target="_blank">
                                     <MobileButton>
                                         <ButtonText>Degree Schedule</ButtonText>
                                     </MobileButton>
@@ -83,12 +83,12 @@ const Education = () => {
                         </div>
                         <div style={{width: "100%", height: "340px", marginRight: "20px", backgroundColor: "transparent", marginLeft: "10px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", borderRadius: "0px 0px 0px 0px"}}>
                             <div style={{width: "100%", height: "160px", backgroundColor: "#62a5e0", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
-                                <Text style={{fontSize: "0.9rem", margin: "0", paddingLeft: "5px", paddingRight: "5px"}}>• Major in Computer Science</Text>
-                                <Text style={{fontSize: "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px", paddingLeft: "5px", paddingRight: "5px"}}>• Minor in Business</Text>
+                                <Text style={{fontSize: "0.9rem", margin: "0", paddingLeft: "10px", paddingRight: "10px"}}>• Major in Computer Science</Text>
+                                <Text style={{fontSize: "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px", paddingLeft: "10px", paddingRight: "10px"}}>• Minor in Business</Text>
                             </div>
                             <div style={{width: "100%", height: "160px", backgroundColor: "#62a5e0", marginTop: "20px", boxShadow: "0px 6px 8px 0px rgba(0,0,0,0.25)", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
-                                <Text style={{fontSize: "0.9rem", margin: "0", paddingLeft: "5px", paddingRight: "5px"}}>• 4.0 GPA (88%)</Text>
-                                <Text style={{fontSize: "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px", paddingLeft: "5px", paddingRight: "5px"}}>• Dean's List: 2019 - 2022</Text>
+                                <Text style={{fontSize: "0.9rem", margin: "0", paddingLeft: "10px", paddingRight: "10px"}}>• 4.0 GPA (88%)</Text>
+                                <Text style={{fontSize: "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px", paddingLeft: "10px", paddingRight: "10px"}}>• Dean's List: 2019 - 2022</Text>
                             </div>
                         </div>
                     </div>
@@ -257,11 +257,14 @@ const Button = styled.button`
 `;
 
 const ButtonText = styled.p`
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: Nunito;
-    font-weight: bold;
     color: white;
     text-align: center;
+
+    @media (max-width: 1400px) {
+        font-size: 0.9rem;
+    }
 
     @media (max-width: 600px) {
         font-weight: normal;

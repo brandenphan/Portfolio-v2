@@ -86,8 +86,8 @@ const NewFooter = () => {
                                 </StyledAnchor>
                             </Tooltip>
                         </div>
-                        <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: "1rem", color: "white", marginTop: "110px", textAlign: "center",  paddingLeft: "5px", paddingRight: "5px"}}>Designed by Branden Phan</p>
-                        <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: "1rem", color: "white", textAlign: "center", paddingLeft: "5px", paddingRight: "5px"}}>Copyright © 2022 - All Rights Reserved.</p>
+                        <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: "0.8rem", color: "white", marginTop: "110px", textAlign: "center",  paddingLeft: "5px", paddingRight: "5px"}}>Designed by Branden Phan</p>
+                        <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: "0.8rem", color: "white", textAlign: "center", paddingLeft: "5px", paddingRight: "5px"}}>Copyright © 2022 - All Rights Reserved.</p>
                     </div>
                 </div>
             </div>

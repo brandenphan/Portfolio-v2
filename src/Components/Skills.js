@@ -220,36 +220,36 @@ const Skills = () => {
                         <div style={{width: "400px", marginTop: "30px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>TypeScript</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: "bold"}}>TypeScript</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>JavaScript</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: "bold"}}>JavaScript</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>HTML</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style={{width: "400px", marginTop: "20px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
-                            <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
-                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>HTML</p>
-                                </div>
-                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>CSS</p>
-                                </div>
-                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>C</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: "bold"}}>HTML</p>
                                 </div>
                             </div>
                         </div>
                         <div style={{width: "400px", marginTop: "20px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Python</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: "bold"}}>HTML</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: "bold"}}>Java</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: "bold"}}>CSS</p>
+                                </div>
+                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: "bold"}}>C</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style={{width: "400px", marginTop: "20px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                            <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: "bold"}}>Python</p>
+                                </div>
+                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: "bold"}}>Java</p>
                                 </div>
                             </div>
                         </div>
@@ -341,36 +341,36 @@ const Skills = () => {
                         <div style={{width: "400px", marginTop: "30px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>TypeScript</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>TypeScript</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>JavaScript</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>JavaScript</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>HTML</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style={{width: "400px", marginTop: "20px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
-                            <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
-                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>HTML</p>
-                                </div>
-                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>CSS</p>
-                                </div>
-                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>C</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>HTML</p>
                                 </div>
                             </div>
                         </div>
                         <div style={{width: "400px", marginTop: "20px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>Python</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>HTML</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>Java</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>CSS</p>
+                                </div>
+                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>C</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style={{width: "400px", marginTop: "20px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                            <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>Python</p>
+                                </div>
+                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>Java</p>
                                 </div>
                             </div>
                         </div>
@@ -383,52 +383,52 @@ const Skills = () => {
                         <div style={{width: "400px", marginTop: "30px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>React</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>React</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>Gatsby</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>Gatsby</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>NextJS</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style={{width: "400px", marginTop: "20px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
-                            <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
-                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>GraphQL</p>
-                                </div>
-                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>Node</p>
-                                </div>
-                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>Express</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>NextJS</p>
                                 </div>
                             </div>
                         </div>
                         <div style={{width: "400px", marginTop: "20px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>MySQL</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>GraphQL</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight:width > 700 ? "bold" : ""}}>Mongo</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>Node</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>Firebase</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>Express</p>
                                 </div>
                             </div>
                         </div>
                         <div style={{width: "400px", marginTop: "20px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>Git</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>MySQL</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>Heroku</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight:width > 700 ? "bold" : ""}}>Mongo</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>Netlify</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>Firebase</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style={{width: "400px", marginTop: "20px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                            <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>Git</p>
+                                </div>
+                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>Heroku</p>
+                                </div>
+                                <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>Netlify</p>
                                 </div>
                             </div>
                         </div>
@@ -441,10 +441,10 @@ const Skills = () => {
                         <div style={{width: "400px", marginTop: "30px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                             <div style={{width: "400px", display: "flex", flexDirection: "row", justifyContent: "center"}}>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>Figma</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>Figma</p>
                                 </div>
                                 <div style={{marginLeft: "5px", marginRight: "5px", width: "100px", height: "50px", borderRadius: "20px", backgroundColor: "#ffe45e", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                    <p style={{fontFamily: "Nunito", fontSize: "1rem", fontWeight: width > 700 ? "bold" : ""}}>Gimp</p>
+                                    <p style={{fontFamily: "Nunito", fontSize: "0.8rem", fontWeight: width > 700 ? "bold" : ""}}>Gimp</p>
                                 </div>
                             </div>
                         </div>

@@ -68,7 +68,7 @@ const Work = () => {
             </div>
         :
             <div style={{display: "flex", justifyContent: "center", flexDirection: "column", marginTop: width > 600 ? "200px" : "170px", width: "100%"}}>
-                <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: width > 800 ? "2rem" : "1.6rem", margin: "0", textAlign: "center"}}>Work</p>
+                <p style={{fontFamily: "Nunito", fontSize: width > 800 ? "2rem" : "1.6rem", margin: "0", textAlign: "center"}}>Work</p>
 
                 <div style={{marginTop: "20px", display: "flex", justifyContent: "center", marginLeft: "20px", marginRight: "20px"}}>
                     <a style={{padding: "0", textDecoration: "none", display: "flex", justifyContent: "center", alignItems: "center"}} target="_blank" href="/Cutsbyjz">
