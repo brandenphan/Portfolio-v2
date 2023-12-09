@@ -1,8 +1,8 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
-import resume from '../Images/resume.pdf';
+// import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
+// import resume from '../Images/resume.pdf';
 import { Tooltip } from "@mui/material";
 import styled from "styled-components";
 import { useWidth } from "../Context/WidthContext";
@@ -38,13 +38,13 @@ const NewFooter = () => {
                                     </Button>
                                 </StyledAnchor>
                             </Tooltip>
-                            <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                            {/* <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
                                 <StyledAnchor target="_blank" href={resume}>
                                     <Button>
                                         <HistoryEduIcon sx={{color: "white", height: "25px", width: "25px"}} />
                                     </Button>
                                 </StyledAnchor>
-                            </Tooltip>
+                            </Tooltip> */}
                         </div>
                         <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: "1rem", color: "white", marginTop: "110px", textAlign: "center"}}>Designed by Branden Phan</p>
                         <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: "1rem", color: "white", textAlign: "center"}}>Copyright © 2022 - All Rights Reserved.</p>
@@ -78,13 +78,13 @@ const NewFooter = () => {
                                     </Button>
                                 </StyledAnchor>
                             </Tooltip>
-                            <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
+                            {/* <Tooltip title="Resume" placement="top" componentsProps={{tooltip: {sx: {backgroundColor: "white", color: "black", border: "1px solid #D7D6D6", fontFamily: "Source Sans Pro", fontWeight: "bold", fontSize: "20px"}}}}>
                                 <StyledAnchor target="_blank" href={resume}>
                                     <Button>
                                         <HistoryEduIcon sx={{color: "white", height: "25px", width: "25px"}} />
                                     </Button>
                                 </StyledAnchor>
-                            </Tooltip>
+                            </Tooltip> */}
                         </div>
                         <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: "0.8rem", color: "white", marginTop: "110px", textAlign: "center",  paddingLeft: "5px", paddingRight: "5px"}}>Designed by Branden Phan</p>
                         <p style={{fontFamily: "Nunito", fontWeight: width > 600 ? "bold" : "", fontSize: "0.8rem", color: "white", textAlign: "center", paddingLeft: "5px", paddingRight: "5px"}}>Copyright © 2022 - All Rights Reserved.</p>
