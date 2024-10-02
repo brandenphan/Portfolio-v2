@@ -25,7 +25,7 @@ const Education = () => {
                         <InformationContainer style={{marginTop: "20px", height: "200px", flexDirection: "column"}}>
                             <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", margin: "0"}}>• Major in Computer Science</Text>
                             <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• Minor in Business</Text>
-                            <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• 4.0 GPA (88%)</Text>
+                            <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• 87% Cumulative Average</Text>
                             <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• Dean's List: 2019 - 2024</Text>
                         </InformationContainer>
                         <StyledAnchor href={transcript} target="_blank">
