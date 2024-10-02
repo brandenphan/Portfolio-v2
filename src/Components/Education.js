@@ -17,7 +17,7 @@ const Education = () => {
                             <Text style={{fontSize: width > 1400 ? "1.8rem" : "1.6rem", fontWeight: "bold"}}>Education</Text>
                         </InformationContainer>
                         <InformationContainer style={{marginTop: "20px", height: "100px"}}>
-                            <Text style={{fontSize: width > 1400 ? "1.1rem": "0.9rem"}}>Sep 2019 - Present</Text>
+                            <Text style={{fontSize: width > 1400 ? "1.1rem": "0.9rem"}}>Sept 2019 - April 2024</Text>
                         </InformationContainer>
                         <InformationContainer style={{marginTop: "20px", height: "100px"}}>
                             <Text style={{fontSize: width > 1400 ? "1.1rem": "0.9rem"}}>Bachelor of Computing</Text>
@@ -26,7 +26,7 @@ const Education = () => {
                             <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", margin: "0"}}>• Major in Computer Science</Text>
                             <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• Minor in Business</Text>
                             <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• 4.0 GPA (88%)</Text>
-                            <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• Dean's List: 2019 - 2022</Text>
+                            <Text style={{fontSize: width > 1400 ? "1.1rem" : "0.9rem", marginLeft: "0", marginRight: "0", marginBottom: "0", marginTop: "7px"}}>• Dean's List: 2019 - 2024</Text>
                         </InformationContainer>
                         <StyledAnchor href={transcript} target="_blank">
                             <Button>
