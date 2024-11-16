@@ -1,0 +1,80 @@
+.LandingContainer {
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 0 0 50px 50px;
+  border-bottom: 1px solid #888787;
+  background-color: white;
+  padding: 20vh 0 20vh 0;
+
+  p {
+    margin: 0;
+    text-align: center;
+    padding: 0 20px 0 20px;
+  }
+}
+
+.FirstHeader {
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.SecondHeader {
+  font-family: Nunito;
+  font-size: 22px;
+  color: #3672FF;
+}
+
+.ThirdHeader {
+  margin-top: 10px !important;
+  font-family: Nunito;
+  font-size: 16px;
+  color: #545454;
+}
+
+.ImageContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+
+  @media(max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  @media(max-width: 600px) {
+    padding: 0 30px 0 30px;
+  }
+}
+
+img {
+  border: 1px solid #B9B7B7;
+
+  @media(max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.Image1 {
+  border-radius: 20px 0 0 20px;
+
+  @media(max-width: 1024px) {
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.Image3 {
+  border-radius: 0 20px 20px 0;
+
+  @media(max-width: 1024px) {
+    border-radius: 0 0 20px 20px;
+  }
+}

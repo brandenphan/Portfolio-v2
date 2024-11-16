@@ -1,0 +1,25 @@
+.HamburgerContainer {
+  position: relative;
+}
+
+.Hamburger {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.25);
+  transition: 0.3s;
+  padding: 5px 0 5px 0;
+
+  a {
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    color: black;
+    font-family: Nunito;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,11 @@
+/* Common breakpoints
+1280+ larger desktops and monitors
+769 - 1279 Laptops, larger tablets in landscape, and small desktops
+481-768 Tablets and larger smartphones
+0-480 Smaller smartphones */
+
+.ContainerCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,106 @@
+.NavContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  transition: 0.3s linear;
+  z-index: 10;
+}
+
+.NavContainerNoScroll {
+  top: 0;
+}
+
+.NavContainerScroll {
+  top: 20px;
+}
+
+.NavContent {
+  width: 80vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 0 50px 0 50px;
+  transition: 0.3s linear;
+
+  @media(max-width: 1279px) {
+    padding: 0 30px 0 30px;
+  }
+
+  @media(max-width: 479px) {
+    padding: 0 15px 0 15px;
+  }
+}
+
+.NavContentNoScroll {
+  height: 80px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.25);
+}
+
+.NavContentScroll {
+  height: 70px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.25);
+}
+
+.NavSections {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  @media(max-width: 1279px) {
+    gap: 10px;
+  }
+}
+
+.NavButtons {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 1rem;
+  font-family: Nunito;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+
+  transition: 0.3s linear;
+}
+
+.NavButtons:hover {
+  background-color: #848484;
+  cursor: pointer;
+}
+
+.NavButtons:active {
+  background-color: #6A6A6A;
+  transition: 0s linear;
+}
+
+.ContactButton {
+  border: none;
+  background-color: #3672FF;
+  color: white;
+  font-size: 1rem;
+  font-family: Nunito;
+  font-weight: bold;
+  padding: 10px 25px 10px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+
+.ContactButton:hover {
+  background-color: #6492FF;
+  cursor: pointer;
+}
+
+.ContactButton:active {
+  background-color: #3D74F4;
+  transition: 0s linear;
+}

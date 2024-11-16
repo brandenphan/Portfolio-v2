@@ -1,0 +1,79 @@
+.ProjectsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15vh 0 17vh 0;
+
+  p {
+    margin: 0;
+    font-family: Nunito;
+  }
+}
+
+.Header {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ProjectBoxSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 800px;
+  gap: 20px;
+
+  @media(max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+}
+
+.ProjectBox {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(53, 142, 241, 0.5);
+  transition: 0.1s linear;
+  text-decoration: none;
+}
+
+.ProjectBox:hover {
+  box-shadow: 0 1px 15px rgba(53, 142, 241, 1)
+}
+
+.ProjectHeader {
+  font-size: 18px;
+  color: black;
+}
+
+.ProjectDesc {
+  font-size: 16px;
+  color: #545454;
+  text-align: center;
+}
+
+.LanguageContainer {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.Language {
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  background-color: #6492FF;
+}
+
+.LanguageText {
+  color: white;
+  font-size: 14px;
+}

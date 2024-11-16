@@ -1,0 +1,120 @@
+.SkillsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15vh 0 15vh 0;
+
+  p {
+    margin: 0;
+    font-family: Nunito;
+  }
+}
+
+.DividerContainer {
+  position: relative;
+}
+
+.Line {
+  position: absolute;
+  height: 1px;
+  width: 600px;
+  background-color: #707070;
+
+  @media(max-width: 768px) {
+    width: 80vw;
+  }
+}
+
+.DividerContent {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  
+  p {
+    font-weight: bold;
+  }
+}
+
+.IconContainer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+
+  @media(max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.IconBox {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  height: 60px;
+  width: 60px;
+  font-size: 60px;
+  transition: 0.1s;
+}
+
+.IconBox:hover {
+  transform: scale(1.05);
+}
+
+.IconTypeScript {
+  box-shadow: 0 0 15px rgba(53, 142, 241, 1);
+}
+
+.IconTypeScript:hover {
+  box-shadow: 0 0 20px rgba(53, 142, 241, 1);
+}
+
+.IconJavaScript {
+  box-shadow: 0 0 15px rgba(240, 219, 79, 1);
+}
+
+.IconJavaScript:hover {
+  box-shadow: 0 0 20px rgba(240, 219, 79, 1);
+
+}
+
+.IconHTML {
+  box-shadow: 0 0 15px rgba(240, 101, 41, 1);
+}
+
+.IconHTML:hover {
+  box-shadow: 0 0 20px rgba(240, 101, 41, 1);
+}
+
+.IconCSS {
+  box-shadow: 0 0 15px rgba(38, 77, 228, 1);
+}
+
+.IconCSS:hover {
+  box-shadow: 0 0 20px rgba(38, 77, 228, 1);
+}
+
+.IconPython {
+  box-shadow: 0 0 15px rgba(255, 222, 87, 1);
+}
+
+.IconPython:hover {
+  box-shadow: 0 0 20px rgba(255, 222, 87, 1);
+}
+
+.IconJava {
+  box-shadow: 0 0 15px rgba(248, 152, 32, 1);
+}
+
+.IconJava:hover {
+  box-shadow: 0 0 20px rgba(248, 152, 32, 1);
+}
