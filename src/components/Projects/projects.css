@@ -37,7 +37,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   border-radius: 20px;
   box-shadow: 0 2px 12px rgba(53, 142, 241, 0.5);
   transition: 0.1s linear;
@@ -60,7 +60,7 @@
 }
 
 .LanguageContainer {
-  margin-top: 5px;
+  margin-top: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
