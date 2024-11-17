@@ -7,15 +7,15 @@
   left: 0;
   transition: 0.3s linear;
   z-index: 10;
+}
 
-  p {
-    font-family: Nunito;
-  }
+.NavContainer p {
+  font-family: Nunito;
+}
 
-  a {
-    font-family: Nunito;
-    text-decoration: none;
-  }
+.NavContainer a {
+  font-family: Nunito;
+  text-decoration: none;
 }
 
 .NavContainerNoScroll {
