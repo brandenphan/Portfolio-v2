@@ -2,6 +2,8 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import { TbFileCv } from "react-icons/tb";
+import resume from "../../assets/resume.pdf";
 import "./footer.css";
 import "../../global/global.css";
 
@@ -20,6 +22,9 @@ const Footer: React.FC = () => {
           </a>
           <a className="FooterButtons" href="mailto: branden.phan@gmail.com" target="_blank" rel="noreferrer">
             <MdEmail size="20px" color="white" />
+          </a>
+          <a className="FooterButtons" href={resume} target="_blank" rel="noreferrer">
+            <TbFileCv size="20px" color="white" />
           </a>
         </div>
       </div>

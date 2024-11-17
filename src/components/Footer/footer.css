@@ -49,6 +49,16 @@
   transition: 0.3s linear;
 }
 
+@media(max-width: 420px) {
+  .FooterButtons {
+    padding: 10px 12px 10px 12px;
+  }
+
+  .ButtonContainer {
+    gap: 15px;
+  }
+}
+
 .FooterButtons:hover {
   background-color: #6492FF;
   cursor: pointer;
