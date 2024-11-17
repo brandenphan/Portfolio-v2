@@ -10,11 +10,11 @@
   border-top: 1px solid #888787;
   border-bottom: 1px solid #888787;
   border-radius: 50px;
+}
 
-  p {
-    margin: 0;
-    font-family: Nunito;
-  }
+.ExperienceContainer p {
+  margin: 0;
+  font-family: Nunito;
 }
 
 .Header {
@@ -35,14 +35,6 @@
   position: relative;
   text-decoration: none;
   transition: 0.1s linear;
-
-  @media(max-width: 768px) {
-    width: 80%;
-  }
-
-  @media(max-width: 420px) {
-    width: 70%;
-  }
 }
 
 .BoxContainer:hover {
@@ -71,15 +63,8 @@
   right: -8px;
 }
 
-@media(max-width: 768px) {
-  .BoxContainer::after {
-    display: none;
-  }
-}
-
 .ExperienceHeader {
   font-size: 18px;
-  /* font-weight: bold; */
   color: black;
 }
 
@@ -91,10 +76,6 @@
 .ExperienceContentHeader {
   font-size: 16px;
   color: #545454;
-
-  @media(max-width: 420px) {
-    text-align: center;
-  }
 }
 
 .DateContainer {
@@ -102,20 +83,41 @@
   justify-content: space-between;
   align-items: center; 
   width: 100%;
-
-  @media(max-width: 420px) {
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-  }
 }
 
 .SubHeader {
   align-self: flex-start;
   color: #517CEA;
   font-size: 16px;
+}
 
-  @media(max-width: 420px) {
+
+@media(max-width: 768px) {
+  .BoxContainer {
+    width: 80%;
+  }
+
+  .BoxContainer::after {
+    display: none;
+  }
+}
+
+@media(max-width: 420px) {
+  .BoxContainer {
+    width: 70%;
+  }
+
+  .ExperienceContainer {
+    text-align: center;
+  }
+
+  .DateContainer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .SubHeader {
     align-self: center;
   }
 }

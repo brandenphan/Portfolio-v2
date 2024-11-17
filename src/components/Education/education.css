@@ -6,11 +6,11 @@
   flex-direction: column;
   gap: 10px;
   padding: 15vh 0 5vh 0;
+}
 
-  p {
-    margin: 0;
-    font-family: Nunito;
-  }
+.EducationContainer p {
+  margin: 0;
+  font-family: Nunito;
 }
 
 .Header {
@@ -23,10 +23,6 @@
   justify-content: space-between;
   align-items: center;
   width: 500px;
-
-  @media(max-width: 600px) {
-    width: 85%;
-  }
 }
 
 .SectionHeader {
@@ -60,4 +56,11 @@
 
 .LinkContainer:hover .Icon {
   transform: rotate(45deg);
+}
+
+
+@media(max-width: 600px) {
+  .SectionContainer {
+    width: 85%;
+  }
 }

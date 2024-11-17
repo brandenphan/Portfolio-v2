@@ -6,11 +6,11 @@
   flex-direction: column;
   gap: 10px;
   padding: 15vh 0 15vh 0;
+}
 
-  p {
-    margin: 0;
-    font-family: Nunito;
-  }
+.SkillsContainer p {
+  margin: 0;
+  font-family: Nunito;
 }
 
 .DividerContainer {
@@ -22,10 +22,6 @@
   height: 1px;
   width: 600px;
   background-color: #707070;
-
-  @media(max-width: 768px) {
-    width: 80vw;
-  }
 }
 
 .DividerContent {
@@ -35,10 +31,10 @@
   background-color: white;
   border: 1px solid #707070;
   border-radius: 20px;
-  
-  p {
-    font-weight: bold;
-  }
+}
+
+.DividerContent p {
+  font-weight: bold;
 }
 
 .IconContainer {
@@ -49,10 +45,6 @@
   align-items: center;
   flex-direction: row;
   gap: 30px;
-
-  @media(max-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .IconBox {
@@ -84,7 +76,6 @@
 
 .IconJavaScript:hover {
   box-shadow: 0 0 20px rgba(240, 219, 79, 1);
-
 }
 
 .IconHTML {
@@ -117,4 +108,15 @@
 
 .IconJava:hover {
   box-shadow: 0 0 20px rgba(248, 152, 32, 1);
+}
+
+
+@media(max-width: 768px) {
+  .Line {
+    width: 80vw;
+  }
+
+  .IconContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

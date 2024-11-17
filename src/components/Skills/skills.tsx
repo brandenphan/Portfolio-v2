@@ -4,6 +4,15 @@ import { FaJava } from "react-icons/fa6";
 import "./skills.css";
 import "../../global/global.css";
 
+const iconData = [
+  { icon: <SiTypescript color="#358EF1" />, className: 'IconTypeScript' },
+  { icon: <SiJavascript color="#F0DB4F" />, className: 'IconJavaScript' },
+  { icon: <SiHtml5 color="#f06529" />, className: 'IconHTML' },
+  { icon: <SiCss3 color="#264de4" />, className: 'IconCSS' },
+  { icon: <SiPython color="#ffde57" />, className: 'IconPython' },
+  { icon: <FaJava color="#f89820" />, className: 'IconJava' },
+]
+
 const Skills: React.FC = () => {
   return (
     <div className="SkillsContainer">
@@ -15,24 +24,11 @@ const Skills: React.FC = () => {
       </div>
 
       <div className="IconContainer">
-        <div className="IconBox ContainerCenter IconTypeScript">
-          <SiTypescript color="#358EF1" />
-        </div>
-        <div className="IconBox ContainerCenter IconJavaScript">
-          <SiJavascript color="#F0DB4F" />
-        </div>
-        <div className="IconBox ContainerCenter IconHTML">
-          <SiHtml5 color="#f06529" />
-        </div>
-        <div className="IconBox ContainerCenter IconCSS">
-          <SiCss3 color="#264de4" />
-        </div>
-        <div className="IconBox ContainerCenter IconPython">
-          <SiPython color="#ffde57" />
-        </div>
-        <div className="IconBox ContainerCenter IconJava">
-          <FaJava color="#f89820" />
-        </div>
+        {iconData.map((icon, index) => (
+          <div key={index} className={`IconBox ContainerCenter ${icon.className}`}>
+            {icon.icon}
+          </div>
+        ))}
       </div>
     </div>
   )
