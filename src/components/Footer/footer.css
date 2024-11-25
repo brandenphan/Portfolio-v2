@@ -37,6 +37,30 @@
   gap: 20px;
 }
 
+.FooterIconContainer {
+  position: relative;
+}
+
+.FooterIconContainer:hover .Tooltip {
+  opacity: 1;
+}
+
+.Tooltip {
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  opacity: 0;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Nunito;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
 .FooterButtons {
   display: flex;
   justify-content: center;

@@ -14,18 +14,30 @@ const Footer: React.FC = () => {
         <p>Branden Phan - 2024</p>
         
         <div className="ButtonContainer">
-          <a className="FooterButtons" href="https://www.linkedin.com/in/brandenphan/" target="_blank" rel="noreferrer">
-            <FaLinkedin size="20px" color="white" />
-          </a>
-          <a className="FooterButtons" href="https://github.com/brandenphan" target="_blank" rel="noreferrer">
-            <FaGithub size="20px" color="white" />
-          </a>
-          <a className="FooterButtons" href="mailto: branden.phan@gmail.com" target="_blank" rel="noreferrer">
-            <MdEmail size="20px" color="white" />
-          </a>
-          <a className="FooterButtons" href={resume} target="_blank" rel="noreferrer">
-            <TbFileCv size="20px" color="white" />
-          </a>
+          <div className="FooterIconContainer">
+            <a className="FooterButtons" href="https://www.linkedin.com/in/brandenphan/" target="_blank" rel="noreferrer">
+              <FaLinkedin size="20px" color="white" />
+            </a>
+            <div className="Tooltip">LinkedIn</div>
+          </div>
+          <div className="FooterIconContainer">
+            <a className="FooterButtons" href="https://github.com/brandenphan" target="_blank" rel="noreferrer">
+              <FaGithub size="20px" color="white" />
+            </a>
+            <div className="Tooltip">GitHub</div>
+          </div>
+          <div className="FooterIconContainer">
+            <a className="FooterButtons" href="mailto: branden.phan@gmail.com" target="_blank" rel="noreferrer">
+              <MdEmail size="20px" color="white" />
+            </a>
+            <div className="Tooltip">Email</div>
+          </div>
+          <div className="FooterIconContainer">
+            <a className="FooterButtons" href={resume} target="_blank" rel="noreferrer">
+              <TbFileCv size="20px" color="white" />
+            </a>
+            <div className="Tooltip">Resume</div>
+          </div>
         </div>
       </div>
     </div>
